@@ -199,12 +199,12 @@
 @-o-viewport {
   width: device-width; }
 
-.page-heading, .page-heading-no-breadcrumb {
+.page-heading, .page-heading-no-breadcrumb, .page-heading-smaller {
   margin: 15px 0; }
   @media (min-width: 641px) {
-    .page-heading, .page-heading-no-breadcrumb {
+    .page-heading, .page-heading-no-breadcrumb, .page-heading-smaller {
       margin: 45px 0 45px; } }
-  .page-heading .context, .page-heading-no-breadcrumb .context {
+  .page-heading .context, .page-heading-no-breadcrumb .context, .page-heading-smaller .context {
     font-family: "nta", Arial, sans-serif;
     font-size: 24px;
     line-height: 1.25;
@@ -213,17 +213,17 @@
     color: #6f777b;
     margin: 0; }
     @media (max-width: 640px) {
-      .page-heading .context, .page-heading-no-breadcrumb .context {
+      .page-heading .context, .page-heading-no-breadcrumb .context, .page-heading-smaller .context {
         font-size: 18px;
         line-height: 1.2; } }
-  .page-heading h1, .page-heading-no-breadcrumb h1 {
+  .page-heading h1, .page-heading-no-breadcrumb h1, .page-heading-smaller h1 {
     font-family: "nta", Arial, sans-serif;
     font-size: 48px;
     line-height: 1.04167;
     font-weight: 700;
     text-transform: none; }
     @media (max-width: 640px) {
-      .page-heading h1, .page-heading-no-breadcrumb h1 {
+      .page-heading h1, .page-heading-no-breadcrumb h1, .page-heading-smaller h1 {
         font-size: 32px;
         line-height: 1.09375; } }
 
@@ -232,6 +232,17 @@
   @media (min-width: 641px) {
     .page-heading-no-breadcrumb {
       margin-top: 89px; } }
+
+.page-heading-smaller h1 {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 1.11111;
+  font-weight: 700;
+  text-transform: none; }
+  @media (max-width: 640px) {
+    .page-heading-smaller h1 {
+      font-size: 24px;
+      line-height: 1.04167; } }
 
 @-ms-viewport {
   width: device-width; }
