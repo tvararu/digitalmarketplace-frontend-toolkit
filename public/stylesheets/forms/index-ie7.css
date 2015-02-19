@@ -459,7 +459,7 @@ table.summary-item-body {
 .summary-item-field-action {
   padding-left: 20px; }
 
-.summary-item-row-incomplete .summary-item-name-field span {
+.summary-item-row-incomplete .summary-item-field-name span {
   padding-left: 10px;
   border-left: 3px solid #cd4c0b; }
 .summary-item-row-incomplete .summary-item-field-content {
