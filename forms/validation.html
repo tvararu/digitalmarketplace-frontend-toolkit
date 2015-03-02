@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>Textboxes - Forms - Test toolkit</title>
+    <title>Question and answer format - Test toolkit</title>
 
     <script type="text/javascript">
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -53,7 +53,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="../govuk_template/assets/images/opengraph-image.png?0.12.0">
 
-    <link rel="stylesheet" media="all" type="text/css" href="../public/stylesheets/index.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="../public/stylesheets/index.css" /> <link rel="stylesheet" media="all" type="text/css" href="../public/stylesheets/forms/_questions.css" /> <link rel="stylesheet" media="all" type="text/css" href="../public/stylesheets/forms/_textboxes.css" /> <link rel="stylesheet" media="all" type="text/css" href="../public/stylesheets/forms/_validation.css" />
 
   </head>
 
@@ -112,41 +112,46 @@
         <a href="../">Home</a>
       </li>
       <li>
-        Forms
+        <a href="./">Forms</a>
       </li>
     </ol>
   </nav>
 </div> <main role="main" id="content" class="wrapper">
   <div id="wrapper">
     <header class="page-heading">
-      <h1>Forms</h1>
+      <h1>Validation</h1>
     </header>
-    <ul>
-      <li>
-        <a href="textboxes.html">Textboxes</a>
-      </li>
-      <li>
-        <a href="selection-buttons.html">Selection buttons</a>
-      </li>
-      <li>
-        <a href="word-count.html">Textbox with word count</a>
-      </li>
-      <li>
-        <a href="list-entry.html">List entry textbox</a>
-      </li>
-      <li>
-        <a href="summary.html">Summary</a>
-      </li>
-      <li>
-        <a href="question-and-answer-format.html">Question and answer format</a>
-      </li>
-      <li>
-        <a href="multi-selects.html">Multi-selects</a>
-      </li>
-      <li>
-        <a href="validation.html">Validation</a>
-      </li>
-    </ul>
+    <form>
+      <div class="validation-masthead" aria-labelledby="validation-masthead-heading">
+        <h3 class="validation-masthead-heading" id="validation-masthead-heading">
+          There was a problem with your answer to the following questions
+        </h3>
+        <a href="#example-textbox" class="validation-masthead-link">What was the name of your first pet?</a>
+        <a href="#example-textbox-2" class="validation-masthead-link">What street did you grow up on?</a>
+      </div>
+      <div class="validation-wrapper">
+        <div class="question">
+          <label for="example-textbox" class="question-heading">
+            What was the name of your first pet?
+          </label>
+          <p class="validation-message" id="error-example-textbox">
+            This question requires an answer
+          </p>
+          <input class="text-box" id="example-textbox" type="text" aria-describedby="error-example-textbox" />
+        </div>
+      </div>
+      <div class="validation-wrapper">
+        <div class="question">
+          <label for="example-textbox-2" class="question-heading">
+            What street did you grow up on?
+          </label>
+          <p class="validation-message" id="error-example-textbox-2">
+            This question requires an answer
+          </p>
+          <input class="text-box" id="example-textbox-2" type="text" aria-describedby="error-example-textbox-2" />
+        </div>
+      </div>
+    </form>
   </div>
 </main>
 
