@@ -53,14 +53,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="../govuk_template/assets/images/opengraph-image.png?0.12.0">
 
-    <link rel="stylesheet" media="all" type="text/css" href="../public/stylesheets/index.css" /> <link rel="stylesheet" media="all" type="text/css" href="../public/stylesheets/grids/index.css" /> <style>
-  .grid-column {
-    padding: 0 15px;
-    border: solid black 1px;
-    min-height: 40em;
-  }
-</style>
-
+    
+        <!--[if !IE]><!-->
+        <link rel="stylesheet" href="/public/stylesheets/index.css "/>
+        <!--<![endif]-->
+        <!--[if IE 6]>
+        <link rel="stylesheet" href="/public/stylesheets/index-ie6.css "/>
+        <![endif]-->
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="/public/stylesheets/index-ie7.css "/>
+        <![endif]-->
+        <!--[if IE 8]>
+        <link rel="stylesheet" href="/public/stylesheets/index-ie8.css "/>
+        <![endif]-->
+        <!--[if IE 9]>
+        <link rel="stylesheet" href="/public/stylesheets/index-ie9.css "/>
+        <![endif]-->
+    
   </head>
 
   <body class="">
@@ -127,8 +136,8 @@
     <header class="page-heading">
       <h1>One column grid: 100%</h1>
     </header>
-    <div class="grid-row">
-      <div class="grid-column">
+    <div class="grid-row grid-example">
+      <div class="one-column">
         <h2>One column</h2>
       </div>
     </div>

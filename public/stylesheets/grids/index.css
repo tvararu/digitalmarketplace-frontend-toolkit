@@ -72,3 +72,17 @@
     .grid-row .half-column {
       float: left;
       width: 50%; } }
+.grid-row .one-column {
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 641px) {
+    .grid-row .one-column {
+      float: left;
+      width: 100%; } }
+
+.grid-example {
+  background: rgba(177, 14, 30, 0.1);
+  box-shadow: inset -15px 0 0 0 rgba(177, 14, 30, 0.1), inset 15px 0 0 0 rgba(177, 14, 30, 0.1), inset 0 0 0 1px rgba(177, 14, 30, 0.3);
+  min-height: 40em; }
