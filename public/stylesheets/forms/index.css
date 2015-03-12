@@ -14,6 +14,17 @@
 @-o-viewport {
   width: device-width; }
 
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+.checkbox-filter .head:after {
+  content: "";
+  display: block;
+  clear: both; }
+
 .text-box {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
@@ -43,12 +54,14 @@
   height: 10.25em; }
 
 .text-box-percentage {
+  display: -moz-inline-stack;
   display: inline-block;
   width: 6em;
   text-align: right;
   padding-right: 5px; }
 
 .text-box-percentage-label {
+  display: -moz-inline-stack;
   display: inline-block;
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
