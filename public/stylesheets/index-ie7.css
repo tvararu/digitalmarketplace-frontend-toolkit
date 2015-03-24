@@ -839,6 +839,70 @@
 @-o-viewport {
   width: device-width; }
 
+.browse-list {
+  padding: 0; }
+
+.browse-list-item {
+  list-style: none;
+  margin-bottom: 30px; }
+
+.browse-list-item-link {
+  display: block;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 27px;
+  line-height: 1.11111;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  padding-top: 4px;
+  padding-bottom: 6px;
+  font-weight: bold;
+  text-decoration: none; }
+  @media (max-width: 640px) {
+    .browse-list-item-link {
+      font-size: 20px;
+      line-height: 1.11111; } }
+
+.browse-list-item-body {
+  margin: 0;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 2px;
+  padding-bottom: 8px;
+  padding-top: 0;
+  padding-bottom: 5px; }
+  @media (max-width: 640px) {
+    .browse-list-item-body {
+      font-size: 16px;
+      line-height: 1.25; } }
+
+.browse-list-item-subtext {
+  margin: 0;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  font-weight: 400;
+  text-transform: none;
+  color: #6f777b; }
+  @media (max-width: 640px) {
+    .browse-list-item-subtext {
+      font-size: 12px;
+      line-height: 1.25; } }
+
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
 .hint {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;

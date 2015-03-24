@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>Test toolkit</title>
+    <title>Browse list - Test toolkit</title>
 
     <script type="text/javascript">
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -104,23 +104,54 @@
     </div>
     <!--end global-header-bar-->
 
-    <main role="main" id="content" class="wrapper">
+    <div id="global-breadcrumb" class="header-context">
+  <nav>
+    <ol class="group" role="breadcrumbs">
+      <li>
+        <a href="./">Home</a>
+      </li>
+    </ol>
+  </nav>
+</div> <main role="main" id="content" class="wrapper">
   <div id="wrapper">
-    <header class="page-heading page-heading-no-breadcrumb">
-      <h1>Digital Marketplace front end toolkit, version 1.5.0</h1>
+    <header class="page-heading">
+      <h1>Browse list</h1>
     </header>
-    <ul>
-      <li><a href="beta-banner.html">Beta banner</a></li>
-      <li><a href="breadcrumb.html">Breadcrumb</a></li>
-      <li><a href="page-headings">Page headings</a></li>
-      <li><a href="notification-banners.html">Notification banners</a></li>
-      <li><a href="buttons.html">Buttons</a></li>
-      <li><a href="grids">Grids</a></li>
-      <li><a href="forms">Forms</a></li>
-      <li><a href="search-result.html">Search result</a></li>
-      <li><a href="document.html">Documents</a></li>
-      <li><a href="browse-list.html">Browse list</a></li>
-    </ul>
+    <div class="grid-row">
+      <div class="two-third-column">
+
+        <ul class="browse-list">
+          <li class="browse-list-item">
+            <a class="browse-list-item-link" href="#">Find cloud technology and support</a>
+            <p class="browse-list-item-body">
+              eg web hosting or IT health checks
+            </p>
+            <p class="browse-list-item-subtext">
+              Procurement framework: G-Cloud
+            </p>
+          </li>
+          <li class="browse-list-item">
+            <a class="browse-list-item-link" href="#">Find specialists to work on digital projects</a>
+            <p class="browse-list-item-body">
+              eg web hosting or IT health checks
+            </p>
+            <p class="browse-list-item-subtext">
+              Procurement framework: Digital Services
+            </p>
+          </li>
+          <li class="browse-list-item">
+            <a class="browse-list-item-link" href="#">Software as a Service</a>
+            <p class="browse-list-item-body">
+              Find applications or services that are run over the internet or in the cloud
+            </p>
+            <p class="browse-list-item-subtext">
+              eg accounting, email
+            </p>
+          </li>
+        </ul>
+
+      </div>
+    </div>
   </div>
 </main>
 
