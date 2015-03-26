@@ -85,4 +85,7 @@
 .grid-example {
   background: rgba(177, 14, 30, 0.1);
   box-shadow: inset -15px 0 0 0 rgba(177, 14, 30, 0.1), inset 15px 0 0 0 rgba(177, 14, 30, 0.1), inset 0 0 0 1px rgba(177, 14, 30, 0.3);
-  min-height: 40em; }
+  min-height: 20vh; }
+  .grid-example p {
+    margin: 0;
+    color: rgba(177, 14, 30, 0.3); }

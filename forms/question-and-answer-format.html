@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>Question and answer format - Test toolkit</title>
+    <title>Question and answer format</title>
 
     <script type="text/javascript">
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -104,64 +104,97 @@
     </div>
     <!--end global-header-bar-->
 
-    <div id="global-breadcrumb" class="header-context">
-  <nav>
-    <ol class="group" role="breadcrumbs">
-      <li>
-        <a href="../">Home</a>
-      </li>
-      <li>
-        <a href="./">Forms</a>
-      </li>
-    </ol>
-  </nav>
-</div> <main role="main" id="content" class="wrapper">
-  <div id="wrapper">
-    <header class="page-heading">
-      <h1>Question and answer format</h1>
-    </header>
-    <form action="" method="get">
-      <div class="question first-question">
-        <label for="question-1" class="question-heading question-heading-with-hint">
-          Question a with single answer
-        </label>
-        <p class="hint">
-          the question and answer are wrapped in a div with the question the answer field's label
-        </p>
-        <input type="text" name="question-1" id="question-1" class="text-box" value="" />
-      </div>
-      <fieldset class="question" id="question-2">
-        <legend class="question-heading question-heading-with-hint ">
-          Question with multiple answers
-        </legend>
-        <p class="hint">
-          the question and answer are wrapped in a fieldset with the question its legend
-        </p>
-        <label class="selection-button">
-          <input type="checkbox" name="question-2" id="question-2-answer-1" value="answer-1" />
-          Answer 1
-        </label>
-        <label class="selection-button">
-          <input type="checkbox" name="question-2" id="question-2-answer-2" value="answer-2" />
-          Answer 2
-        </label>
-        <label class="selection-button">
-          <input type="checkbox" name="question-2" id="question-2-answer-3" value="answer-3" />
-          Answer 3
-        </label>
-        <label class="selection-button">
-          <input type="checkbox" name="question-2" id="question-2-answer-4" value="answer-4" />
-          Answer 4
-        </label>
-        <label class="selection-button">
-          <input type="checkbox" name="question-2" id="question-2-answer-5" value="answer-5" />
-          Answer 5
-        </label>
-      </fieldset>
-    </form>
+    
+                        <main role="main" id="content" class="wrapper">
+                            <div id="wrapper">
+                                <header class="page-heading">
+                                    <h1>Question and answer format</h1>
+                                </header>
+                                    <h2>Question with a single answer</h2>
+                                    <form action="" method="get">
+  <div class="question first-question">
+    <label for="question-1" class="question-heading question-heading-with-hint">
+      What was the name of your first pet?
+    </label>
+    <p class="hint">
+      the question and answer are wrapped in a div with the question the answer field's label
+    </p>
+    <input type="text" name="question-1" id="question-1" class="text-box" value="" />
   </div>
-</main>
 
+                                    <pre>&lt;form action=&quot;&quot; method=&quot;get&quot;&gt;
+  &lt;div class=&quot;question first-question&quot;&gt;
+    &lt;label for=&quot;question-1&quot; class=&quot;question-heading question-heading-with-hint&quot;&gt;
+      What was the name of your first pet?
+    &lt;/label&gt;
+    &lt;p class=&quot;hint&quot;&gt;
+      the question and answer are wrapped in a div with the question the answer field's label
+    &lt;/p&gt;
+    &lt;input type=&quot;text&quot; name=&quot;question-1&quot; id=&quot;question-1&quot; class=&quot;text-box&quot; value=&quot;&quot; /&gt;
+  &lt;/div&gt;
+</pre>
+                                    <h2>Question with multiple answers</h2>
+                                    <fieldset class="question" id="question-2">
+  <legend class="question-heading question-heading-with-hint ">
+    What are your favourite colours?
+  </legend>
+  <p class="hint">
+    the question and answer are wrapped in a fieldset with the question its legend
+  </p>
+  <label class="selection-button">
+    <input type="checkbox" name="question-2" id="question-2-answer-1" value="answer-1" />
+    Answer 1
+  </label>
+  <label class="selection-button">
+    <input type="checkbox" name="question-2" id="question-2-answer-2" value="answer-2" />
+    Answer 2
+  </label>
+  <label class="selection-button">
+    <input type="checkbox" name="question-2" id="question-2-answer-3" value="answer-3" />
+    Answer 3
+  </label>
+  <label class="selection-button">
+    <input type="checkbox" name="question-2" id="question-2-answer-4" value="answer-4" />
+    Answer 4
+  </label>
+  <label class="selection-button">
+    <input type="checkbox" name="question-2" id="question-2-answer-5" value="answer-5" />
+    Answer 5
+  </label>
+</fieldset>
+
+                                    <pre>&lt;fieldset class=&quot;question&quot; id=&quot;question-2&quot;&gt;
+  &lt;legend class=&quot;question-heading question-heading-with-hint &quot;&gt;
+    What are your favourite colours?
+  &lt;/legend&gt;
+  &lt;p class=&quot;hint&quot;&gt;
+    the question and answer are wrapped in a fieldset with the question its legend
+  &lt;/p&gt;
+  &lt;label class=&quot;selection-button&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;question-2&quot; id=&quot;question-2-answer-1&quot; value=&quot;answer-1&quot; /&gt;
+    Answer 1
+  &lt;/label&gt;
+  &lt;label class=&quot;selection-button&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;question-2&quot; id=&quot;question-2-answer-2&quot; value=&quot;answer-2&quot; /&gt;
+    Answer 2
+  &lt;/label&gt;
+  &lt;label class=&quot;selection-button&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;question-2&quot; id=&quot;question-2-answer-3&quot; value=&quot;answer-3&quot; /&gt;
+    Answer 3
+  &lt;/label&gt;
+  &lt;label class=&quot;selection-button&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;question-2&quot; id=&quot;question-2-answer-4&quot; value=&quot;answer-4&quot; /&gt;
+    Answer 4
+  &lt;/label&gt;
+  &lt;label class=&quot;selection-button&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;question-2&quot; id=&quot;question-2-answer-5&quot; value=&quot;answer-5&quot; /&gt;
+    Answer 5
+  &lt;/label&gt;
+&lt;/fieldset&gt;
+</pre>
+                            </div>
+                        </main>
+                    
 
     <footer class="group js-footer" id="footer" role="contentinfo">
 

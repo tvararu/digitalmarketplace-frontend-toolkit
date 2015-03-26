@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>Textboxes</title>
+    <title>Grids</title>
 
     <script type="text/javascript">
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -108,57 +108,76 @@
                         <main role="main" id="content" class="wrapper">
                             <div id="wrapper">
                                 <header class="page-heading">
-                                    <h1>Textboxes</h1>
+                                    <h1>Grids</h1>
                                 </header>
-                                    
-                                    <div class="question first-question">
-  <label for="question-1" class="question-heading">
-    Textbox
-  </label>
-  <input type="text" name="question-1" id="question-1" class="text-box" value="" />
+                                    <h2>One column, full width</h2>
+                                    <div class="grid-row grid-example">
+  <div class="one-column">
+    <p>Contents</p>
+  </div>
 </div>
 
-                                    <pre>&lt;div class=&quot;question first-question&quot;&gt;
-  &lt;label for=&quot;question-1&quot; class=&quot;question-heading&quot;&gt;
-    Textbox
-  &lt;/label&gt;
-  &lt;input type=&quot;text&quot; name=&quot;question-1&quot; id=&quot;question-1&quot; class=&quot;text-box&quot; value=&quot;&quot; /&gt;
+                                    <pre>&lt;div class=&quot;grid-row grid-example&quot;&gt;
+  &lt;div class=&quot;one-column&quot;&gt;
+    &lt;p&gt;Contents&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-                                    
-                                    <div class="question">
-  <label for="question-2" class="question-heading-with-hint">
-    Textbox with hint
-  </label>
-  <p class="hint">
-    Hint comprising further information about the question.
-  </p>
-  <input type="text" name="question-2" id="question-2" class="text-box" value="" />
+                                    <h2>Two columns, 1/3 and 2/3</h2>
+                                    <div class="grid-row">
+  <div class="grid-column third-column grid-example">
+    <p>Contents</p>
+  </div>
+  <div class="grid-column two-third-column grid-example">
+    <p>Contents</p>
+  </div>
 </div>
 
-                                    <pre>&lt;div class=&quot;question&quot;&gt;
-  &lt;label for=&quot;question-2&quot; class=&quot;question-heading-with-hint&quot;&gt;
-    Textbox with hint
-  &lt;/label&gt;
-  &lt;p class=&quot;hint&quot;&gt;
-    Hint comprising further information about the question.
-  &lt;/p&gt;
-  &lt;input type=&quot;text&quot; name=&quot;question-2&quot; id=&quot;question-2&quot; class=&quot;text-box&quot; value=&quot;&quot; /&gt;
+                                    <pre>&lt;div class=&quot;grid-row&quot;&gt;
+  &lt;div class=&quot;grid-column third-column grid-example&quot;&gt;
+    &lt;p&gt;Contents&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-column two-third-column grid-example&quot;&gt;
+    &lt;p&gt;Contents&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-                                    
-                                    <div class="question">
-  <label for="question-1" class="question-heading">
-    Large textbox
-  </label>
-  <textarea class="text-box text-box-large" name="question-3" id="question-3">Large textbox</textarea>
+                                    <h2>Two columns, 1/2 and 1/2</h2>
+                                    <div class="grid-row">
+  <div class="grid-column half-column grid-example">
+    <p>Contents</p>
+  </div>
+  <div class="grid-column half-column grid-example">
+    <p>Contents</p>
+  </div>
 </div>
 
-                                    <pre>&lt;div class=&quot;question&quot;&gt;
-  &lt;label for=&quot;question-1&quot; class=&quot;question-heading&quot;&gt;
-    Large textbox
-  &lt;/label&gt;
-  &lt;textarea class=&quot;text-box text-box-large&quot; name=&quot;question-3&quot; id=&quot;question-3&quot;&gt;Large textbox&lt;/textarea&gt;
+                                    <pre>&lt;div class=&quot;grid-row&quot;&gt;
+  &lt;div class=&quot;grid-column half-column grid-example&quot;&gt;
+    &lt;p&gt;Contents&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-column half-column grid-example&quot;&gt;
+    &lt;p&gt;Contents&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                                    <h2>Two columns, 2/3 and 1/3</h2>
+                                    <div class="grid-row">
+  <div class="grid-column two-third-column grid-example">
+    <p>Contents</p>
+  </div>
+  <div class="grid-column third-column grid-example">
+    <p>Contents</p>
+  </div>
+</div>
+
+                                    <pre>&lt;div class=&quot;grid-row&quot;&gt;
+  &lt;div class=&quot;grid-column two-third-column grid-example&quot;&gt;
+    &lt;p&gt;Contents&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-column third-column grid-example&quot;&gt;
+    &lt;p&gt;Contents&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 </pre>
                             </div>

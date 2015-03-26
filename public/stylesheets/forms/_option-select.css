@@ -1,0 +1,114 @@
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+.govuk-option-select {
+  background-color: #dee0e2;
+  padding: 0 5px 5px 5px; }
+  @media (min-width: 769px) {
+    .govuk-option-select {
+      /* Redefine scrollbars on desktop where these lists are scrollable
+    so they are always visible in option lists */ }
+      .govuk-option-select ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 7px; }
+      .govuk-option-select ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); } }
+  .govuk-option-select:focus {
+    outline: 3px solid #ffbf47; }
+  .govuk-option-select .container-head {
+    padding: 0 5px; }
+  .govuk-option-select .option-select-label {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: 400;
+    text-transform: none;
+    margin-right: 40px;
+    font-weight: bold;
+    padding-top: 10px; }
+    @media (max-width: 640px) {
+      .govuk-option-select .option-select-label {
+        font-size: 16px;
+        line-height: 1.25; } }
+  .govuk-option-select .options-container {
+    position: relative;
+    background-color: #fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 5px; }
+    @media (min-width: 769px) {
+      .govuk-option-select .options-container {
+        max-height: 200px; } }
+    .govuk-option-select .options-container label {
+      display: -moz-inline-stack;
+      display: inline-block;
+      padding: 7px 0 7px 30px;
+      border-bottom: 1px solid #bfc1c3;
+      width: 100%;
+      cursor: pointer; }
+      @media (min-width: 769px) {
+        .govuk-option-select .options-container label {
+          /* leave room for the scroll bars on desktop*/
+          width: 90%; } }
+      .govuk-option-select .options-container label:hover {
+        background-color: #f8f8f8; }
+    .govuk-option-select .options-container input {
+      margin-left: -23px;
+      vertical-align: top;
+      position: absolute; }
+  .js-enabled .govuk-option-select {
+    /* styles for collapsibleness. .js-collapsible is added by the javascript if the browser is not ie6/7 in which case these don't collapse */
+    /* styles for clear link */ }
+    .js-enabled .govuk-option-select.js-collapsible:hover {
+      background-color: #bfc1c3;
+      cursor: pointer; }
+    .js-enabled .govuk-option-select.js-collapsible.js-closed .options-container {
+      position: absolute;
+      left: -9999px;
+      padding: 0;
+      margin: 0; }
+    .js-enabled .govuk-option-select.js-collapsible.js-closed .js-toggle-indicator {
+      background-position: 0 -33px; }
+    .js-enabled .govuk-option-select.js-collapsible .js-toggle-indicator {
+      display: -moz-inline-stack;
+      display: inline-block;
+      height: 15px;
+      width: 23px;
+      background-image: url("./option-select-toggle-sprite.png");
+      background-repeat: no-repeat;
+      background-position: 0 3px;
+      position: absolute;
+      right: 3px;
+      top: 10px; }
+      @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20/10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        .js-enabled .govuk-option-select.js-collapsible .js-toggle-indicator {
+          background-image: url("./option-select-toggle-sprite-retina.png");
+          background-size: 32px 50px; } }
+    .js-enabled .govuk-option-select .js-container-head {
+      position: relative; }
+    .js-enabled .govuk-option-select .js-clear-selected {
+      display: -moz-inline-stack;
+      display: inline-block;
+      position: absolute;
+      right: 23px;
+      top: 7px;
+      cursor: pointer; }
+      .js-enabled .govuk-option-select .js-clear-selected.js-hidden {
+        left: -9999em;
+        height: 0px;
+        overflow: hidden; }

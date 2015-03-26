@@ -10,9 +10,9 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row, .checkbox-filter .head {
+.grid-row {
   zoom: 1; }
-  .grid-row:after, .checkbox-filter .head:after {
+  .grid-row:after {
     content: "";
     display: block;
     clear: both; }
@@ -87,7 +87,29 @@
 .grid-example {
   background: rgba(177, 14, 30, 0.1);
   box-shadow: inset -15px 0 0 0 rgba(177, 14, 30, 0.1), inset 15px 0 0 0 rgba(177, 14, 30, 0.1), inset 0 0 0 1px rgba(177, 14, 30, 0.3);
-  min-height: 40em; }
+  min-height: 20vh; }
+  .grid-example p {
+    margin: 0;
+    color: rgba(177, 14, 30, 0.3); }
+
+pre {
+  box-shadow: inset 0 0 50px 0 rgba(50, 20, 0, 0.025);
+  background: #fafafa;
+  padding: 10px 10px 15px 15px;
+  font-family: monospace;
+  font-size: 17px;
+  margin-bottom: 30px;
+  color: #888;
+  position: relative; }
+  pre:hover {
+    color: #111; }
+  pre:before {
+    content: "HTML";
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: rgba(0, 0, 0, 0.15);
+    letter-spacing: 3px; }
 
 @font-face {
   font-family: GDS-Logo;
@@ -105,9 +127,9 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row, .checkbox-filter .head {
+.grid-row {
   zoom: 1; }
-  .grid-row:after, .checkbox-filter .head:after {
+  .grid-row:after {
     content: "";
     display: block;
     clear: both; }
@@ -124,9 +146,9 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row, .checkbox-filter .head {
+.grid-row {
   zoom: 1; }
-  .grid-row:after, .checkbox-filter .head:after {
+  .grid-row:after {
     content: "";
     display: block;
     clear: both; }
@@ -159,9 +181,9 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row, .checkbox-filter .head {
+.grid-row {
   zoom: 1; }
-  .grid-row:after, .checkbox-filter .head:after {
+  .grid-row:after {
     content: "";
     display: block;
     clear: both; }
@@ -293,9 +315,9 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row, .checkbox-filter .head {
+.grid-row {
   zoom: 1; }
-  .grid-row:after, .checkbox-filter .head:after {
+  .grid-row:after {
     content: "";
     display: block;
     clear: both; }
@@ -556,9 +578,9 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row, .checkbox-filter .head {
+.grid-row {
   zoom: 1; }
-  .grid-row:after, .checkbox-filter .head:after {
+  .grid-row:after {
     content: "";
     display: block;
     clear: both; }
@@ -753,9 +775,9 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row, .checkbox-filter .head {
+.grid-row {
   zoom: 1; }
-  .grid-row:after, .checkbox-filter .head:after {
+  .grid-row:after {
     content: "";
     display: block;
     clear: both; }
@@ -948,9 +970,9 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row, .checkbox-filter .head {
+.grid-row {
   zoom: 1; }
-  .grid-row:after, .checkbox-filter .head:after {
+  .grid-row:after {
     content: "";
     display: block;
     clear: both; }
@@ -1019,9 +1041,9 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row, .checkbox-filter .head {
+.grid-row {
   zoom: 1; }
-  .grid-row:after, .checkbox-filter .head:after {
+  .grid-row:after {
     content: "";
     display: block;
     clear: both; }
@@ -1036,103 +1058,104 @@
 @-o-viewport {
   width: device-width; }
 
-.filter {
-  margin-bottom: 30px;
+.govuk-option-select {
   background-color: #dee0e2;
-  padding: 0 5px; }
-  .filter:focus {
+  padding: 0 5px 5px 5px;
+  /* Redefine scrollbars on desktop where these lists are scrollable
+    so they are always visible in option lists */ }
+  .govuk-option-select ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px; }
+  .govuk-option-select ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
+  .govuk-option-select:focus {
     outline: 3px solid #ffbf47; }
-  .filter .legend {
+  .govuk-option-select .container-head {
+    padding: 0 5px; }
+  .govuk-option-select .option-select-label {
     font-family: "nta", Arial, sans-serif;
     font-size: 19px;
     line-height: 1.31579;
     font-weight: 400;
     text-transform: none;
-    display: -moz-inline-stack;
-    display: inline-block;
-    zoom: 1;
-    display: inline;
     margin-right: 40px;
     font-weight: bold;
     padding-top: 10px; }
     @media (max-width: 640px) {
-      .filter .legend {
+      .govuk-option-select .option-select-label {
         font-size: 16px;
         line-height: 1.25; } }
-
-.radio-filter, .text-filter {
-  padding: 0 10px; }
-  .radio-filter label, .text-filter label {
-    margin-right: 10px;
-    display: -moz-inline-stack;
-    display: inline-block;
-    zoom: 1;
-    display: inline; }
-
-.radio-filter input {
-  width: 14px; }
-
-.checkbox-filter {
-  padding-bottom: 5px;
-  /* Only apply these styles to chrome/firefox/safari and ie8 upwards
-     this is because checkbox filters are always open on ie6/7 so no
-     need to have closed styles or toggles. */
-  /* Redefine scrollbars so they are always visible in scrolling checkbox lists */ }
-  .checkbox-filter:hover {
-    background-color: #bfc1c3; }
-  .checkbox-filter ::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 7px; }
-  .checkbox-filter ::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
-  .checkbox-filter .head {
-    padding: 0 5px;
-    position: relative; }
-    .checkbox-filter .head .controls {
-      position: absolute;
-      right: 5px;
-      top: 10px; }
-      .checkbox-filter .head .controls .clear-selected {
-        display: -moz-inline-stack;
-        display: inline-block;
-        zoom: 1;
-        display: inline;
-        margin-right: 5px; }
-        .checkbox-filter .head .controls .clear-selected.js-hidden {
-          left: -9999em;
-          position: relative;
-          height: 0px;
-          overflow: hidden; }
-  .checkbox-filter .checkbox-container {
+  .govuk-option-select .options-container {
     position: relative;
-    margin-top: 5px;
     background-color: #fff;
-    height: 200px;
     overflow-y: scroll;
     overflow-x: hidden;
-    /* IE6 doesn't support psuedo selectors so scoping to checkbox-container instead of using a psuedo selector */ }
-    .checkbox-filter .checkbox-container ul {
-      margin: 0;
-      padding: 0;
-      list-style: none; }
-      .checkbox-filter .checkbox-container ul ul {
-        padding-left: 20px; }
-    .checkbox-filter .checkbox-container label {
+    margin-top: 5px;
+    max-height: 200px; }
+    .govuk-option-select .options-container label {
       display: -moz-inline-stack;
       display: inline-block;
       zoom: 1;
       display: inline;
       padding: 7px 0 7px 30px;
-      width: 90%;
-      border-bottom: 1px solid #bfc1c3; }
-      .checkbox-filter .checkbox-container label:hover {
+      border-bottom: 1px solid #bfc1c3;
+      width: 100%;
+      cursor: pointer;
+      /* leave room for the scroll bars on desktop*/
+      width: 90%; }
+      .govuk-option-select .options-container label:hover {
         background-color: #f8f8f8; }
-    .checkbox-filter .checkbox-container input {
+    .govuk-option-select .options-container input {
       margin-left: -23px;
       vertical-align: top;
       position: absolute; }
+  .js-enabled .govuk-option-select {
+    /* styles for collapsibleness. .js-collapsible is added by the javascript if the browser is not ie6/7 in which case these don't collapse */
+    /* styles for clear link */ }
+    .js-enabled .govuk-option-select.js-collapsible:hover {
+      background-color: #bfc1c3;
+      cursor: pointer; }
+    .js-enabled .govuk-option-select.js-collapsible.js-closed .options-container {
+      position: absolute;
+      left: -9999px;
+      padding: 0;
+      margin: 0; }
+    .js-enabled .govuk-option-select.js-collapsible.js-closed .js-toggle-indicator {
+      background-position: 0 -33px; }
+    .js-enabled .govuk-option-select.js-collapsible .js-toggle-indicator {
+      display: -moz-inline-stack;
+      display: inline-block;
+      zoom: 1;
+      display: inline;
+      height: 15px;
+      width: 23px;
+      background-image: url('../images/option-select-toggle-sprite.png');
+      background-repeat: no-repeat;
+      background-position: 0 3px;
+      position: absolute;
+      right: 3px;
+      top: 10px; }
+      @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20/10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        .js-enabled .govuk-option-select.js-collapsible .js-toggle-indicator {
+          background-image: url('../images/option-select-toggle-sprite-retina.png');
+          background-size: 32px 50px; } }
+    .js-enabled .govuk-option-select .js-container-head {
+      position: relative; }
+    .js-enabled .govuk-option-select .js-clear-selected {
+      display: -moz-inline-stack;
+      display: inline-block;
+      zoom: 1;
+      display: inline;
+      position: absolute;
+      right: 23px;
+      top: 7px;
+      cursor: pointer; }
+      .js-enabled .govuk-option-select .js-clear-selected.js-hidden {
+        left: -9999em;
+        height: 0px;
+        overflow: hidden; }
 
 @font-face {
   font-family: GDS-Logo;
@@ -1416,9 +1439,9 @@ table.summary-item-body {
 @-o-viewport {
   width: device-width; }
 
-.grid-row, .checkbox-filter .head {
+.grid-row {
   zoom: 1; }
-  .grid-row:after, .checkbox-filter .head:after {
+  .grid-row:after {
     content: "";
     display: block;
     clear: both; }
