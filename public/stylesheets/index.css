@@ -836,6 +836,17 @@
 @-o-viewport {
   width: device-width; }
 
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+.grid-row:after {
+  content: "";
+  display: block;
+  clear: both; }
+
 .browse-list {
   padding: 0; }
 
@@ -844,7 +855,8 @@
   margin-bottom: 30px; }
 
 .browse-list-item-link {
-  display: block;
+  display: -moz-inline-stack;
+  display: inline-block;
   font-family: "nta", Arial, sans-serif;
   font-size: 27px;
   line-height: 1.11111;
