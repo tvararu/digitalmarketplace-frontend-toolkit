@@ -20,6 +20,11 @@
 @-o-viewport {
   width: device-width; }
 
+.question:after, .question-first:after {
+  content: "";
+  display: block;
+  clear: both; }
+
 .text-box {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
@@ -143,7 +148,7 @@
   width: device-width; }
 
 .question, .question-first {
-  margin: 15px 0 0 0;
+  margin: 15px 0 30px 0;
   clear: both; }
 
 .question-first {
@@ -271,6 +276,11 @@
 
 @-o-viewport {
   width: device-width; }
+
+.question:after, .question-first:after {
+  content: "";
+  display: block;
+  clear: both; }
 
 .input-list .list-entry {
   vertical-align: middle; }
@@ -469,6 +479,11 @@ table.summary-item-body {
 
 @-o-viewport {
   width: device-width; }
+
+.question:after, .question-first:after {
+  content: "";
+  display: block;
+  clear: both; }
 
 @font-face {
   font-family: GDS-Logo;
