@@ -53,7 +53,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="../govuk_template/assets/images/opengraph-image.png?0.12.0">
 
-    <!--[if !IE]><!--><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index.css "/><!--<![endif]--><!--[if IE 6]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie6.css "/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie7.css "/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie8.css "/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie9.css "/><![endif]-->
+    <!--[if !IE]><!--><link rel="stylesheet" href="/public/stylesheets/index.css "/><!--<![endif]--><!--[if IE 6]><link rel="stylesheet" href="/public/stylesheets/index-ie6.css "/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/public/stylesheets/index-ie7.css "/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="/public/stylesheets/index-ie8.css "/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="/public/stylesheets/index-ie9.css "/><![endif]-->
   </head>
 
   <body class="">
@@ -124,43 +124,69 @@
   <h3 class="validation-masthead-heading" id="validation-masthead-heading">
     There was a problem with your answer to the following questions
   </h3>
-  <a href="#example-textbox" class="validation-masthead-link">What was the name of your first pet?</a>
-  <a href="#example-textbox-2" class="validation-masthead-link">What street did you grow up on?</a>
+  
+    <a href="#example-textbox" class="validation-masthead-link">What was the name of your first pet?</a>
+  
+    <a href="#example-textbox-2" class="validation-masthead-link">What street did you grow up on?</a>
+  
 </div>
-
-                                    <pre>&lt;div class=&quot;validation-masthead&quot; aria-labelledby=&quot;validation-masthead-heading&quot;&gt;
-  &lt;h3 class=&quot;validation-masthead-heading&quot; id=&quot;validation-masthead-heading&quot;&gt;
+                                    <div class="code open"><h3 class="code-label">Template (forms/validation.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-masthead&quot;</span> <span style="color: #7D9029">aria-labelledby=</span><span style="color: #BA2121">&quot;validation-masthead-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;h3</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-masthead-heading&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;validation-masthead-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     There was a problem with your answer to the following questions
-  &lt;/h3&gt;
-  &lt;a href=&quot;#example-textbox&quot; class=&quot;validation-masthead-link&quot;&gt;What was the name of your first pet?&lt;/a&gt;
-  &lt;a href=&quot;#example-textbox-2&quot; class=&quot;validation-masthead-link&quot;&gt;What street did you grow up on?&lt;/a&gt;
-&lt;/div&gt;
-</pre>
-                                    <h2>Wrapper and inline message</h2>
-                                    <div class="validation-wrapper">
-  <div class="question">
-    <label for="example-textbox" class="question-heading">
-      What was the name of your first pet?
-    </label>
-    <p class="validation-message" id="error-example-textbox">
-      This question requires an answer
-    </p>
-    <input class="text-box" id="example-textbox" type="text" aria-describedby="error-example-textbox" />
-  </div>
+  <span style="color: #008000; font-weight: bold">&lt;/h3&gt;</span>
+  
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#example-textbox&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-masthead-link&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>What was the name of your first pet?<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+  
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#example-textbox-2&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-masthead-link&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>What street did you grow up on?<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+  
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
 </div>
-
-                                    <pre>&lt;div class=&quot;validation-wrapper&quot;&gt;
-  &lt;div class=&quot;question&quot;&gt;
-    &lt;label for=&quot;example-textbox&quot; class=&quot;question-heading&quot;&gt;
-      What was the name of your first pet?
-    &lt;/label&gt;
-    &lt;p class=&quot;validation-message&quot; id=&quot;error-example-textbox&quot;&gt;
-      This question requires an answer
-    &lt;/p&gt;
-    &lt;input class=&quot;text-box&quot; id=&quot;example-textbox&quot; type=&quot;text&quot; aria-describedby=&quot;error-example-textbox&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</pre>
+                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
+    <span style="color: #BA2121">&quot;errors&quot;</span><span style="color: #666666">:</span> [
+        {
+            <span style="color: #BA2121">&quot;input_name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;example-textbox&quot;</span>, 
+            <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;What was the name of your first pet?&quot;</span>
+        }, 
+        {
+            <span style="color: #BA2121">&quot;input_name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;example-textbox-2&quot;</span>, 
+            <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;What street did you grow up on?&quot;</span>
+        }
+    ], 
+    <span style="color: #BA2121">&quot;lede&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;There was a problem with your answer to the following questions&quot;</span>
+}
+</pre></div>
+</div>
+                                    <h2>With a custom message</h2>
+                                    <div class="validation-masthead" aria-labelledby="validation-masthead-heading">
+  <h3 class="validation-masthead-heading" id="validation-masthead-heading">
+    Something went wrong
+  </h3>
+  
+    <a href="#example-textbox" class="validation-masthead-link">What was the name of your first pet?</a>
+  
+</div>
+                                    <div class="code open"><h3 class="code-label">Template (forms/validation.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-masthead&quot;</span> <span style="color: #7D9029">aria-labelledby=</span><span style="color: #BA2121">&quot;validation-masthead-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;h3</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-masthead-heading&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;validation-masthead-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    Something went wrong
+  <span style="color: #008000; font-weight: bold">&lt;/h3&gt;</span>
+  
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#example-textbox&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-masthead-link&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>What was the name of your first pet?<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+  
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
+    <span style="color: #BA2121">&quot;errors&quot;</span><span style="color: #666666">:</span> [
+        {
+            <span style="color: #BA2121">&quot;input_name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;example-textbox&quot;</span>, 
+            <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;What was the name of your first pet?&quot;</span>
+        }
+    ], 
+    <span style="color: #BA2121">&quot;lede&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Something went wrong&quot;</span>
+}
+</pre></div>
+</div>
                             </div>
                         </main>
                     

@@ -53,7 +53,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="govuk_template/assets/images/opengraph-image.png?0.12.0">
 
-    <!--[if !IE]><!--><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index.css "/><!--<![endif]--><!--[if IE 6]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie6.css "/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie7.css "/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie8.css "/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie9.css "/><![endif]-->
+    <!--[if !IE]><!--><link rel="stylesheet" href="/public/stylesheets/index.css "/><!--<![endif]--><!--[if IE 6]><link rel="stylesheet" href="/public/stylesheets/index-ie6.css "/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/public/stylesheets/index-ie7.css "/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="/public/stylesheets/index-ie8.css "/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="/public/stylesheets/index-ie9.css "/><![endif]-->
   </head>
 
   <body class="">
@@ -122,42 +122,47 @@
                                     
                                     <div id="global-breadcrumb" class="header-context">
   <nav>
-    <ol class="group" role="breadcrumbs">
-      <li>
-        <a href="./">Home</a>
-      </li>
-      <li>
-        <a href="#">Item 1</a>
-      </li>
-      <li>
-        <a href="#">Item 2</a>
-      </li>
-      <li>
-        Item 3
-      </li>
+    <ol class="group" role="breadcrumbs"><li><a href="./">Home</a></li>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+      <li>Item 3</li>
+      
     </ol>
   </nav>
 </div>
-
-                                    <pre>&lt;div id=&quot;global-breadcrumb&quot; class=&quot;header-context&quot;&gt;
-  &lt;nav&gt;
-    &lt;ol class=&quot;group&quot; role=&quot;breadcrumbs&quot;&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;./&quot;&gt;Home&lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Item 3
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/nav&gt;
-&lt;/div&gt;
-</pre>
+                                    <div class="code open"><h3 class="code-label">Template (breadcrumb.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;global-breadcrumb&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-context&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;nav&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;ol</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;group&quot;</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;breadcrumbs&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;li&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;./&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Home<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Item 1<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Item 2<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Item 3<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/ol&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/nav&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
+    <span style="color: #BA2121">&quot;items&quot;</span><span style="color: #666666">:</span> [
+        {
+            <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;./&quot;</span>, 
+            <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Home&quot;</span>
+        }, 
+        {
+            <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span>, 
+            <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Item 1&quot;</span>
+        }, 
+        {
+            <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span>, 
+            <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Item 2&quot;</span>
+        }, 
+        {
+            <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Item 3&quot;</span>
+        }
+    ]
+}
+</pre></div>
+</div>
                             </div>
                         </main>
                     

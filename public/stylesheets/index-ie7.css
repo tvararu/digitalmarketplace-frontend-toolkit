@@ -922,6 +922,37 @@
 @-o-viewport {
   width: device-width; }
 
+.contact-details-organisation {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: bold;
+  margin: 0 0 5px; }
+  @media (max-width: 640px) {
+    .contact-details-organisation {
+      font-size: 14px;
+      line-height: 1.14286; } }
+
+.contact-details-block-without-spacing, .contact-details-block {
+  margin: 0 0 5px; }
+  .contact-details-block-without-spacing span, .contact-details-block span {
+    display: block; }
+
+.contact-details-block-without-spacing {
+  margin: 0; }
+
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
 .search-summary {
   font-family: "nta", Arial, sans-serif;
   font-size: 14px;
@@ -1635,7 +1666,7 @@ table.summary-item-body {
       font-size: 16px;
       line-height: 1.25; } }
 
-pre {
+.code {
   box-shadow: inset 0 0 50px 0 rgba(50, 20, 0, 0.025);
   background: #fafafa;
   padding: 10px 10px 15px 15px;
@@ -1645,15 +1676,18 @@ pre {
   color: #888;
   position: relative;
   overflow: scroll; }
-  pre:hover {
+  .code:hover {
     color: #111; }
-  pre:before {
-    content: "HTML";
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: rgba(0, 0, 0, 0.15);
-    letter-spacing: 3px; }
+
+.code-label {
+  text-align: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 10px 0 0;
+  z-index: 100;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: bold; }
 
 a.version-link:link {
   text-decoration: none; }

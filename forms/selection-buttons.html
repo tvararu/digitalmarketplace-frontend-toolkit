@@ -53,7 +53,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="../govuk_template/assets/images/opengraph-image.png?0.12.0">
 
-    <!--[if !IE]><!--><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index.css "/><!--<![endif]--><!--[if IE 6]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie6.css "/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie7.css "/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie8.css "/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie9.css "/><![endif]-->
+    <!--[if !IE]><!--><link rel="stylesheet" href="/public/stylesheets/index.css "/><!--<![endif]--><!--[if IE 6]><link rel="stylesheet" href="/public/stylesheets/index-ie6.css "/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/public/stylesheets/index-ie7.css "/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="/public/stylesheets/index-ie8.css "/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="/public/stylesheets/index-ie9.css "/><![endif]-->
   </head>
 
   <body class="">
@@ -120,137 +120,370 @@
                                     <h1>Selection buttons</h1>
                                 </header>
                                     
-                                    <fieldset class="question first-question">
-  <legend class="question-heading">Radio buttons</legend>
-  <label class="selection-button">
-    Hour
-    <input type="radio" name="radio-1" id="radio-1" value="val-1" />
-  </label>
-  <label class="selection-button">
-    Day
-    <input type="radio" name="radio-1" id="radio-2" value="val-2" />
-  </label>
-  <label class="selection-button">
-    Month
-    <input type="radio" name="radio-1" id="radio-3" value="val-3" />
-  </label>
-  <label class="selection-button">
-    Year
-    <input type="radio" name="radio-1" id="radio-4" value="val-4" />
-  </label>
-</fieldset>
-
-                                    <pre>&lt;fieldset class=&quot;question first-question&quot;&gt;
-  &lt;legend class=&quot;question-heading&quot;&gt;Radio buttons&lt;/legend&gt;
-  &lt;label class=&quot;selection-button&quot;&gt;
-    Hour
-    &lt;input type=&quot;radio&quot; name=&quot;radio-1&quot; id=&quot;radio-1&quot; value=&quot;val-1&quot; /&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;selection-button&quot;&gt;
-    Day
-    &lt;input type=&quot;radio&quot; name=&quot;radio-1&quot; id=&quot;radio-2&quot; value=&quot;val-2&quot; /&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;selection-button&quot;&gt;
-    Month
-    &lt;input type=&quot;radio&quot; name=&quot;radio-1&quot; id=&quot;radio-3&quot; value=&quot;val-3&quot; /&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;selection-button&quot;&gt;
-    Year
-    &lt;input type=&quot;radio&quot; name=&quot;radio-1&quot; id=&quot;radio-4&quot; value=&quot;val-4&quot; /&gt;
-  &lt;/label&gt;
-&lt;/fieldset&gt;
-</pre>
                                     
-                                    <fieldset class="question">
-  <legend class="question-heading">Checkboxes</legend>
-  <label class="selection-button">
-    Accounting and finance
-    <input type="checkbox" name="checkbox-1" id="checkbox-1" value="val-1" />
-  </label>
-  <label class="selection-button">
-    Business intelligence and analytics
-    <input type="checkbox" name="checkbox-2" id="checkbox-2" value="val-2" />
-  </label>
-  <label class="selection-button">
-    Collaboration
-    <input type="checkbox" name="checkbox-3" id="checkbox-3" value="val-3" />
-  </label>
-</fieldset>
+  <fieldset class="question first-question">
+    <legend class="question-heading">Radio buttons</legend>
+    
+    
+    
+      
+        <label class="selection-button" for="minimumContractPeriod-1">
+          Hour
+          <input type="radio" name="minimumContractPeriod" id="minimumContractPeriod-1" value="Heure" />
+        </label>
+        
+      
+        <label class="selection-button" for="minimumContractPeriod-2">
+          Day
+          <input type="radio" name="minimumContractPeriod" id="minimumContractPeriod-2" value="Day" />
+        </label>
+        
+      
+        <label class="selection-button" for="minimumContractPeriod-3">
+          Month
+          <input type="radio" name="minimumContractPeriod" id="minimumContractPeriod-3" value="Month" />
+        </label>
+        
+      
+        <label class="selection-button" for="minimumContractPeriod-4">
+          Year
+          <input type="radio" name="minimumContractPeriod" id="minimumContractPeriod-4" value="Year" />
+        </label>
+        
+      
+    
+  </fieldset>
 
-                                    <pre>&lt;fieldset class=&quot;question&quot;&gt;
-  &lt;legend class=&quot;question-heading&quot;&gt;Checkboxes&lt;/legend&gt;
-  &lt;label class=&quot;selection-button&quot;&gt;
-    Accounting and finance
-    &lt;input type=&quot;checkbox&quot; name=&quot;checkbox-1&quot; id=&quot;checkbox-1&quot; value=&quot;val-1&quot; /&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;selection-button&quot;&gt;
-    Business intelligence and analytics
-    &lt;input type=&quot;checkbox&quot; name=&quot;checkbox-2&quot; id=&quot;checkbox-2&quot; value=&quot;val-2&quot; /&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;selection-button&quot;&gt;
-    Collaboration
-    &lt;input type=&quot;checkbox&quot; name=&quot;checkbox-3&quot; id=&quot;checkbox-3&quot; value=&quot;val-3&quot; /&gt;
-  &lt;/label&gt;
-&lt;/fieldset&gt;
-</pre>
+                                    <div class="code open"><h3 class="code-label">Template (forms/selection-buttons.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;fieldset</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question first-question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;legend</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Radio buttons<span style="color: #008000; font-weight: bold">&lt;/legend&gt;</span>
+    
+    
+    
+      
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;minimumContractPeriod-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Hour
+          <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;minimumContractPeriod&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;minimumContractPeriod-1&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Heure&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        
+      
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;minimumContractPeriod-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Day
+          <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;minimumContractPeriod&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;minimumContractPeriod-2&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Day&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        
+      
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;minimumContractPeriod-3&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Month
+          <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;minimumContractPeriod&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;minimumContractPeriod-3&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Month&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        
+      
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;minimumContractPeriod-4&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Year
+          <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;minimumContractPeriod&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;minimumContractPeriod-4&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Year&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        
+      
+    
+  <span style="color: #008000; font-weight: bold">&lt;/fieldset&gt;</span>
+</pre></div>
+</div>
+                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
+    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Radio buttons&quot;</span>, 
+    <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;radio&quot;</span>, 
+    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;minimumContractPeriod&quot;</span>, 
+    <span style="color: #BA2121">&quot;options&quot;</span><span style="color: #666666">:</span> [
+        {
+            <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Heure&quot;</span>, 
+            <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Hour&quot;</span>
+        }, 
+        {
+            <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Day&quot;</span>
+        }, 
+        {
+            <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Month&quot;</span>
+        }, 
+        {
+            <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Year&quot;</span>
+        }
+    ]
+}
+</pre></div>
+</div>
                                     
-                                    <fieldset class="question">
-  <legend class="question-heading">Boolean</legend>
-  <label class="selection-button selection-button-boolean">
-    Yes
-    <input type="radio" name="boolean-1" id="boolean-1" value="val-1" />
-  </label>
-  <label class="selection-button selection-button-boolean">
-    No
-    <input type="radio" name="boolean-1" id="boolean-2" value="val-2" />
-  </label>
-</fieldset>
-
-                                    <pre>&lt;fieldset class=&quot;question&quot;&gt;
-  &lt;legend class=&quot;question-heading&quot;&gt;Boolean&lt;/legend&gt;
-  &lt;label class=&quot;selection-button selection-button-boolean&quot;&gt;
-    Yes
-    &lt;input type=&quot;radio&quot; name=&quot;boolean-1&quot; id=&quot;boolean-1&quot; value=&quot;val-1&quot; /&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;selection-button selection-button-boolean&quot;&gt;
-    No
-    &lt;input type=&quot;radio&quot; name=&quot;boolean-1&quot; id=&quot;boolean-2&quot; value=&quot;val-2&quot; /&gt;
-  &lt;/label&gt;
-&lt;/fieldset&gt;
-</pre>
                                     
-                                    <fieldset class="question">
-  <legend class="question-heading question-heading-with-hint">Checkbox with hint and description</legend>
-  <p class="hint">
-    Hint giving some information about how to answer the question.
-  </p>
-  <label class="selection-button selection-button-with-description">
-    Infrastructure as a Service (IaaS)
-    <input type="checkbox" name="checkbox-4" id="checkbox-4" value="val-4" />
-  </label>
-  <p class="question-description">
-    Infrastructure is the hardware that makes software work. It's the networks, hosting facilities
-    and servers that platforms and software depend on. IaaS is infrastructure you can order and run
-    entirely over the internet, without having to pay for your own hardware.
-  </p>
-</fieldset>
+  <fieldset class="question first-question">
+    <legend class="question-heading">Choose a category</legend>
+    
+    
+    
+      
+        <label class="selection-button" for="categories-1">
+          Accounting and finance
+          <input type="checkbox" name="categories" id="categories-1" value="Accounting and finance" />
+        </label>
+        
+      
+        <label class="selection-button" for="categories-2">
+          Business intelligence and analytics
+          <input type="checkbox" name="categories" id="categories-2" value="Business intelligence and analytics" />
+        </label>
+        
+      
+        <label class="selection-button" for="categories-3">
+          Collaboration
+          <input type="checkbox" name="categories" id="categories-3" value="Collaboration" />
+        </label>
+        
+      
+    
+  </fieldset>
 
-                                    <pre>&lt;fieldset class=&quot;question&quot;&gt;
-  &lt;legend class=&quot;question-heading question-heading-with-hint&quot;&gt;Checkbox with hint and description&lt;/legend&gt;
-  &lt;p class=&quot;hint&quot;&gt;
-    Hint giving some information about how to answer the question.
-  &lt;/p&gt;
-  &lt;label class=&quot;selection-button selection-button-with-description&quot;&gt;
-    Infrastructure as a Service (IaaS)
-    &lt;input type=&quot;checkbox&quot; name=&quot;checkbox-4&quot; id=&quot;checkbox-4&quot; value=&quot;val-4&quot; /&gt;
-  &lt;/label&gt;
-  &lt;p class=&quot;question-description&quot;&gt;
-    Infrastructure is the hardware that makes software work. It's the networks, hosting facilities
-    and servers that platforms and software depend on. IaaS is infrastructure you can order and run
-    entirely over the internet, without having to pay for your own hardware.
-  &lt;/p&gt;
-&lt;/fieldset&gt;
-</pre>
+                                    <div class="code open"><h3 class="code-label">Template (forms/selection-buttons.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;fieldset</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question first-question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;legend</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Choose a category<span style="color: #008000; font-weight: bold">&lt;/legend&gt;</span>
+    
+    
+    
+      
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;categories-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Accounting and finance
+          <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;categories&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;categories-1&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Accounting and finance&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        
+      
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;categories-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Business intelligence and analytics
+          <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;categories&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;categories-2&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Business intelligence and analytics&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        
+      
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;categories-3&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Collaboration
+          <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;categories&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;categories-3&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Collaboration&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        
+      
+    
+  <span style="color: #008000; font-weight: bold">&lt;/fieldset&gt;</span>
+</pre></div>
+</div>
+                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
+    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Choose a category&quot;</span>, 
+    <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;checkbox&quot;</span>, 
+    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;categories&quot;</span>, 
+    <span style="color: #BA2121">&quot;options&quot;</span><span style="color: #666666">:</span> [
+        {
+            <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Accounting and finance&quot;</span>
+        }, 
+        {
+            <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Business intelligence and analytics&quot;</span>
+        }, 
+        {
+            <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Collaboration&quot;</span>
+        }
+    ]
+}
+</pre></div>
+</div>
+                                    
+                                    
+  <fieldset class="question first-question">
+    <legend class="question-heading">Offline working supported</legend>
+    
+    
+    
+      <label class="selection-button selection-button-boolean" for="offlineWorking-yes">
+        Yes
+        <input type="radio" name="offlineWorking" id="offlineWorking-yes" value="val-1" />
+      </label>
+      <label class="selection-button selection-button-boolean" for="offlineWorking-no">
+        No
+        <input type="radio" name="offlineWorking" id="offlineWorking-no" value="val-2" />
+      </label>
+    
+  </fieldset>
+
+                                    <div class="code open"><h3 class="code-label">Template (forms/selection-buttons.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;fieldset</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question first-question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;legend</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Offline working supported<span style="color: #008000; font-weight: bold">&lt;/legend&gt;</span>
+    
+    
+    
+      <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button selection-button-boolean&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;offlineWorking-yes&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        Yes
+        <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;offlineWorking&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;offlineWorking-yes&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;val-1&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button selection-button-boolean&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;offlineWorking-no&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        No
+        <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;offlineWorking&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;offlineWorking-no&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;val-2&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/fieldset&gt;</span>
+</pre></div>
+</div>
+                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
+    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Offline working supported&quot;</span>, 
+    <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;boolean&quot;</span>, 
+    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;offlineWorking&quot;</span>
+}
+</pre></div>
+</div>
+                                    
+                                    
+  <fieldset class="question first-question">
+    <legend class="question-heading">Checkbox with hint and description</legend>
+    
+      <p class="hint">
+        Hint giving some information about how to answer the question.
+      </p>
+    
+    
+    
+      
+        <label class="selection-button" for="lot-1">
+          Infrastructure as a Service
+          <input type="radio" name="lot" id="lot-1" value="Infrastructure as a Service" />
+        </label>
+        
+          <p class="question-description">
+            Infrastructure is the hardware that makes software work. It's the networks, hosting facilities and servers that platforms and software depend on. IaaS is infrastructure you can order and run entirely over the internet, without having to pay for your own hardware.
+
+          </p>
+        
+      
+    
+  </fieldset>
+
+                                    <div class="code open"><h3 class="code-label">Template (forms/selection-buttons.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;fieldset</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question first-question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;legend</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Checkbox with hint and description<span style="color: #008000; font-weight: bold">&lt;/legend&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        Hint giving some information about how to answer the question.
+      <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    
+    
+    
+      
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;lot-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Infrastructure as a Service
+          <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;lot&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;lot-1&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Infrastructure as a Service&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-description&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            Infrastructure is the hardware that makes software work. It&#39;s the networks, hosting facilities and servers that platforms and software depend on. IaaS is infrastructure you can order and run entirely over the internet, without having to pay for your own hardware.
+
+          <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+        
+      
+    
+  <span style="color: #008000; font-weight: bold">&lt;/fieldset&gt;</span>
+</pre></div>
+</div>
+                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
+    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Checkbox with hint and description&quot;</span>, 
+    <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;radio&quot;</span>, 
+    <span style="color: #BA2121">&quot;options&quot;</span><span style="color: #666666">:</span> [
+        {
+            <span style="color: #BA2121">&quot;description&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Infrastructure is the hardware that makes software work. It&#39;s the networks, hosting facilities and servers that platforms and software depend on. IaaS is infrastructure you can order and run entirely over the internet, without having to pay for your own hardware.\n&quot;</span>, 
+            <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Infrastructure as a Service&quot;</span>
+        }
+    ], 
+    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;lot&quot;</span>, 
+    <span style="color: #BA2121">&quot;hint&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Hint giving some information about how to answer the question.&quot;</span>
+}
+</pre></div>
+</div>
+                                    
+                                    
+  <div class="validation-wrapper">
+
+  <fieldset class="question first-question">
+    <legend class="question-heading">Checkboxes with an error</legend>
+    
+    
+      <p class="validation-message" id="error-vegetables">
+        Answer required
+      </p>
+    
+    
+      
+        <label class="selection-button" for="vegetables-1">
+          Carrot
+          <input type="checkbox" name="vegetables" id="vegetables-1" value="Carrot" />
+        </label>
+        
+      
+        <label class="selection-button" for="vegetables-2">
+          Onion
+          <input type="checkbox" name="vegetables" id="vegetables-2" value="Onion" />
+        </label>
+        
+      
+        <label class="selection-button" for="vegetables-3">
+          Collaboration
+          <input type="checkbox" name="vegetables" id="vegetables-3" value="Collaboration" />
+        </label>
+        
+      
+    
+  </fieldset>
+
+  </div>
+
+                                    <div class="code open"><h3 class="code-label">Template (forms/selection-buttons.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+
+  <span style="color: #008000; font-weight: bold">&lt;fieldset</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question first-question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;legend</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Checkboxes with an error<span style="color: #008000; font-weight: bold">&lt;/legend&gt;</span>
+    
+    
+      <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;error-vegetables&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        Answer required
+      <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    
+    
+      
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;vegetables-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Carrot
+          <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;vegetables&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;vegetables-1&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Carrot&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        
+      
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;vegetables-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Onion
+          <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;vegetables&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;vegetables-2&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Onion&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        
+      
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;vegetables-3&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Collaboration
+          <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;vegetables&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;vegetables-3&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Collaboration&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        
+      
+    
+  <span style="color: #008000; font-weight: bold">&lt;/fieldset&gt;</span>
+
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
+    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Checkboxes with an error&quot;</span>, 
+    <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;checkbox&quot;</span>, 
+    <span style="color: #BA2121">&quot;options&quot;</span><span style="color: #666666">:</span> [
+        {
+            <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Carrot&quot;</span>
+        }, 
+        {
+            <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Onion&quot;</span>
+        }, 
+        {
+            <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Collaboration&quot;</span>
+        }
+    ], 
+    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;vegetables&quot;</span>, 
+    <span style="color: #BA2121">&quot;error&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Answer required&quot;</span>
+}
+</pre></div>
+</div>
                             </div>
                         </main>
                     

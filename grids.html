@@ -53,7 +53,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="../govuk_template/assets/images/opengraph-image.png?0.12.0">
 
-    <!--[if !IE]><!--><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index.css "/><!--<![endif]--><!--[if IE 6]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie6.css "/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie7.css "/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie8.css "/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie9.css "/><![endif]-->
+    <!--[if !IE]><!--><link rel="stylesheet" href="/public/stylesheets/index.css "/><!--<![endif]--><!--[if IE 6]><link rel="stylesheet" href="/public/stylesheets/index-ie6.css "/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/public/stylesheets/index-ie7.css "/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="/public/stylesheets/index-ie8.css "/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="/public/stylesheets/index-ie9.css "/><![endif]-->
   </head>
 
   <body class="">
@@ -120,75 +120,191 @@
                                     <h1>Grids</h1>
                                 </header>
                                     <h2>One column, full width</h2>
-                                    <div class="grid-row grid-example">
-  <div class="one-column">
-    <p>Contents</p>
-  </div>
+                                    <div class="grid-row">
+  
+    <div class="grid-column one-column grid-example">
+      <p>Contents</p>
+    </div>
+    <div class="grid-column one-column grid-example">
+      <p>Contents</p>
+    </div>
+  
 </div>
-
-                                    <pre>&lt;div class=&quot;grid-row grid-example&quot;&gt;
-  &lt;div class=&quot;one-column&quot;&gt;
-    &lt;p&gt;Contents&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</pre>
+                                    <div class="code open"><h3 class="code-label">Template (grids.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;grid-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;grid-column one-column grid-example&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Contents<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;grid-column one-column grid-example&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Contents<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+  
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
+    <span style="color: #BA2121">&quot;items&quot;</span><span style="color: #666666">:</span> [
+        {
+            <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;one-column&quot;</span>, 
+            <span style="color: #BA2121">&quot;contents&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Contents&quot;</span>
+        }
+    ]
+}
+</pre></div>
+</div>
                                     <h2>Two columns, 1/3 and 2/3</h2>
                                     <div class="grid-row">
-  <div class="grid-column third-column grid-example">
-    <p>Contents</p>
-  </div>
-  <div class="grid-column two-third-column grid-example">
-    <p>Contents</p>
-  </div>
+  
+    <div class="grid-column third-column grid-example">
+      <p>Contents</p>
+    </div>
+    <div class="grid-column third-column grid-example">
+      <p>Contents</p>
+    </div>
+  
+    <div class="grid-column third-column grid-example">
+      <p>Contents</p>
+    </div>
+    <div class="grid-column third-column grid-example">
+      <p>Contents</p>
+    </div>
+  
 </div>
-
-                                    <pre>&lt;div class=&quot;grid-row&quot;&gt;
-  &lt;div class=&quot;grid-column third-column grid-example&quot;&gt;
-    &lt;p&gt;Contents&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid-column two-third-column grid-example&quot;&gt;
-    &lt;p&gt;Contents&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</pre>
+                                    <div class="code open"><h3 class="code-label">Template (grids.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;grid-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;grid-column third-column grid-example&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Contents<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;grid-column third-column grid-example&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Contents<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+  
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;grid-column third-column grid-example&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Contents<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;grid-column third-column grid-example&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Contents<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+  
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
+    <span style="color: #BA2121">&quot;items&quot;</span><span style="color: #666666">:</span> [
+        {
+            <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;third-column&quot;</span>, 
+            <span style="color: #BA2121">&quot;contents&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Contents&quot;</span>
+        }, 
+        {
+            <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;third-column&quot;</span>, 
+            <span style="color: #BA2121">&quot;contents&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Contents&quot;</span>
+        }
+    ]
+}
+</pre></div>
+</div>
                                     <h2>Two columns, 1/2 and 1/2</h2>
                                     <div class="grid-row">
-  <div class="grid-column half-column grid-example">
-    <p>Contents</p>
-  </div>
-  <div class="grid-column half-column grid-example">
-    <p>Contents</p>
-  </div>
+  
+    <div class="grid-column half-column grid-example">
+      <p>Contents</p>
+    </div>
+    <div class="grid-column half-column grid-example">
+      <p>Contents</p>
+    </div>
+  
+    <div class="grid-column half-column grid-example">
+      <p>Contents</p>
+    </div>
+    <div class="grid-column half-column grid-example">
+      <p>Contents</p>
+    </div>
+  
 </div>
-
-                                    <pre>&lt;div class=&quot;grid-row&quot;&gt;
-  &lt;div class=&quot;grid-column half-column grid-example&quot;&gt;
-    &lt;p&gt;Contents&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid-column half-column grid-example&quot;&gt;
-    &lt;p&gt;Contents&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</pre>
+                                    <div class="code open"><h3 class="code-label">Template (grids.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;grid-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;grid-column half-column grid-example&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Contents<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;grid-column half-column grid-example&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Contents<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+  
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;grid-column half-column grid-example&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Contents<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;grid-column half-column grid-example&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Contents<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+  
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
+    <span style="color: #BA2121">&quot;items&quot;</span><span style="color: #666666">:</span> [
+        {
+            <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;half-column&quot;</span>, 
+            <span style="color: #BA2121">&quot;contents&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Contents&quot;</span>
+        }, 
+        {
+            <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;half-column&quot;</span>, 
+            <span style="color: #BA2121">&quot;contents&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Contents&quot;</span>
+        }
+    ]
+}
+</pre></div>
+</div>
                                     <h2>Two columns, 2/3 and 1/3</h2>
                                     <div class="grid-row">
-  <div class="grid-column two-third-column grid-example">
-    <p>Contents</p>
-  </div>
-  <div class="grid-column third-column grid-example">
-    <p>Contents</p>
-  </div>
+  
+    <div class="grid-column two-third-column grid-example">
+      <p>Contents</p>
+    </div>
+    <div class="grid-column two-third-column grid-example">
+      <p>Contents</p>
+    </div>
+  
+    <div class="grid-column third-column grid-example">
+      <p>Contents</p>
+    </div>
+    <div class="grid-column third-column grid-example">
+      <p>Contents</p>
+    </div>
+  
 </div>
-
-                                    <pre>&lt;div class=&quot;grid-row&quot;&gt;
-  &lt;div class=&quot;grid-column two-third-column grid-example&quot;&gt;
-    &lt;p&gt;Contents&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid-column third-column grid-example&quot;&gt;
-    &lt;p&gt;Contents&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</pre>
+                                    <div class="code open"><h3 class="code-label">Template (grids.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;grid-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;grid-column two-third-column grid-example&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Contents<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;grid-column two-third-column grid-example&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Contents<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+  
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;grid-column third-column grid-example&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Contents<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;grid-column third-column grid-example&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Contents<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+  
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
+    <span style="color: #BA2121">&quot;items&quot;</span><span style="color: #666666">:</span> [
+        {
+            <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;two-third-column&quot;</span>, 
+            <span style="color: #BA2121">&quot;contents&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Contents&quot;</span>
+        }, 
+        {
+            <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;third-column&quot;</span>, 
+            <span style="color: #BA2121">&quot;contents&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Contents&quot;</span>
+        }
+    ]
+}
+</pre></div>
+</div>
                             </div>
                         </main>
                     

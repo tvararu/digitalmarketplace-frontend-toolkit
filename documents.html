@@ -53,7 +53,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="govuk_template/assets/images/opengraph-image.png?0.12.0">
 
-    <!--[if !IE]><!--><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index.css "/><!--<![endif]--><!--[if IE 6]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie6.css "/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie7.css "/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie8.css "/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie9.css "/><![endif]-->
+    <!--[if !IE]><!--><link rel="stylesheet" href="/public/stylesheets/index.css "/><!--<![endif]--><!--[if IE 6]><link rel="stylesheet" href="/public/stylesheets/index-ie6.css "/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/public/stylesheets/index-ie7.css "/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="/public/stylesheets/index-ie8.css "/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="/public/stylesheets/index-ie9.css "/><![endif]-->
   </head>
 
   <body class="">
@@ -121,56 +121,85 @@
                                 </header>
                                     <h2>Document list</h2>
                                     <ul class='document-list'>
-  <li class='document-list-item'>
-    <a href="#" class='document-link-with-icon'>
-      <span class='document-icon'>PDF<span> document:</span></span>
-      Service definition
-    </a>
-  </li>
-  <li class='document-list-item'>
-    <a href="#" class='document-link-with-icon'>
-      <span class='document-icon'>PDF<span> document:</span></span>
-      Terms and conditions
-    </a>
-  </li>
-  <li class='document-list-item'>
-    <a href="#" class='document-link'>
-      Document without icon
-    </a>
-  </li>
+  
+    <li class='document-list-item'>
+      
+        <a href="#" class='document-link-with-icon'>
+          <span class='document-icon'>PDF<span> document:</span></span>
+          Service definition
+        </a>
+      
+    </li>
+  
+    <li class='document-list-item'>
+      
+        <a href="#" class='document-link-with-icon'>
+          <span class='document-icon'>PDF<span> document:</span></span>
+          Terms and conditions
+        </a>
+      
+    </li>
+  
+    <li class='document-list-item'>
+      
+        <a href="#" class='document-link'>
+          Document without icon
+        </a>
+      
+    </li>
+  
 </ul>
-
-                                    <pre>&lt;ul class='document-list'&gt;
-  &lt;li class='document-list-item'&gt;
-    &lt;a href=&quot;#&quot; class='document-link-with-icon'&gt;
-      &lt;span class='document-icon'&gt;PDF&lt;span&gt; document:&lt;/span&gt;&lt;/span&gt;
-      Service definition
-    &lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class='document-list-item'&gt;
-    &lt;a href=&quot;#&quot; class='document-link-with-icon'&gt;
-      &lt;span class='document-icon'&gt;PDF&lt;span&gt; document:&lt;/span&gt;&lt;/span&gt;
-      Terms and conditions
-    &lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class='document-list-item'&gt;
-    &lt;a href=&quot;#&quot; class='document-link'&gt;
-      Document without icon
-    &lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</pre>
-                                    <h2>Single document (not in a list)</h2>
-                                    <a href="#" class='document-link-with-icon'>
-  <span class='document-icon'>CSV<span> document:</span></span>
-  Service definition
-</a>
-
-                                    <pre>&lt;a href=&quot;#&quot; class='document-link-with-icon'&gt;
-  &lt;span class='document-icon'&gt;CSV&lt;span&gt; document:&lt;/span&gt;&lt;/span&gt;
-  Service definition
-&lt;/a&gt;
-</pre>
+                                    <div class="code open"><h3 class="code-label">Template (documents.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;document-list&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  
+    <span style="color: #008000; font-weight: bold">&lt;li</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;document-list-item&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;document-link-with-icon&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;document-icon&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>PDF<span style="color: #008000; font-weight: bold">&lt;span&gt;</span> document:<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/span&gt;</span>
+          Service definition
+        <span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+  
+    <span style="color: #008000; font-weight: bold">&lt;li</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;document-list-item&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;document-link-with-icon&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;document-icon&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>PDF<span style="color: #008000; font-weight: bold">&lt;span&gt;</span> document:<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/span&gt;</span>
+          Terms and conditions
+        <span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+  
+    <span style="color: #008000; font-weight: bold">&lt;li</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;document-list-item&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;document-link&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Document without icon
+        <span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+  
+<span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+</pre></div>
+</div>
+                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
+    <span style="color: #BA2121">&quot;items&quot;</span><span style="color: #666666">:</span> [
+        {
+            <span style="color: #BA2121">&quot;file_type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;PDF&quot;</span>, 
+            <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span>, 
+            <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service definition&quot;</span>
+        }, 
+        {
+            <span style="color: #BA2121">&quot;file_type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;PDF&quot;</span>, 
+            <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span>, 
+            <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Terms and conditions&quot;</span>
+        }, 
+        {
+            <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span>, 
+            <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Document without icon&quot;</span>
+        }
+    ]
+}
+</pre></div>
+</div>
                             </div>
                         </main>
                     

@@ -53,7 +53,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="govuk_template/assets/images/opengraph-image.png?0.12.0">
 
-    <!--[if !IE]><!--><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index.css "/><!--<![endif]--><!--[if IE 6]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie6.css "/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie7.css "/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie8.css "/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie9.css "/><![endif]-->
+    <!--[if !IE]><!--><link rel="stylesheet" href="/public/stylesheets/index.css "/><!--<![endif]--><!--[if IE 6]><link rel="stylesheet" href="/public/stylesheets/index-ie6.css "/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/public/stylesheets/index-ie7.css "/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="/public/stylesheets/index-ie8.css "/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="/public/stylesheets/index-ie9.css "/><![endif]-->
   </head>
 
   <body class="">
@@ -121,65 +121,97 @@
                                 </header>
                                     
                                     <ul class="browse-list">
-  <li class="browse-list-item">
-    <a class="browse-list-item-link" href="#">Find cloud technology and support</a>
-    <p class="browse-list-item-body">
-      eg web hosting or IT health checks
-    </p>
-    <p class="browse-list-item-subtext">
-      Procurement framework: G-Cloud
-    </p>
-  </li>
-  <li class="browse-list-item">
-    <a class="browse-list-item-link" href="#">Find specialists to work on digital projects</a>
-    <p class="browse-list-item-body">
-      eg web hosting or IT health checks
-    </p>
-    <p class="browse-list-item-subtext">
-      Procurement framework: Digital Services
-    </p>
-  </li>
-  <li class="browse-list-item">
-    <a class="browse-list-item-link" href="#">Software as a Service</a>
-    <p class="browse-list-item-body">
-      Find applications or services that are run over the internet or in the cloud
-    </p>
-    <p class="browse-list-item-subtext">
-      eg accounting, email
-    </p>
-  </li>
+  
+    <li class="browse-list-item">
+      <a class="browse-list-item-link" href="#">Find cloud technology and support</a>
+      <p class="browse-list-item-body">
+        eg web hosting or IT health checks
+      </p>
+      <p class="browse-list-item-subtext">
+        Procurement framework: G-Cloud
+      </p>
+    </li>
+  
+    <li class="browse-list-item">
+      <a class="browse-list-item-link" href="#">Find specialists to work on digital projects</a>
+      <p class="browse-list-item-body">
+        eg web hosting or IT health checks
+      </p>
+      <p class="browse-list-item-subtext">
+        Procurement framework: Digital Services
+      </p>
+    </li>
+  
+    <li class="browse-list-item">
+      <a class="browse-list-item-link" href="#">Software as a Service</a>
+      <p class="browse-list-item-body">
+        Find applications or services that are run over the internet or in the cloud
+      </p>
+      <p class="browse-list-item-subtext">
+        eg accounting, email
+      </p>
+    </li>
+  
 </ul>
-
-                                    <pre>&lt;ul class=&quot;browse-list&quot;&gt;
-  &lt;li class=&quot;browse-list-item&quot;&gt;
-    &lt;a class=&quot;browse-list-item-link&quot; href=&quot;#&quot;&gt;Find cloud technology and support&lt;/a&gt;
-    &lt;p class=&quot;browse-list-item-body&quot;&gt;
-      eg web hosting or IT health checks
-    &lt;/p&gt;
-    &lt;p class=&quot;browse-list-item-subtext&quot;&gt;
-      Procurement framework: G-Cloud
-    &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;browse-list-item&quot;&gt;
-    &lt;a class=&quot;browse-list-item-link&quot; href=&quot;#&quot;&gt;Find specialists to work on digital projects&lt;/a&gt;
-    &lt;p class=&quot;browse-list-item-body&quot;&gt;
-      eg web hosting or IT health checks
-    &lt;/p&gt;
-    &lt;p class=&quot;browse-list-item-subtext&quot;&gt;
-      Procurement framework: Digital Services
-    &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;browse-list-item&quot;&gt;
-    &lt;a class=&quot;browse-list-item-link&quot; href=&quot;#&quot;&gt;Software as a Service&lt;/a&gt;
-    &lt;p class=&quot;browse-list-item-body&quot;&gt;
-      Find applications or services that are run over the internet or in the cloud
-    &lt;/p&gt;
-    &lt;p class=&quot;browse-list-item-subtext&quot;&gt;
-      eg accounting, email
-    &lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</pre>
+                                    <div class="code open"><h3 class="code-label">Template (browse-list.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  
+    <span style="color: #008000; font-weight: bold">&lt;li</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-link&quot;</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Find cloud technology and support<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        eg web hosting or IT health checks
+      <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-subtext&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        Procurement framework: G-Cloud
+      <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+  
+    <span style="color: #008000; font-weight: bold">&lt;li</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-link&quot;</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Find specialists to work on digital projects<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        eg web hosting or IT health checks
+      <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-subtext&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        Procurement framework: Digital Services
+      <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+  
+    <span style="color: #008000; font-weight: bold">&lt;li</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-link&quot;</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Software as a Service<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        Find applications or services that are run over the internet or in the cloud
+      <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-subtext&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        eg accounting, email
+      <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+  
+<span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+</pre></div>
+</div>
+                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
+    <span style="color: #BA2121">&quot;items&quot;</span><span style="color: #666666">:</span> [
+        {
+            <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;eg web hosting or IT health checks&quot;</span>, 
+            <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span>, 
+            <span style="color: #BA2121">&quot;subtext&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Procurement framework: G-Cloud&quot;</span>, 
+            <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Find cloud technology and support&quot;</span>
+        }, 
+        {
+            <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;eg web hosting or IT health checks&quot;</span>, 
+            <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span>, 
+            <span style="color: #BA2121">&quot;subtext&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Procurement framework: Digital Services&quot;</span>, 
+            <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Find specialists to work on digital projects&quot;</span>
+        }, 
+        {
+            <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Find applications or services that are run over the internet or in the cloud&quot;</span>, 
+            <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span>, 
+            <span style="color: #BA2121">&quot;subtext&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;eg accounting, email&quot;</span>, 
+            <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Software as a Service&quot;</span>
+        }
+    ]
+}
+</pre></div>
+</div>
                             </div>
                         </main>
                     
