@@ -21,7 +21,8 @@
   width: device-width; }
 
 .input-list .list-entry {
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin-bottom: 15px; }
 .input-list .list-entry-remove {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
@@ -41,7 +42,8 @@
       margin: 0 0 0 0.6em; } }
 .input-list .text-box {
   padding-left: 1.84em;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 0; }
   @media (min-width: 769px) {
     .input-list .text-box {
       display: -moz-inline-stack;

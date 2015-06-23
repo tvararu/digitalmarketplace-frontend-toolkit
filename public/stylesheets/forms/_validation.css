@@ -9,8 +9,8 @@
   width: device-width; }
 
 .validation-masthead {
-  border: 3px solid #b10e1e;
-  padding: 15px 20px 30px 20px;
+  border: 5px solid #b10e1e;
+  padding: 15px 15px 20px 15px;
   margin-bottom: 30px; }
   .validation-masthead .validation-masthead-heading {
     font-family: "nta", Arial, sans-serif;
@@ -30,6 +30,23 @@
       .validation-masthead .validation-masthead-heading {
         padding-top: 6px;
         padding-bottom: 4px; } }
+  .validation-masthead .validation-masthead-description {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: 400;
+    text-transform: none;
+    padding-top: 2px;
+    padding-bottom: 8px;
+    margin-bottom: 5px; }
+    @media (max-width: 640px) {
+      .validation-masthead .validation-masthead-description {
+        font-size: 16px;
+        line-height: 1.25; } }
+    @media (min-width: 641px) {
+      .validation-masthead .validation-masthead-description {
+        padding-top: 0;
+        padding-bottom: 5px; } }
   .validation-masthead .validation-masthead-link, .validation-masthead .validation-masthead-link:link, .validation-masthead .validation-masthead-link:visited {
     display: block;
     font-family: "nta", Arial, sans-serif;
@@ -37,6 +54,7 @@
     line-height: 1.31579;
     font-weight: 400;
     text-transform: none;
+    font-weight: bold;
     color: #b10e1e; }
     @media (max-width: 640px) {
       .validation-masthead .validation-masthead-link, .validation-masthead .validation-masthead-link:link, .validation-masthead .validation-masthead-link:visited {
@@ -44,26 +62,24 @@
         line-height: 1.25; } }
 
 .validation-wrapper {
-  border-left: 3px solid #b10e1e;
-  padding: 0 0 5px 20px;
-  margin-bottom: 15px;
+  border-left: 5px solid #b10e1e;
+  padding: 0 0 5px 15px;
+  margin: 15px 0 30px 0;
   overflow: hidden; }
+  .validation-wrapper .question {
+    margin: 0; }
 
 .validation-message {
+  display: block;
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
   font-weight: 400;
   text-transform: none;
-  padding-top: 2px;
-  padding-bottom: 8px;
+  font-weight: bold;
   color: #b10e1e;
-  margin-bottom: 5px; }
+  margin: 5px 0 7px 0; }
   @media (max-width: 640px) {
     .validation-message {
       font-size: 16px;
       line-height: 1.25; } }
-  @media (min-width: 641px) {
-    .validation-message {
-      padding-top: 0;
-      padding-bottom: 5px; } }

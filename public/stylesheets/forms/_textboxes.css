@@ -20,7 +20,7 @@
 @-o-viewport {
   width: device-width; }
 
-.text-box {
+.text-box-with-error, .text-box {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
@@ -35,17 +35,21 @@
   padding: 5px;
   border: 1px solid #bfc1c3; }
   @media (max-width: 640px) {
-    .text-box {
+    .text-box-with-error, .text-box {
       font-size: 16px;
       line-height: 1.25; } }
   @media (min-width: 769px) {
-    .text-box {
+    .text-box-with-error, .text-box {
       width: 66%; } }
+
+.text-box-with-error, .text-box-large-with-error {
+  border: 5px solid #b10e1e;
+  margin-bottom: 0; }
 
 .text-box-medium {
   height: 6.25em; }
 
-.text-box-large {
+.text-box-large-with-error, .text-box-large {
   height: 10.25em; }
 
 .text-box-percentage {
