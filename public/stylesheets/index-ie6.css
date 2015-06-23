@@ -1333,7 +1333,7 @@
   .selection-button:hover {
     border-color: #0b0c0c; }
 
-.selection-button-boolean {
+.selection-button-boolean, .selection-button-inline {
   clear: none;
   margin-right: 15px; }
 
