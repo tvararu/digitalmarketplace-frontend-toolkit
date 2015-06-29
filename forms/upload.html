@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang=""><![endif]-->
+<!--[if gt IE 8]><!--><html lang=""><!--<![endif]-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <title>File upload - Digital Marketplace frontend toolkit</title>
+
+    <script type="text/javascript">
+      (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
+    </script>
+
+    <!--[if gt IE 8]><!--><link href="../govuk_template/assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+    <!--[if IE 6]><link href="../govuk_template/assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if IE 7]><link href="../govuk_template/assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if IE 8]><link href="../govuk_template/assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+
+    <link href="../govuk_template/assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+
+    <!--[if IE 8]>
+    <script type="text/javascript">
+      (function(){if(window.opera){return;}
+       setTimeout(function(){var a=document,g,b={families:(g=
+       ["nta"]),urls:["../govuk_template/assets/stylesheets/fonts-ie8.css?0.12.0"]},
+       c="../govuk_template/assets/javascripts/vendor/goog/webfont-debug.js?0.12.0",d="script",
+       e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+       ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+       .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+      })()
+    </script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+      <link href="../govuk_template/assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+    <!--<![endif]-->
+
+
+    <!--[if lt IE 9]>
+      <script src="../govuk_template/assets/javascripts/ie.js?0.12.0" type="text/javascript"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="../govuk_template/assets/images/favicon.ico?0.12.0" type="image/x-icon" />
+
+    <!-- Size for iPad and iPad mini (high resolution) -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../govuk_template/assets/images/apple-touch-icon-152x152.png?0.12.0">
+    <!-- Size for iPhone and iPod touch (high resolution) -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../govuk_template/assets/images/apple-touch-icon-120x120.png?0.12.0">
+    <!-- Size for iPad 2 and iPad mini (standard resolution) -->
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../govuk_template/assets/images/apple-touch-icon-76x76.png?0.12.0">
+    <!-- Default non-defined size, also used for Android 2.1+ devices -->
+    <link rel="apple-touch-icon-precomposed" href="../govuk_template/assets/images/apple-touch-icon-60x60.png?0.12.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="../govuk_template/assets/images/opengraph-image.png?0.12.0">
+
+    <!--[if !IE]><!--><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index.css "/><!--<![endif]--><!--[if IE 6]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie6.css "/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie7.css "/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie8.css "/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie9.css "/><![endif]-->
+  </head>
+
+  <body class="">
+    <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">Skip to main content</a>
+      </div>
+    </div>
+
+    <div id="global-cookie-message">
+      <div class="outer-block">
+        <div class="inner-block">
+          
+            
+          
+        </div>
+      </div>
+    </div>
+    <!--end global-cookie-message-->
+
+    
+    <header role="banner" id="global-header" class="">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="https://www.gov.uk/" title="Go to the GOV.UK homepage" id="logo" class="content">
+              <img src="../govuk_template/assets/images/gov.uk_logotype_crown.png?0.12.0" width="35" height="31" alt=""> GOV.UK
+            </a>
+          </div>
+          
+        </div>
+        
+      </div>
+    </header>
+    <!--end header-->
+    
+
+    
+
+    <div id="global-header-bar">
+      <div class="inner-block">
+        <div class="header-bar"></div>
+      </div>
+    </div>
+    <!--end global-header-bar-->
+
+    
+                        <div id="global-breadcrumb" class="header-context">
+                          <nav>
+                            <ol class="group" role="breadcrumbs">
+                              <li>
+                                <a href="/digitalmarketplace-frontend-toolkit/">Home</a>
+                              </li>
+                            </ol>
+                          </nav>
+                        </div>
+                        <main role="main" id="content" class="wrapper">
+                            <div id="wrapper">
+                                <header class="page-heading">
+                                    <h1>File upload</h1>
+                                </header>
+                                    
+                                    
+  <div class="question">
+    <label for="question-1">
+      <span class="question-heading">
+        Please upload a file
+      </span>
+      
+      
+    </label>
+    
+    <input type="file" name="question-1" id="question-1" class="file-upload-input" />
+  </div>
+
+                                    <div class="code open"><h3 class="code-label">Template (forms/upload.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;question-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        Please upload a file
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+      
+    <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+    <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;file&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-1&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-1&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-input&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
+    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Please upload a file&quot;</span>, 
+    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;question-1&quot;</span>
+}
+</pre></div>
+</div>
+                                    
+                                    
+  <div class="question">
+    <label for="question-2">
+      <span class="question-heading-with-hint">
+        Please replace the file you previously uploaded
+      </span>
+      
+        <span class="hint">
+          Hint comprising further information about the question
+        </span>
+      
+      
+    </label>
+    
+      <p class="file-upload-existing-value">
+        
+          <span class='document-link-with-narrow-icon'>
+        
+            <span class='document-icon-blank'></span>
+            1234123412341234-pricing-document.pdf
+        
+          </span>
+        
+      </p>
+    
+    <input type="file" name="question-2" id="question-2" class="file-upload-input" />
+  </div>
+
+                                    <div class="code open"><h3 class="code-label">Template (forms/upload.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading-with-hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        Please replace the file you previously uploaded
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Hint comprising further information about the question
+        <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+      
+    <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-existing-value&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;document-link-with-narrow-icon&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+            <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;document-icon-blank&#39;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/span&gt;</span>
+            1234123412341234-pricing-document.pdf
+        
+          <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+        
+      <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    
+    <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;file&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-2&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-2&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-input&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
+    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Please replace the file you previously uploaded&quot;</span>, 
+    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;question-2&quot;</span>, 
+    <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;1234123412341234-pricing-document.pdf&quot;</span>, 
+    <span style="color: #BA2121">&quot;hint&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Hint comprising further information about the question&quot;</span>
+}
+</pre></div>
+</div>
+                                    
+                                    
+  <div class="question">
+    <label for="question-3">
+      <span class="question-heading">
+        Example of a link to the uploaded file
+      </span>
+      
+      
+    </label>
+    
+      <p class="file-upload-existing-value">
+        
+          <a href="https://assets.digitalmarketplace.service.gov.uk/documents/654321/1234123412341234-pricing-document.pdf" class='document-link-with-narrow-icon'>
+        
+            <span class='document-icon-blank'></span>
+            Excelsior_CMS-Pricing-2015.pdf
+        
+          </a>
+        
+      </p>
+    
+    <input type="file" name="question-3" id="question-3" class="file-upload-input" />
+  </div>
+
+                                    <div class="code open"><h3 class="code-label">Template (forms/upload.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;question-3&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        Example of a link to the uploaded file
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+      
+    <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-existing-value&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;https://assets.digitalmarketplace.service.gov.uk/documents/654321/1234123412341234-pricing-document.pdf&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;document-link-with-narrow-icon&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+            <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;document-icon-blank&#39;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/span&gt;</span>
+            Excelsior_CMS-Pricing-2015.pdf
+        
+          <span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+        
+      <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    
+    <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;file&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-3&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-3&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-input&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
+    <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;https://assets.digitalmarketplace.service.gov.uk/documents/654321/1234123412341234-pricing-document.pdf&quot;</span>, 
+    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Example of a link to the uploaded file&quot;</span>, 
+    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;question-3&quot;</span>, 
+    <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Excelsior_CMS-Pricing-2015.pdf&quot;</span>
+}
+</pre></div>
+</div>
+                                    
+                                    
+<div class="validation-wrapper">
+
+  <div class="question">
+    <label for="question-4">
+      <span class="question-heading">
+        With a bad upload
+      </span>
+      
+      
+        <span class="validation-message" id="error-question-4">
+          The file you uploaded was too big &ndash; maximum file size is 5Mb
+        </span>
+      
+    </label>
+    
+    <input type="file" name="question-4" id="question-4" class="file-upload-input" />
+  </div>
+
+</div>
+
+                                    <div class="code open"><h3 class="code-label">Template (forms/upload.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;question-4&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        With a bad upload
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+      
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;error-question-4&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          The file you uploaded was too big <span style="color: #999999; font-weight: bold">&amp;ndash;</span> maximum file size is 5Mb
+        <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+    <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;file&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-4&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-4&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-input&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
+    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;With a bad upload&quot;</span>, 
+    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;question-4&quot;</span>, 
+    <span style="color: #BA2121">&quot;error&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;The file you uploaded was too big &amp;ndash; maximum file size is 5Mb&quot;</span>
+}
+</pre></div>
+</div>
+                            </div>
+                        </main>
+                    
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper">
+        
+
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+            
+
+            <div class="open-government-licence">
+              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+              <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+            </div>
+          </div>
+
+          <div class="copyright">
+            <a href="https://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">&copy; Crown copyright</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--end footer-->
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="../govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
+
+    
+  </body>
+</html>

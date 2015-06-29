@@ -540,7 +540,7 @@
 .document-list-item {
   list-style: none; }
 
-.document-link-with-icon, .document-link {
+.document-link-with-icon, .document-link-with-narrow-icon, .document-link {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
@@ -554,7 +554,7 @@
   width: 100%;
   /* Trigger HasLayout on older IEs */ }
   @media (max-width: 640px) {
-    .document-link-with-icon, .document-link {
+    .document-link-with-icon, .document-link-with-narrow-icon, .document-link {
       font-size: 16px;
       line-height: 1.25; } }
 
@@ -562,7 +562,11 @@
   padding-left: 65px;
   padding-left: 55px; }
 
-.document-icon {
+.document-link-with-narrow-icon {
+  padding-left: 45px;
+  padding-left: 35px; }
+
+.document-icon, .document-icon-blank {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -581,17 +585,23 @@
   text-decoration: none;
   padding-right: 7px; }
   @media (max-width: 640px) {
-    .document-icon {
+    .document-icon, .document-icon-blank {
       font-size: 14px;
       line-height: 1.14286; } }
-  .document-icon:before {
+  .document-icon:before, .document-icon-blank:before {
     content: '.';
     /* Insert this with CSS so that it doesn't get read out */ }
-  .document-icon span {
+  .document-icon span, .document-icon-blank span {
     /* Text for screen readers, visually hidden */
     position: absolute;
     top: 0;
     left: -999em; }
+
+.document-icon-blank {
+  min-width: 8px;
+  min-height: 20px; }
+  .document-icon-blank:before {
+    content: ""; }
 
 @font-face {
   font-family: GDS-Logo;
@@ -1623,6 +1633,40 @@ table.summary-item-body {
   width: 66%; }
   @media (max-width: 640px) {
     .word-count-counter {
+      font-size: 16px;
+      line-height: 1.25; } }
+
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+.file-upload-existing-value {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  margin: 0; }
+  @media (max-width: 640px) {
+    .file-upload-existing-value {
+      font-size: 16px;
+      line-height: 1.25; } }
+
+.file-upload-input {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  margin-top: 5px; }
+  @media (max-width: 640px) {
+    .file-upload-input {
       font-size: 16px;
       line-height: 1.25; } }
 

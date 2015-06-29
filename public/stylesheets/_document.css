@@ -21,7 +21,7 @@
 .document-list-item {
   list-style: none; }
 
-.document-link-with-icon, .document-link {
+.document-link-with-icon, .document-link-with-narrow-icon, .document-link {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
@@ -35,14 +35,17 @@
   width: 100%;
   /* Trigger HasLayout on older IEs */ }
   @media (max-width: 640px) {
-    .document-link-with-icon, .document-link {
+    .document-link-with-icon, .document-link-with-narrow-icon, .document-link {
       font-size: 16px;
       line-height: 1.25; } }
 
 .document-link-with-icon {
   padding-left: 65px; }
 
-.document-icon {
+.document-link-with-narrow-icon {
+  padding-left: 45px; }
+
+.document-icon, .document-icon-blank {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -60,13 +63,13 @@
   text-transform: lowercase;
   text-decoration: none; }
   @media (max-width: 640px) {
-    .document-icon {
+    .document-icon, .document-icon-blank {
       font-size: 14px;
       line-height: 1.14286; } }
-  .document-icon:before {
+  .document-icon:before, .document-icon-blank:before {
     content: '.';
     /* Insert this with CSS so that it doesn't get read out */ }
-  .document-icon:after {
+  .document-icon:after, .document-icon-blank:after {
     content: '';
     position: absolute;
     top: -1px;
@@ -78,8 +81,14 @@
     /* For browsers that don't support linear gradient */
     background: linear-gradient(45deg, #fff, #fff 47%, #bfc1c3 48%, #bfc1c3 53%, #fff 53%);
     box-shadow: -1px 1px 0 0 #bfc1c3, -2px 2px 5px 0 rgba(191, 193, 195, 0.2); }
-  .document-icon span {
+  .document-icon span, .document-icon-blank span {
     /* Text for screen readers, visually hidden */
     position: absolute;
     top: 0;
     left: -999em; }
+
+.document-icon-blank {
+  min-width: 8px;
+  min-height: 20px; }
+  .document-icon-blank:before {
+    content: ""; }
