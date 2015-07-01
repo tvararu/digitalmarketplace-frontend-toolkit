@@ -20,7 +20,7 @@
 @-o-viewport {
   width: device-width; }
 
-.text-box-with-error, .text-box {
+.text-box-with-error, .text-box-with-unit-before-with-error, .text-box-with-unit-before, .text-box-with-unit-after-with-error, .text-box-with-unit-after, .text-box {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
@@ -35,14 +35,14 @@
   padding: 5px;
   border: 1px solid #bfc1c3; }
   @media (max-width: 640px) {
-    .text-box-with-error, .text-box {
+    .text-box-with-error, .text-box-with-unit-before-with-error, .text-box-with-unit-before, .text-box-with-unit-after-with-error, .text-box-with-unit-after, .text-box {
       font-size: 16px;
       line-height: 1.25; } }
   @media (min-width: 769px) {
-    .text-box-with-error, .text-box {
+    .text-box-with-error, .text-box-with-unit-before-with-error, .text-box-with-unit-before, .text-box-with-unit-after-with-error, .text-box-with-unit-after, .text-box {
       width: 66%; } }
 
-.text-box-with-error, .text-box-large-with-error {
+.text-box-with-error, .text-box-large-with-error, .text-box-with-unit-before-with-error, .text-box-with-unit-after-with-error {
   border: 5px solid #b10e1e;
   margin-bottom: 0; }
 
@@ -52,22 +52,40 @@
 .text-box-large-with-error, .text-box-large {
   height: 10.25em; }
 
-.text-box-percentage {
+.text-box-with-unit-before-with-error, .text-box-with-unit-before, .text-box-with-unit-after-with-error, .text-box-with-unit-after {
   display: -moz-inline-stack;
   display: inline-block;
-  width: 6em;
-  text-align: right;
-  padding-right: 5px; }
+  width: 7em; }
 
-.text-box-percentage-label {
+.text-box-with-unit-before-with-error, .text-box-with-unit-before {
+  margin-left: -40px;
+  padding-left: 30px; }
+
+.text-box-with-unit-after-with-error, .text-box-with-unit-after {
+  text-align: right;
+  margin-right: -40px;
+  padding-right: 30px; }
+
+.text-box-unit {
   display: -moz-inline-stack;
   display: inline-block;
+  color: #bfc1c3;
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
   font-weight: 400;
-  text-transform: none; }
+  text-transform: none;
+  font-weight: bold;
+  width: 40px;
+  position: relative;
+  z-index: 10;
+  pointer-events: none;
+  text-align: center; }
   @media (max-width: 640px) {
-    .text-box-percentage-label {
+    .text-box-unit {
       font-size: 16px;
       line-height: 1.25; } }
+
+.text-box-unit-qualifier {
+  position: absolute;
+  left: -9999em; }
