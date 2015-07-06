@@ -63,11 +63,13 @@
 
 .validation-wrapper {
   border-left: 5px solid #b10e1e;
-  padding: 0 0 5px 15px;
+  padding: 0 0 0 15px;
   margin: 15px 0 30px 0;
   overflow: hidden; }
   .validation-wrapper .question {
     margin: 0; }
+  .validation-wrapper .question-heading, .validation-wrapper .question-heading-with-hint {
+    padding-top: 0; }
 
 .validation-message {
   display: block;
