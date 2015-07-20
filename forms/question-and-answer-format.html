@@ -131,7 +131,15 @@
     <input type="text" name="question-1" id="question-1" class="text-box" value="" />
   </div>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/question-and-answer-format.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;form</span> <span style="color: #7D9029">action=</span><span style="color: #BA2121">&quot;&quot;</span> <span style="color: #7D9029">method=</span><span style="color: #BA2121">&quot;get&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">markup</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;form action=\&quot;\&quot; method=\&quot;get\&quot;&gt;\n  &lt;div class=\&quot;question first-question\&quot;&gt;\n    &lt;label for=\&quot;question-1\&quot; class=\&quot;question-heading question-heading-with-hint\&quot;&gt;\n      What was the name of your first pet?\n    &lt;/label&gt;\n    &lt;p class=\&quot;hint\&quot;&gt;\n      the question and answer are wrapped in a div with the question the answer field&#39;s label\n    &lt;/p&gt;\n    &lt;input type=\&quot;text\&quot; name=\&quot;question-1\&quot; id=\&quot;question-1\&quot; class=\&quot;text-box\&quot; value=\&quot;\&quot; /&gt;\n  &lt;/div&gt;\n&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/question-and-answer-format.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;form</span> <span style="color: #7D9029">action=</span><span style="color: #BA2121">&quot;&quot;</span> <span style="color: #7D9029">method=</span><span style="color: #BA2121">&quot;get&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question first-question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;question-1&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading question-heading-with-hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       What was the name of your first pet?
@@ -141,11 +149,6 @@
     <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-1&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-1&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;markup&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;&lt;form action=\&quot;\&quot; method=\&quot;get\&quot;&gt;\n  &lt;div class=\&quot;question first-question\&quot;&gt;\n    &lt;label for=\&quot;question-1\&quot; class=\&quot;question-heading question-heading-with-hint\&quot;&gt;\n      What was the name of your first pet?\n    &lt;/label&gt;\n    &lt;p class=\&quot;hint\&quot;&gt;\n      the question and answer are wrapped in a div with the question the answer field&#39;s label\n    &lt;/p&gt;\n    &lt;input type=\&quot;text\&quot; name=\&quot;question-1\&quot; id=\&quot;question-1\&quot; class=\&quot;text-box\&quot; value=\&quot;\&quot; /&gt;\n  &lt;/div&gt;\n&quot;</span>
-}
 </pre></div>
 </div>
                                     <h2>Question with multiple answers</h2>
@@ -178,7 +181,15 @@
   </label>
 </fieldset>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/question-and-answer-format.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;fieldset</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">markup</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;fieldset class=\&quot;question\&quot; id=\&quot;question-2\&quot;&gt;\n  &lt;legend class=\&quot;question-heading question-heading-with-hint \&quot;&gt;\n    What are your favourite colours?\n  &lt;/legend&gt;\n  &lt;p class=\&quot;hint\&quot;&gt;\n    the question and answer are wrapped in a fieldset with the question its legend\n  &lt;/p&gt;\n  &lt;label class=\&quot;selection-button\&quot;&gt;\n    &lt;input type=\&quot;checkbox\&quot; name=\&quot;question-2\&quot; id=\&quot;question-2-answer-1\&quot; value=\&quot;answer-1\&quot; /&gt;\n    Answer 1\n  &lt;/label&gt;\n  &lt;label class=\&quot;selection-button\&quot;&gt;\n    &lt;input type=\&quot;checkbox\&quot; name=\&quot;question-2\&quot; id=\&quot;question-2-answer-2\&quot; value=\&quot;answer-2\&quot; /&gt;\n    Answer 2\n  &lt;/label&gt;\n  &lt;label class=\&quot;selection-button\&quot;&gt;\n    &lt;input type=\&quot;checkbox\&quot; name=\&quot;question-2\&quot; id=\&quot;question-2-answer-3\&quot; value=\&quot;answer-3\&quot; /&gt;\n    Answer 3\n  &lt;/label&gt;\n  &lt;label class=\&quot;selection-button\&quot;&gt;\n    &lt;input type=\&quot;checkbox\&quot; name=\&quot;question-2\&quot; id=\&quot;question-2-answer-4\&quot; value=\&quot;answer-4\&quot; /&gt;\n    Answer 4\n  &lt;/label&gt;\n  &lt;label class=\&quot;selection-button\&quot;&gt;\n    &lt;input type=\&quot;checkbox\&quot; name=\&quot;question-2\&quot; id=\&quot;question-2-answer-5\&quot; value=\&quot;answer-5\&quot; /&gt;\n    Answer 5\n  &lt;/label&gt;\n&lt;/fieldset&gt;\n&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/question-and-answer-format.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;fieldset</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;legend</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading question-heading-with-hint &quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     What are your favourite colours?
   <span style="color: #008000; font-weight: bold">&lt;/legend&gt;</span>
@@ -206,11 +217,6 @@
     Answer 5
   <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
 <span style="color: #008000; font-weight: bold">&lt;/fieldset&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;markup&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;&lt;fieldset class=\&quot;question\&quot; id=\&quot;question-2\&quot;&gt;\n  &lt;legend class=\&quot;question-heading question-heading-with-hint \&quot;&gt;\n    What are your favourite colours?\n  &lt;/legend&gt;\n  &lt;p class=\&quot;hint\&quot;&gt;\n    the question and answer are wrapped in a fieldset with the question its legend\n  &lt;/p&gt;\n  &lt;label class=\&quot;selection-button\&quot;&gt;\n    &lt;input type=\&quot;checkbox\&quot; name=\&quot;question-2\&quot; id=\&quot;question-2-answer-1\&quot; value=\&quot;answer-1\&quot; /&gt;\n    Answer 1\n  &lt;/label&gt;\n  &lt;label class=\&quot;selection-button\&quot;&gt;\n    &lt;input type=\&quot;checkbox\&quot; name=\&quot;question-2\&quot; id=\&quot;question-2-answer-2\&quot; value=\&quot;answer-2\&quot; /&gt;\n    Answer 2\n  &lt;/label&gt;\n  &lt;label class=\&quot;selection-button\&quot;&gt;\n    &lt;input type=\&quot;checkbox\&quot; name=\&quot;question-2\&quot; id=\&quot;question-2-answer-3\&quot; value=\&quot;answer-3\&quot; /&gt;\n    Answer 3\n  &lt;/label&gt;\n  &lt;label class=\&quot;selection-button\&quot;&gt;\n    &lt;input type=\&quot;checkbox\&quot; name=\&quot;question-2\&quot; id=\&quot;question-2-answer-4\&quot; value=\&quot;answer-4\&quot; /&gt;\n    Answer 4\n  &lt;/label&gt;\n  &lt;label class=\&quot;selection-button\&quot;&gt;\n    &lt;input type=\&quot;checkbox\&quot; name=\&quot;question-2\&quot; id=\&quot;question-2-answer-5\&quot; value=\&quot;answer-5\&quot; /&gt;\n    Answer 5\n  &lt;/label&gt;\n&lt;/fieldset&gt;\n&quot;</span>
-}
 </pre></div>
 </div>
                             </div>
@@ -245,6 +251,6 @@
 
     <script src="../govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
 
-    
+    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script><script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
   </body>
 </html>

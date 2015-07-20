@@ -124,15 +124,18 @@
     Page heading
   </h1>
 </header>
-                                    <div class="code open"><h3 class="code-label">Template (page-heading.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;header</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;page-heading page-heading-without-breadcrumb&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;h1&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Page heading&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates//page-heading.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;header</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;page-heading page-heading-without-breadcrumb&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;h1&gt;</span>
     Page heading
   <span style="color: #008000; font-weight: bold">&lt;/h1&gt;</span>
 <span style="color: #008000; font-weight: bold">&lt;/header&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;heading&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Page heading&quot;</span>
-}
 </pre></div>
 </div>
                                     
@@ -140,16 +143,19 @@
     Page heading, no breadcrumb
   </h1>
 </header>
-                                    <div class="code open"><h3 class="code-label">Template (page-heading.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;header</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;page-heading page-heading-without-breadcrumb&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;h1&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Page heading, no breadcrumb&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">class</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;page-heading page-heading-without-breadcrumb&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates//page-heading.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;header</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;page-heading page-heading-without-breadcrumb&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;h1&gt;</span>
     Page heading, no breadcrumb
   <span style="color: #008000; font-weight: bold">&lt;/h1&gt;</span>
 <span style="color: #008000; font-weight: bold">&lt;/header&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;heading&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Page heading, no breadcrumb&quot;</span>, 
-    <span style="color: #BA2121">&quot;class&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;page-heading page-heading-without-breadcrumb&quot;</span>
-}
 </pre></div>
 </div>
                                     
@@ -159,7 +165,16 @@
     Page heading with context
   </h1>
 </header>
-                                    <div class="code open"><h3 class="code-label">Template (page-heading.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;header</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;page-heading page-heading-with-context page-heading-without-breadcrumb&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;context&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Page heading with context&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">context</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Context&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates//page-heading.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;header</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;page-heading page-heading-with-context page-heading-without-breadcrumb&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;context&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       Context
     <span style="color: #008000; font-weight: bold">&lt;/p&gt;&lt;h1&gt;</span>
     Page heading with context
@@ -167,27 +182,24 @@
 <span style="color: #008000; font-weight: bold">&lt;/header&gt;</span>
 </pre></div>
 </div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;heading&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Page heading with context&quot;</span>, 
-    <span style="color: #BA2121">&quot;context&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Context&quot;</span>
-}
-</pre></div>
-</div>
                                     
                                     <header class="page-heading-smaller page-heading-without-breadcrumb"><h1>
     Page heading (smaller)
   </h1>
 </header>
-                                    <div class="code open"><h3 class="code-label">Template (page-heading.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;header</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;page-heading-smaller page-heading-without-breadcrumb&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;h1&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">smaller</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Page heading (smaller)&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates//page-heading.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;header</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;page-heading-smaller page-heading-without-breadcrumb&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;h1&gt;</span>
     Page heading (smaller)
   <span style="color: #008000; font-weight: bold">&lt;/h1&gt;</span>
 <span style="color: #008000; font-weight: bold">&lt;/header&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;smaller&quot;</span><span style="color: #666666">:</span> <span style="color: #008000; font-weight: bold">true</span>, 
-    <span style="color: #BA2121">&quot;heading&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Page heading (smaller)&quot;</span>
-}
 </pre></div>
 </div>
                                     
@@ -197,19 +209,22 @@
     Page heading (smaller)
   </h1>
 </header>
-                                    <div class="code open"><h3 class="code-label">Template (page-heading.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;header</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;page-heading-smaller page-heading-with-context page-heading-without-breadcrumb&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;context&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">smaller</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Page heading (smaller)&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">context</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Context&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates//page-heading.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;header</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;page-heading-smaller page-heading-with-context page-heading-without-breadcrumb&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;context&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       Context
     <span style="color: #008000; font-weight: bold">&lt;/p&gt;&lt;h1&gt;</span>
     Page heading (smaller)
   <span style="color: #008000; font-weight: bold">&lt;/h1&gt;</span>
 <span style="color: #008000; font-weight: bold">&lt;/header&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;smaller&quot;</span><span style="color: #666666">:</span> <span style="color: #008000; font-weight: bold">true</span>, 
-    <span style="color: #BA2121">&quot;heading&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Page heading (smaller)&quot;</span>, 
-    <span style="color: #BA2121">&quot;context&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Context&quot;</span>
-}
 </pre></div>
 </div>
                             </div>
@@ -244,6 +259,6 @@
 
     <script src="../govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
 
-    
+    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script><script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
   </body>
 </html>

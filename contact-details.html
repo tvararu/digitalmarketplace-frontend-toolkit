@@ -174,7 +174,29 @@
 
 </div>
 
-                                    <div class="code open"><h3 class="code-label">Template (contact-details.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;contact-details&quot;</span> <span style="color: #7D9029">itemscope</span> <span style="color: #7D9029">itemtype=</span><span style="color: #BA2121">&quot;http://schema.org/Organization&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">organisation_type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;supplier&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">locality</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;London&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">organisation</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Government Digital Service&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">telephone</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;012345 678910&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">postcode</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;WC2B 6NH&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">contact_name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Jo Johnston&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">email_address</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;jo@example.com&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">street_address</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;line_1&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Aviation House&quot;</span>
+    <span style="color: #666666">},</span> 
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;line_2&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;125 Kingsway&quot;</span>
+    <span style="color: #666666">}</span>
+<span style="color: #666666">],</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates//contact-details.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;contact-details&quot;</span> <span style="color: #7D9029">itemscope</span> <span style="color: #7D9029">itemtype=</span><span style="color: #BA2121">&quot;http://schema.org/Organization&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;contact-details-organisation&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">itemprop=</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Government Digital Service<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
@@ -228,25 +250,6 @@
 <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;organisation_type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;supplier&quot;</span>, 
-    <span style="color: #BA2121">&quot;organisation&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Government Digital Service&quot;</span>, 
-    <span style="color: #BA2121">&quot;locality&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;London&quot;</span>, 
-    <span style="color: #BA2121">&quot;telephone&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;012345 678910&quot;</span>, 
-    <span style="color: #BA2121">&quot;postcode&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;WC2B 6NH&quot;</span>, 
-    <span style="color: #BA2121">&quot;contact_name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Jo Johnston&quot;</span>, 
-    <span style="color: #BA2121">&quot;email_address&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;jo@example.com&quot;</span>, 
-    <span style="color: #BA2121">&quot;street_address&quot;</span><span style="color: #666666">:</span> [
-        {
-            <span style="color: #BA2121">&quot;line_1&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Aviation House&quot;</span>
-        }, 
-        {
-            <span style="color: #BA2121">&quot;line_2&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;125 Kingsway&quot;</span>
-        }
-    ]
-}
-</pre></div>
-</div>
                                     <h2>Without spacing (for use in a table, for example)</h2>
                                     
 
@@ -272,7 +275,25 @@
   </p>
 
 
-                                    <div class="code open"><h3 class="code-label">Template (contact-details.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;contact-details-block-without-spacing&quot;</span> <span style="color: #7D9029">itemprop=</span><span style="color: #BA2121">&quot;address&quot;</span> <span style="color: #7D9029">itemscope</span> <span style="color: #7D9029">itemtype=</span><span style="color: #BA2121">&quot;http://schema.org/PostalAddress&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">without_spacing</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">postcode</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;WC2B 6NH&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">street_address</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;line_1&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Aviation House&quot;</span>
+    <span style="color: #666666">},</span> 
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;line_2&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;125 Kingsway&quot;</span>
+    <span style="color: #666666">}</span>
+<span style="color: #666666">],</span>
+  <span style="color: #19177C">locality</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;London&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates//contact-details.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;contact-details-block-without-spacing&quot;</span> <span style="color: #7D9029">itemprop=</span><span style="color: #BA2121">&quot;address&quot;</span> <span style="color: #7D9029">itemscope</span> <span style="color: #7D9029">itemtype=</span><span style="color: #BA2121">&quot;http://schema.org/PostalAddress&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">itemprop=</span><span style="color: #BA2121">&quot;streetAddress&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       
@@ -292,21 +313,6 @@
     <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
     
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;without_spacing&quot;</span><span style="color: #666666">:</span> <span style="color: #008000; font-weight: bold">true</span>, 
-    <span style="color: #BA2121">&quot;locality&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;London&quot;</span>, 
-    <span style="color: #BA2121">&quot;postcode&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;WC2B 6NH&quot;</span>, 
-    <span style="color: #BA2121">&quot;street_address&quot;</span><span style="color: #666666">:</span> [
-        {
-            <span style="color: #BA2121">&quot;line_1&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Aviation House&quot;</span>
-        }, 
-        {
-            <span style="color: #BA2121">&quot;line_2&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;125 Kingsway&quot;</span>
-        }
-    ]
-}
 </pre></div>
 </div>
                             </div>
@@ -341,6 +347,6 @@
 
     <script src="govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
 
-    
+    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script><script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
   </body>
 </html>

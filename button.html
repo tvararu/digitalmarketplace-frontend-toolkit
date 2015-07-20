@@ -121,35 +121,44 @@
                                 </header>
                                     <h2>Save button</h2>
                                     <button class="button-save">Save and continue</button>
-                                    <div class="code open"><h3 class="code-label">Template (button.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;button</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;button-save&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Save and continue<span style="color: #008000; font-weight: bold">&lt;/button&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;save&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">label</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Save and continue&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates//button.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Save and continue&quot;</span>, 
-    <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;save&quot;</span>
-}
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;button</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;button-save&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Save and continue<span style="color: #008000; font-weight: bold">&lt;/button&gt;</span>
 </pre></div>
 </div>
                                     <h2>Secondary button</h2>
                                     <button class="button-secondary">Return service to drafts</button>
-                                    <div class="code open"><h3 class="code-label">Template (button.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;button</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;button-secondary&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Return service to drafts<span style="color: #008000; font-weight: bold">&lt;/button&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;secondary&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">label</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Return service to drafts&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates//button.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Return service to drafts&quot;</span>, 
-    <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;secondary&quot;</span>
-}
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;button</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;button-secondary&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Return service to drafts<span style="color: #008000; font-weight: bold">&lt;/button&gt;</span>
 </pre></div>
 </div>
                                     <h2>Destructive button</h2>
                                     <button class="button-destructive">Delete this user</button>
-                                    <div class="code open"><h3 class="code-label">Template (button.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;button</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;button-destructive&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Delete this user<span style="color: #008000; font-weight: bold">&lt;/button&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;destructive&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">label</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Delete this user&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates//button.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Delete this user&quot;</span>, 
-    <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;destructive&quot;</span>
-}
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;button</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;button-destructive&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Delete this user<span style="color: #008000; font-weight: bold">&lt;/button&gt;</span>
 </pre></div>
 </div>
                             </div>
@@ -184,6 +193,6 @@
 
     <script src="govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
 
-    
+    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script><script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
   </body>
 </html>

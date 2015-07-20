@@ -137,7 +137,16 @@
     
   </div>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/textbox.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Text box&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-1&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/textbox.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;question-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         Text box
@@ -152,12 +161,6 @@
       
     
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Text box&quot;</span>, 
-    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;question-1&quot;</span>
-}
 </pre></div>
 </div>
                                     
@@ -182,7 +185,18 @@
     
   </div>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/textbox.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Text box with hint&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Now I know what to type here&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Hint comprising further information about the question&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/textbox.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading-with-hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         Text box with hint
@@ -203,14 +217,6 @@
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Text box with hint&quot;</span>, 
-    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;question-2&quot;</span>, 
-    <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Now I know what to type here&quot;</span>, 
-    <span style="color: #BA2121">&quot;hint&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Hint comprising further information about the question&quot;</span>
-}
-</pre></div>
-</div>
                                     
                                     
   <div class="question">
@@ -229,7 +235,18 @@
     
   </div>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/textbox.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">large</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Large textbox&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-3&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Large textbox&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/textbox.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;question-3&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         Large textbox
@@ -244,14 +261,6 @@
       
     
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;large&quot;</span><span style="color: #666666">:</span> <span style="color: #008000; font-weight: bold">true</span>, 
-    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Large textbox&quot;</span>, 
-    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;question-3&quot;</span>, 
-    <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Large textbox&quot;</span>
-}
 </pre></div>
 </div>
                                     
@@ -274,7 +283,19 @@
     
   </div>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/textbox.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">large</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Large textbox with word count limit of 50 words&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">max_length_in_words</span> <span style="color: #666666">=</span> <span style="color: #666666">50,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-4&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;One two three four five&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/textbox.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;question-4&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         Large textbox with word count limit of 50 words
@@ -291,15 +312,6 @@
       
     
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;large&quot;</span><span style="color: #666666">:</span> <span style="color: #008000; font-weight: bold">true</span>, 
-    <span style="color: #BA2121">&quot;max_length_in_words&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">50</span>, 
-    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Large textbox with word count limit of 50 words&quot;</span>, 
-    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;question-4&quot;</span>, 
-    <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;One two three four five&quot;</span>
-}
 </pre></div>
 </div>
                                     
@@ -328,7 +340,18 @@
 
   </div>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/textbox.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Text box with error&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-5&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;hello2example.com&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Answer cannot be more than 50 characters&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/textbox.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
 
   <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;question-5&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -351,14 +374,6 @@
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Text box with error&quot;</span>, 
-    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;question-5&quot;</span>, 
-    <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;hello2example.com&quot;</span>, 
-    <span style="color: #BA2121">&quot;error&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Answer cannot be more than 50 characters&quot;</span>
-}
 </pre></div>
 </div>
                                     
@@ -391,7 +406,19 @@
 
   </div>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/textbox.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;eg hello@example.com&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Text box with hint and error&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-6&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;hello2example.com&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Must be a valid email address&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/textbox.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
 
   <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;question-6&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -420,15 +447,6 @@
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;error&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Must be a valid email address&quot;</span>, 
-    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Text box with hint and error&quot;</span>, 
-    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;question-6&quot;</span>, 
-    <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;hello2example.com&quot;</span>, 
-    <span style="color: #BA2121">&quot;hint&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;eg hello@example.com&quot;</span>
-}
-</pre></div>
-</div>
                                     <h2>Numeric textbox with unit before</h2>
                                     
   <div class="question">
@@ -453,7 +471,19 @@
     
   </div>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/textbox.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">unit_in_full</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;dollars&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Price&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-7&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">unit</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;$&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">unit_position</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;before&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/textbox.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;question-7&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         Price
@@ -474,15 +504,6 @@
       
     
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;unit_in_full&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;dollars&quot;</span>, 
-    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;question-7&quot;</span>, 
-    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Price&quot;</span>, 
-    <span style="color: #BA2121">&quot;unit_position&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;before&quot;</span>, 
-    <span style="color: #BA2121">&quot;unit&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;$&quot;</span>
-}
 </pre></div>
 </div>
                                     <h2>Numeric textbox with unit after</h2>
@@ -509,7 +530,19 @@
     
   </div>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/textbox.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">unit_in_full</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;percent&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Uptime&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-7&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">unit</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;%&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">unit_position</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;after&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/textbox.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;question-7&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         Uptime
@@ -530,15 +563,6 @@
       
     
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;unit_in_full&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;percent&quot;</span>, 
-    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;question-7&quot;</span>, 
-    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Uptime&quot;</span>, 
-    <span style="color: #BA2121">&quot;unit_position&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;after&quot;</span>, 
-    <span style="color: #BA2121">&quot;unit&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;%&quot;</span>
-}
 </pre></div>
 </div>
                                     <h2>Numeric textbox with error</h2>
@@ -573,7 +597,21 @@
 
   </div>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/textbox.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">unit_in_full</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;dollars&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-8&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Price&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;aaaaaa&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Price must not contain letters&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">unit_position</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;before&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">unit</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;$&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/textbox.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
 
   <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;question-8&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -602,17 +640,6 @@
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;unit_in_full&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;dollars&quot;</span>, 
-    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;question-8&quot;</span>, 
-    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Price&quot;</span>, 
-    <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;aaaaaa&quot;</span>, 
-    <span style="color: #BA2121">&quot;error&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Price must not contain letters&quot;</span>, 
-    <span style="color: #BA2121">&quot;unit_position&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;before&quot;</span>, 
-    <span style="color: #BA2121">&quot;unit&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;$&quot;</span>
-}
 </pre></div>
 </div>
                             </div>
@@ -647,7 +674,7 @@
 
     <script src="../govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
 
-    <script type="text/javascript" src="../public/javascripts/vendor/jquery-1.11.0.js"></script> <script type="text/javascript" src="../public/javascripts/vendor/hogan-3.0.2.min.js"></script> <script type="text/javascript" src="../public/javascripts/list-entry.js"></script> <script type="text/javascript" src="../public/javascripts/word-counter.js"></script> <script type="text/javascript" src="../public/javascripts/onready.js"></script>
-
+    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script><script type="text/javascript" src="../public/javascripts/vendor/hogan-3.0.2.min.js"></script> <script type="text/javascript" src="../public/javascripts/word-counter.js"></script>
+<script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
   </body>
 </html>

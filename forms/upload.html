@@ -133,7 +133,16 @@
     <input type="file" name="question-1" id="question-1" class="file-upload-input" />
   </div>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/upload.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Please upload a file&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-1&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/upload.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;question-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         Please upload a file
@@ -144,12 +153,6 @@
     
     <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;file&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-1&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-1&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-input&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Please upload a file&quot;</span>, 
-    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;question-1&quot;</span>
-}
 </pre></div>
 </div>
                                     
@@ -181,7 +184,18 @@
     <input type="file" name="question-2" id="question-2" class="file-upload-input" />
   </div>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/upload.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Please replace the file you previously uploaded&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;1234123412341234-pricing-document.pdf&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Hint comprising further information about the question&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/upload.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading-with-hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         Please replace the file you previously uploaded
@@ -209,14 +223,6 @@
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Please replace the file you previously uploaded&quot;</span>, 
-    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;question-2&quot;</span>, 
-    <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;1234123412341234-pricing-document.pdf&quot;</span>, 
-    <span style="color: #BA2121">&quot;hint&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Hint comprising further information about the question&quot;</span>
-}
-</pre></div>
-</div>
                                     
                                     
   <div class="question">
@@ -242,7 +248,18 @@
     <input type="file" name="question-3" id="question-3" class="file-upload-input" />
   </div>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/upload.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Example of a link to the uploaded file&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">link</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;https://assets.digitalmarketplace.service.gov.uk/documents/654321/1234123412341234-pricing-document.pdf&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-3&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Excelsior_CMS-Pricing-2015.pdf&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/upload.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;question-3&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         Example of a link to the uploaded file
@@ -264,14 +281,6 @@
     
     <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;file&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-3&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-3&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-input&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;https://assets.digitalmarketplace.service.gov.uk/documents/654321/1234123412341234-pricing-document.pdf&quot;</span>, 
-    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Example of a link to the uploaded file&quot;</span>, 
-    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;question-3&quot;</span>, 
-    <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Excelsior_CMS-Pricing-2015.pdf&quot;</span>
-}
 </pre></div>
 </div>
                                     
@@ -296,7 +305,17 @@
 
 </div>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/upload.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;With a bad upload&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-4&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;The file you uploaded was too big &amp;ndash; maximum file size is 5Mb&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/upload.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
 
   <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;question-4&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -315,13 +334,6 @@
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 
 <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;With a bad upload&quot;</span>, 
-    <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;question-4&quot;</span>, 
-    <span style="color: #BA2121">&quot;error&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;The file you uploaded was too big &amp;ndash; maximum file size is 5Mb&quot;</span>
-}
 </pre></div>
 </div>
                             </div>
@@ -356,6 +368,6 @@
 
     <script src="../govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
 
-    
+    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script><script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
   </body>
 </html>

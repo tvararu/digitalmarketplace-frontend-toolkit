@@ -135,7 +135,7 @@
     <li class="browse-list-item">
       <a class="browse-list-item-link" href="#nope"><span>Find specialists to work on digital projects to work on digital projects to work on digital projects to work on digital projects</span></a>
       <p class="browse-list-item-body">
-        eg web hosting or IT health checks
+        
       </p>
       <p class="browse-list-item-subtext">
         Procurement framework: <a href="#">Digital Services</a>
@@ -153,7 +153,33 @@
     </li>
   
 </ul>
-                                    <div class="code open"><h3 class="code-label">Template (browse-list.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">items</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;eg web hosting or IT health checks&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;https://www.gov.uk&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;subtext&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Procurement framework: &lt;a href=\&quot;#\&quot;&gt;G-Cloud&lt;/a&gt;&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Find cloud technology and support&quot;</span>
+    <span style="color: #666666">},</span> 
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#nope&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;subtext&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Procurement framework: &lt;a href=\&quot;#\&quot;&gt;Digital Services&lt;/a&gt;&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Find specialists to work on digital projects to work on digital projects to work on digital projects to work on digital projects&quot;</span>
+    <span style="color: #666666">},</span> 
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Find applications or services that are run over the internet or in the cloud&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#nope&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;subtext&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;eg accounting, email&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Software as a Service&quot;</span>
+    <span style="color: #666666">}</span>
+<span style="color: #666666">],</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates//browse-list.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
   
     <span style="color: #008000; font-weight: bold">&lt;li</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-link&quot;</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;https://www.gov.uk&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;span&gt;</span>Find cloud technology and support<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
@@ -168,7 +194,7 @@
     <span style="color: #008000; font-weight: bold">&lt;li</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-link&quot;</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#nope&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;span&gt;</span>Find specialists to work on digital projects to work on digital projects to work on digital projects to work on digital projects<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-        eg web hosting or IT health checks
+        
       <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-subtext&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         Procurement framework: <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Digital Services<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
@@ -188,30 +214,6 @@
 <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
 </pre></div>
 </div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;items&quot;</span><span style="color: #666666">:</span> [
-        {
-            <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;eg web hosting or IT health checks&quot;</span>, 
-            <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;https://www.gov.uk&quot;</span>, 
-            <span style="color: #BA2121">&quot;subtext&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Procurement framework: &lt;a href=\&quot;#\&quot;&gt;G-Cloud&lt;/a&gt;&quot;</span>, 
-            <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Find cloud technology and support&quot;</span>
-        }, 
-        {
-            <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;eg web hosting or IT health checks&quot;</span>, 
-            <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#nope&quot;</span>, 
-            <span style="color: #BA2121">&quot;subtext&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Procurement framework: &lt;a href=\&quot;#\&quot;&gt;Digital Services&lt;/a&gt;&quot;</span>, 
-            <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Find specialists to work on digital projects to work on digital projects to work on digital projects to work on digital projects&quot;</span>
-        }, 
-        {
-            <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Find applications or services that are run over the internet or in the cloud&quot;</span>, 
-            <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#nope&quot;</span>, 
-            <span style="color: #BA2121">&quot;subtext&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;eg accounting, email&quot;</span>, 
-            <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Software as a Service&quot;</span>
-        }
-    ]
-}
-</pre></div>
-</div>
                                     
                                     <ul class="browse-list">
   
@@ -226,7 +228,21 @@
     </li>
   
 </ul>
-                                    <div class="code open"><h3 class="code-label">Template (browse-list.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">items</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;G-Cloud 10 is open for applications until 1 October 2019&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#nope&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Apply to G-Cloud 10&quot;</span>
+    <span style="color: #666666">}</span>
+<span style="color: #666666">],</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates//browse-list.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
   
     <span style="color: #008000; font-weight: bold">&lt;li</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-link&quot;</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#nope&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;span&gt;</span>Apply to G-Cloud 10<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
@@ -239,17 +255,6 @@
     <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
   
 <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;items&quot;</span><span style="color: #666666">:</span> [
-        {
-            <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;G-Cloud 10 is open for applications until 1 October 2019&quot;</span>, 
-            <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#nope&quot;</span>, 
-            <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Apply to G-Cloud 10&quot;</span>
-        }
-    ]
-}
 </pre></div>
 </div>
                             </div>
@@ -284,6 +289,6 @@
 
     <script src="govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
 
-    
+    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script><script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
   </body>
 </html>

@@ -126,57 +126,97 @@
 </h2>
 
 
-  <p class="hint summary-item-no-content">
+  <p class="summary-item-no-content">
     You haven't submitted any services yet
   </p>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/summary.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Summary item with no entries&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">empty_message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;You haven&#39;t submitted any services yet&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/summary.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     Summary item with no entries
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
 
 
-  <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint summary-item-no-content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-no-content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     You haven&#39;t submitted any services yet
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;heading&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Summary item with no entries&quot;</span>, 
-    <span style="color: #BA2121">&quot;empty_message&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;You haven&#39;t submitted any services yet&quot;</span>
-}
 </pre></div>
 </div>
                                     
                                     <h2 class="summary-item-heading">
     
-    Summary item
+    Summary item with column headings
 </h2>
 
 
   <table class="summary-item-body">
-    <thead class="summary-item-field-headings">
+    <thead class="summary-item-field-headings-visible">
       <tr>
-        <th scope="col">
-          Name
-        </th>
-        <th scope="col">
-          Content
-        </th>
+        
+          <th scope="col" class="summary-item-field-heading-first">
+            Name
+          </th>
+        
+          <th scope="col" class="summary-item-field-heading">
+            Content
+          </th>
+        
       </tr>
     </thead>
     <tbody>
       
         <tr class="summary-item-row">
-          <td class="summary-item-field-name">
-            <span>Summary item name</span>
-          </td>
-          <td class="summary-item-field-content">
-            Summary item content
-          </td>
           
-            <td class="summary-item-action-field">
-              <a href="#">Change<span class="visuallyhidden"> Summary item</span></a>
+            <td class="summary-item-field-first">
+              <span>Summary item name</span>
+            </td>
+          
+            <td class="summary-item-field">
+              <span>Summary item content</span>
+            </td>
+          
+        </tr>
+      
+        <tr class="summary-item-row">
+          
+            <td class="summary-item-field-first">
+              <span>Summary item name</span>
+            </td>
+          
+            <td class="summary-item-field">
+              <span>Summary item content</span>
+            </td>
+          
+        </tr>
+      
+        <tr class="summary-item-row">
+          
+            <td class="summary-item-field-first">
+              <span>Summary item name</span>
+            </td>
+          
+            <td class="summary-item-field">
+              <span>Summary item content</span>
+            </td>
+          
+        </tr>
+      
+        <tr class="summary-item-row">
+          
+            <td class="summary-item-field-first">
+              <span>Summary item name</span>
+            </td>
+          
+            <td class="summary-item-field">
+              <span>Summary item content</span>
             </td>
           
         </tr>
@@ -184,35 +224,111 @@
     </tbody>
   </table>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/summary.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">rows</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;fields&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
+            <span style="color: #BA2121">&quot;Summary item name&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;Summary item content&quot;</span>
+        <span style="color: #666666">]</span>
+    <span style="color: #666666">},</span> 
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;fields&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
+            <span style="color: #BA2121">&quot;Summary item name&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;Summary item content&quot;</span>
+        <span style="color: #666666">]</span>
+    <span style="color: #666666">},</span> 
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;fields&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
+            <span style="color: #BA2121">&quot;Summary item name&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;Summary item content&quot;</span>
+        <span style="color: #666666">]</span>
+    <span style="color: #666666">},</span> 
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;fields&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
+            <span style="color: #BA2121">&quot;Summary item name&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;Summary item content&quot;</span>
+        <span style="color: #666666">]</span>
+    <span style="color: #666666">}</span>
+<span style="color: #666666">],</span>
+  <span style="color: #19177C">field_headings</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #BA2121">&quot;Name&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;Content&quot;</span>
+<span style="color: #666666">],</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Summary item with column headings&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">field_headings_visible</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/summary.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
-    Summary item
+    Summary item with column headings
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
 
 
   <span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-    <span style="color: #008000; font-weight: bold">&lt;thead</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-headings&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;thead</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-headings-visible&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          Name
-        <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          Content
-        <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            Name
+          <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            Content
+          <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
       <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;/thead&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;tbody&gt;</span>
       
         <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-name&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-            <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item name<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-            Summary item content
-          <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
           
-            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-action-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-              <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Change<span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> Summary item<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item name<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item content<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+        <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item name<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item content<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+        <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item name<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item content<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+        <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item name<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item content<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
             <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
           
         <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
@@ -221,52 +337,280 @@
   <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
 </pre></div>
 </div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;rows&quot;</span><span style="color: #666666">:</span> [
-        {
-            <span style="color: #BA2121">&quot;content&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Summary item content&quot;</span>, 
-            <span style="color: #BA2121">&quot;action&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;Change&lt;span class=\&quot;visuallyhidden\&quot;&gt; Summary item&lt;/span&gt;&lt;/a&gt;&quot;</span>, 
-            <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Summary item name&quot;</span>
-        }
-    ], 
-    <span style="color: #BA2121">&quot;heading&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Summary item&quot;</span>
-}
+                                    
+                                    <h2 class="summary-item-heading">
+    
+    Summary item with many columns
+</h2>
+
+
+  <table class="summary-item-body">
+    <thead class="summary-item-field-headings-visible">
+      <tr>
+        
+          <th scope="col" class="summary-item-field-heading-first">
+            Name
+          </th>
+        
+          <th scope="col" class="summary-item-field-heading">
+            ID
+          </th>
+        
+          <th scope="col" class="summary-item-field-heading">
+            Framework
+          </th>
+        
+          <th scope="col" class="summary-item-field-heading">
+            Lot
+          </th>
+        
+          <th scope="col" class="summary-item-field-heading">
+            Last edited
+          </th>
+        
+          <th scope="col" class="summary-item-field-heading">
+            Action
+          </th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="summary-item-row">
+          
+            <td class="summary-item-field-first">
+              <span><a href="#">Excelsior CMS</a></span>
+            </td>
+          
+            <td class="summary-item-field">
+              <span>1234 5678 9012 3456</span>
+            </td>
+          
+            <td class="summary-item-field">
+              <span>G-Cloud 5</span>
+            </td>
+          
+            <td class="summary-item-field">
+              <span>SaaS</span>
+            </td>
+          
+            <td class="summary-item-field">
+              <span>12 June 2015</span>
+            </td>
+          
+            <td class="summary-item-field-with-action">
+              <span><a href="#">Edit</a></span>
+            </td>
+          
+        </tr>
+      
+    </tbody>
+  </table>
+
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">rows</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;fields&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
+            <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;Excelsior CMS&lt;/a&gt;&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;1234 5678 9012 3456&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;G-Cloud 5&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;SaaS&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;12 June 2015&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;Edit&lt;/a&gt;&quot;</span>
+        <span style="color: #666666">]</span>
+    <span style="color: #666666">}</span>
+<span style="color: #666666">],</span>
+  <span style="color: #19177C">field_headings</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #BA2121">&quot;Name&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;ID&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;Framework&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;Lot&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;Last edited&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;Action&quot;</span>
+<span style="color: #666666">],</span>
+  <span style="color: #19177C">with_action_field</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">field_headings_visible</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Summary item with many columns&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/summary.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+    Summary item with many columns
+<span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
+
+
+  <span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;thead</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-headings-visible&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            Name
+          <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            ID
+          <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            Framework
+          <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            Lot
+          <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            Last edited
+          <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            Action
+          <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
+      <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/thead&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tbody&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Excelsior CMS<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>1234 5678 9012 3456<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>G-Cloud 5<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>SaaS<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>12 June 2015<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-with-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Edit<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+        <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/tbody&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
 </pre></div>
 </div>
                                     
                                     <h2 class="summary-item-heading">
     
-    Summary item with action
+    Summary item with wide first column
+</h2>
+
+
+  <table class="summary-item-body">
+    <thead class="summary-item-field-headings">
+      <tr>
+        
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="summary-item-row">
+          
+            <td class="summary-item-field-first-wider">
+              <span>User access control within management interfaces</span>
+            </td>
+          
+            <td class="summary-item-field">
+              <span>True</span>
+            </td>
+          
+        </tr>
+      
+    </tbody>
+  </table>
+
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">wide_first_column</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">rows</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;fields&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
+            <span style="color: #BA2121">&quot;User access control within management interfaces&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #008000">true</span>
+        <span style="color: #666666">]</span>
+    <span style="color: #666666">}</span>
+<span style="color: #666666">],</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Summary item with wide first column&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/summary.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+    Summary item with wide first column
+<span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
+
+
+  <span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;thead</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-headings&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        
+      <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/thead&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tbody&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first-wider&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>User access control within management interfaces<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>True<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+        <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/tbody&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
+</pre></div>
+</div>
+                                    
+                                    <h2 class="summary-item-heading">
+    
+    Summary item with top-level action
 </h2>
 
   <p class="summary-item-top-level-action">
-    <a href="#" class="summary-change-link">Edit <span class="visuallyhidden"> Summary item with action</span></a>
+    <a href="#" class="summary-change-link">Add new service</a>
   </p>
 
 
   <table class="summary-item-body">
     <thead class="summary-item-field-headings">
       <tr>
-        <th scope="col">
-          Name
-        </th>
-        <th scope="col">
-          Content
-        </th>
+        
       </tr>
     </thead>
     <tbody>
       
         <tr class="summary-item-row">
-          <td class="summary-item-field-name">
-            <span>Summary item name</span>
-          </td>
-          <td class="summary-item-field-content">
-            Summary item content
-          </td>
           
-            <td class="summary-item-action-field">
-              <a href="#">Change<span class="visuallyhidden"> Summary item</span></a>
+            <td class="summary-item-field-first">
+              <span>Summary item name</span>
+            </td>
+          
+            <td class="summary-item-field">
+              <span>Summary item content</span>
             </td>
           
         </tr>
@@ -274,58 +618,56 @@
     </tbody>
   </table>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/summary.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">rows</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;fields&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
+            <span style="color: #BA2121">&quot;Summary item name&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;Summary item content&quot;</span>
+        <span style="color: #666666">]</span>
+    <span style="color: #666666">}</span>
+<span style="color: #666666">],</span>
+  <span style="color: #19177C">top_link</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;#&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Summary item with top-level action&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">top_link_label</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Add new service&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/summary.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
-    Summary item with action
+    Summary item with top-level action
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
 
   <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-top-level-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-change-link&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Edit <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> Summary item with action<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-change-link&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Add new service<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
 
 
   <span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;thead</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-headings&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          Name
-        <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          Content
-        <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
       <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;/thead&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;tbody&gt;</span>
       
         <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-name&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-            <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item name<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-            Summary item content
-          <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
           
-            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-action-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-              <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Change<span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> Summary item<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item name<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item content<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
             <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
           
         <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
       
     <span style="color: #008000; font-weight: bold">&lt;/tbody&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;rows&quot;</span><span style="color: #666666">:</span> [
-        {
-            <span style="color: #BA2121">&quot;content&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Summary item content&quot;</span>, 
-            <span style="color: #BA2121">&quot;action&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;Change&lt;span class=\&quot;visuallyhidden\&quot;&gt; Summary item&lt;/span&gt;&lt;/a&gt;&quot;</span>, 
-            <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Summary item name&quot;</span>
-        }
-    ], 
-    <span style="color: #BA2121">&quot;heading&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Summary item with action&quot;</span>, 
-    <span style="color: #BA2121">&quot;edit_link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span>
-}
 </pre></div>
 </div>
                                     
@@ -340,26 +682,23 @@
   <table class="summary-item-body">
     <thead class="summary-item-field-headings">
       <tr>
-        <th scope="col">
-          Name
-        </th>
-        <th scope="col">
-          Content
-        </th>
+        
       </tr>
     </thead>
     <tbody>
       
         <tr class="summary-item-row">
-          <td class="summary-item-field-name">
-            <span>Summary item name</span>
-          </td>
-          <td class="summary-item-field-content">
-            Summary item content
-          </td>
           
-            <td class="summary-item-action-field">
-              <a href="#">Change<span class="visuallyhidden"> Summary item</span></a>
+            <td class="summary-item-field-first">
+              <span>Summary item name</span>
+            </td>
+          
+            <td class="summary-item-field">
+              <span>Summary item content</span>
+            </td>
+          
+            <td class="summary-item-field-with-action">
+              <span><a href="#">Change<span class="visuallyhidden"> Summary item</span></a></span>
             </td>
           
         </tr>
@@ -367,7 +706,26 @@
     </tbody>
   </table>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/summary.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">index</span> <span style="color: #666666">=</span> <span style="color: #666666">1,</span>
+  <span style="color: #19177C">rows</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;fields&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
+            <span style="color: #BA2121">&quot;Summary item name&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;Summary item content&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;Change&lt;span class=\&quot;visuallyhidden\&quot;&gt; Summary item&lt;/span&gt;&lt;/a&gt;&quot;</span>
+        <span style="color: #666666">]</span>
+    <span style="color: #666666">}</span>
+<span style="color: #666666">],</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Summary item with number&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">with_action_field</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/summary.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading-number&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>1.<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
     
@@ -378,45 +736,29 @@
   <span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;thead</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-headings&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          Name
-        <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          Content
-        <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
       <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;/thead&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;tbody&gt;</span>
       
         <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-name&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-            <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item name<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-            Summary item content
-          <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
           
-            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-action-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-              <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Change<span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> Summary item<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item name<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item content<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-with-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Change<span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> Summary item<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;</span>
             <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
           
         <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
       
     <span style="color: #008000; font-weight: bold">&lt;/tbody&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;index&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">1</span>, 
-    <span style="color: #BA2121">&quot;rows&quot;</span><span style="color: #666666">:</span> [
-        {
-            <span style="color: #BA2121">&quot;content&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Summary item content&quot;</span>, 
-            <span style="color: #BA2121">&quot;action&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;Change&lt;span class=\&quot;visuallyhidden\&quot;&gt; Summary item&lt;/span&gt;&lt;/a&gt;&quot;</span>, 
-            <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Summary item name&quot;</span>
-        }
-    ], 
-    <span style="color: #BA2121">&quot;heading&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Summary item with number&quot;</span>
-}
 </pre></div>
 </div>
                                     
@@ -429,26 +771,23 @@
   <table class="summary-item-body">
     <thead class="summary-item-field-headings">
       <tr>
-        <th scope="col">
-          Name
-        </th>
-        <th scope="col">
-          Content
-        </th>
+        
       </tr>
     </thead>
     <tbody>
       
         <tr class="summary-item-row">
-          <td class="summary-item-field-name">
-            <span><a href="#">Summary item name</a></span>
-          </td>
-          <td class="summary-item-field-content">
-            Summary item content
-          </td>
           
-            <td class="summary-item-action-field">
-              <a href="#">Change<span class="visuallyhidden"> Summary item</span></a>
+            <td class="summary-item-field-first">
+              <span><a href="#">Summary item name</a></span>
+            </td>
+          
+            <td class="summary-item-field">
+              <span>Summary item content</span>
+            </td>
+          
+            <td class="summary-item-field-with-action">
+              <span><a href="#">Change<span class="visuallyhidden"> Summary item</span></a></span>
             </td>
           
         </tr>
@@ -456,7 +795,25 @@
     </tbody>
   </table>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/summary.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">rows</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;fields&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
+            <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;Summary item name&lt;/a&gt;&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;Summary item content&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;Change&lt;span class=\&quot;visuallyhidden\&quot;&gt; Summary item&lt;/span&gt;&lt;/a&gt;&quot;</span>
+        <span style="color: #666666">]</span>
+    <span style="color: #666666">}</span>
+<span style="color: #666666">],</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Summary item with name field as link&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">with_action_field</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/summary.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     Summary item with name field as link
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
@@ -465,44 +822,29 @@
   <span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;thead</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-headings&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          Name
-        <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          Content
-        <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
       <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;/thead&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;tbody&gt;</span>
       
         <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-name&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-            <span style="color: #008000; font-weight: bold">&lt;span&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Summary item name<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/span&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-            Summary item content
-          <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
           
-            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-action-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-              <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Change<span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> Summary item<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Summary item name<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item content<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-with-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Change<span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> Summary item<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;</span>
             <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
           
         <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
       
     <span style="color: #008000; font-weight: bold">&lt;/tbody&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;rows&quot;</span><span style="color: #666666">:</span> [
-        {
-            <span style="color: #BA2121">&quot;content&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Summary item content&quot;</span>, 
-            <span style="color: #BA2121">&quot;action&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;Change&lt;span class=\&quot;visuallyhidden\&quot;&gt; Summary item&lt;/span&gt;&lt;/a&gt;&quot;</span>, 
-            <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;Summary item name&lt;/a&gt;&quot;</span>
-        }
-    ], 
-    <span style="color: #BA2121">&quot;heading&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Summary item with name field as link&quot;</span>
-}
 </pre></div>
 </div>
                                     
@@ -515,30 +857,19 @@
   <table class="summary-item-body">
     <thead class="summary-item-field-headings">
       <tr>
-        <th scope="col">
-          Name
-        </th>
-        <th scope="col">
-          Content
-        </th>
+        
       </tr>
     </thead>
     <tbody>
       
         <tr class="summary-item-row">
-          <td class="summary-item-field-name">
-            <span>Summary item name</span>
-          </td>
-          <td class="summary-item-field-content">
-            <ul>
-  <li>Summary item content 1</li>
-  <li>Summary item content 2</li>
-</ul>
-
-          </td>
           
-            <td class="summary-item-action-field">
-              <a href="#">Change<span class="visuallyhidden"> Summary item</span></a>
+            <td class="summary-item-field-first">
+              <span>Summary item name</span>
+            </td>
+          
+            <td class="summary-item-field">
+              <span><ul><li>Summary item content 1</li><li>Summary item content 2</li></ul></span>
             </td>
           
         </tr>
@@ -546,7 +877,23 @@
     </tbody>
   </table>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/summary.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">rows</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;fields&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
+            <span style="color: #BA2121">&quot;Summary item name&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;&lt;ul&gt;&lt;li&gt;Summary item content 1&lt;/li&gt;&lt;li&gt;Summary item content 2&lt;/li&gt;&lt;/ul&gt;&quot;</span>
+        <span style="color: #666666">]</span>
+    <span style="color: #666666">}</span>
+<span style="color: #666666">],</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Summary item with content field as list&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/summary.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     Summary item with content field as list
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
@@ -555,48 +902,25 @@
   <span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;thead</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-headings&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          Name
-        <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          Content
-        <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
       <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;/thead&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;tbody&gt;</span>
       
         <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-name&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-            <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item name<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-            <span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
-  <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Summary item content 1<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
-  <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Summary item content 2<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
-<span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
-
-          <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
           
-            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-action-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-              <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Change<span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> Summary item<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item name<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;&lt;ul&gt;&lt;li&gt;</span>Summary item content 1<span style="color: #008000; font-weight: bold">&lt;/li&gt;&lt;li&gt;</span>Summary item content 2<span style="color: #008000; font-weight: bold">&lt;/li&gt;&lt;/ul&gt;&lt;/span&gt;</span>
             <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
           
         <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
       
     <span style="color: #008000; font-weight: bold">&lt;/tbody&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;rows&quot;</span><span style="color: #666666">:</span> [
-        {
-            <span style="color: #BA2121">&quot;content&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;&lt;ul&gt;\n  &lt;li&gt;Summary item content 1&lt;/li&gt;\n  &lt;li&gt;Summary item content 2&lt;/li&gt;\n&lt;/ul&gt;\n&quot;</span>, 
-            <span style="color: #BA2121">&quot;action&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;Change&lt;span class=\&quot;visuallyhidden\&quot;&gt; Summary item&lt;/span&gt;&lt;/a&gt;&quot;</span>, 
-            <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Summary item name&quot;</span>
-        }
-    ], 
-    <span style="color: #BA2121">&quot;heading&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Summary item with content field as list&quot;</span>
-}
 </pre></div>
 </div>
                                     
@@ -605,30 +929,27 @@
     Summary item with incomplete entry
 </h2>
 
+  <p class="summary-item-top-level-action">
+    <a href="#" class="summary-change-link">Edit <span class="visuallyhidden">summary item with incomplete entry</span></a>
+  </p>
+
 
   <table class="summary-item-body">
     <thead class="summary-item-field-headings">
       <tr>
-        <th scope="col">
-          Name
-        </th>
-        <th scope="col">
-          Content
-        </th>
+        
       </tr>
     </thead>
     <tbody>
       
         <tr class="summary-item-row-incomplete">
-          <td class="summary-item-field-name">
-            <span>Summary item name</span>
-          </td>
-          <td class="summary-item-field-content">
-            Summary item content
-          </td>
           
-            <td class="summary-item-action-field">
-              <a href="#">Change<span class="visuallyhidden"> Summary item</span></a>
+            <td class="summary-item-field-first">
+              <span>Summary item name</span>
+            </td>
+          
+            <td class="summary-item-field">
+              <span><a href="#">Summary item content</a></span>
             </td>
           
         </tr>
@@ -636,54 +957,57 @@
     </tbody>
   </table>
 
-                                    <div class="code open"><h3 class="code-label">Template (forms/summary.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">rows</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;fields&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
+            <span style="color: #BA2121">&quot;Summary item name&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;Summary item content&lt;/a&gt;&quot;</span>
+        <span style="color: #666666">],</span> 
+        <span style="color: #BA2121">&quot;incomplete&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">true</span>
+    <span style="color: #666666">}</span>
+<span style="color: #666666">],</span>
+  <span style="color: #19177C">top_link</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;#&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Summary item with incomplete entry&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">top_link_label</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Edit &lt;span class=\&quot;visuallyhidden\&quot;&gt;summary item with incomplete entry&lt;/span&gt;&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/summary.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     Summary item with incomplete entry
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
+
+  <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-top-level-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-change-link&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Edit <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>summary item with incomplete entry<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
 
 
   <span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;thead</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-headings&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          Name
-        <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          Content
-        <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
       <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;/thead&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;tbody&gt;</span>
       
         <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row-incomplete&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-name&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-            <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item name<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-            Summary item content
-          <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
           
-            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-action-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-              <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Change<span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> Summary item<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Summary item name<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Summary item content<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/span&gt;</span>
             <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
           
         <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
       
     <span style="color: #008000; font-weight: bold">&lt;/tbody&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;rows&quot;</span><span style="color: #666666">:</span> [
-        {
-            <span style="color: #BA2121">&quot;content&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Summary item content&quot;</span>, 
-            <span style="color: #BA2121">&quot;action&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;Change&lt;span class=\&quot;visuallyhidden\&quot;&gt; Summary item&lt;/span&gt;&lt;/a&gt;&quot;</span>, 
-            <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Summary item name&quot;</span>, 
-            <span style="color: #BA2121">&quot;incomplete&quot;</span><span style="color: #666666">:</span> <span style="color: #008000; font-weight: bold">true</span>
-        }
-    ], 
-    <span style="color: #BA2121">&quot;heading&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Summary item with incomplete entry&quot;</span>
-}
 </pre></div>
 </div>
                             </div>
@@ -718,6 +1042,6 @@
 
     <script src="../govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
 
-    
+    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script><script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
   </body>
 </html>

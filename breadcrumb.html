@@ -130,7 +130,31 @@
     </ol>
   </nav>
 </div>
-                                    <div class="code open"><h3 class="code-label">Template (breadcrumb.html)</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;global-breadcrumb&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-context&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">items</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;./&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Home&quot;</span>
+    <span style="color: #666666">},</span> 
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Item 1&quot;</span>
+    <span style="color: #666666">},</span> 
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Item 2&quot;</span>
+    <span style="color: #666666">},</span> 
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Item 3&quot;</span>
+    <span style="color: #666666">}</span>
+<span style="color: #666666">],</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates//breadcrumb.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;global-breadcrumb&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-context&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;nav&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;ol</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;group&quot;</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;breadcrumbs&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;li&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;./&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Home<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Item 1<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
@@ -140,27 +164,6 @@
     <span style="color: #008000; font-weight: bold">&lt;/ol&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/nav&gt;</span>
 <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
-</pre></div>
-</div>
-                                    <div class="code open"><h3 class="code-label">Parameters</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">{
-    <span style="color: #BA2121">&quot;items&quot;</span><span style="color: #666666">:</span> [
-        {
-            <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;./&quot;</span>, 
-            <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Home&quot;</span>
-        }, 
-        {
-            <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span>, 
-            <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Item 1&quot;</span>
-        }, 
-        {
-            <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span>, 
-            <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Item 2&quot;</span>
-        }, 
-        {
-            <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Item 3&quot;</span>
-        }
-    ]
-}
 </pre></div>
 </div>
                             </div>
@@ -195,6 +198,6 @@
 
     <script src="govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
 
-    
+    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script><script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
   </body>
 </html>
