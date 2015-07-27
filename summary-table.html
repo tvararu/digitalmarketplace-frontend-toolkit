@@ -130,28 +130,29 @@
     Summary table
 </h2>
 
+  
   <table class="summary-item-body">
     <caption class="visuallyhidden">
       Summary table
     </caption>
-    <thead class="summary-item-field-headings-visible">
+    <thead class="summary-item-field-headings">
       <tr>
         
           <th scope="col" class="summary-item-field-heading-first">
             
-              Service
+              <span class="visuallyhidden">Service</span>
             
           </th>
         
           <th scope="col" class="summary-item-field-heading">
             
-              Lot
+              <span class="visuallyhidden">Lot</span>
             
           </th>
         
           <th scope="col" class="summary-item-field-heading">
             
-              <span class="hidden">Action</span>
+              <span class="visuallyhidden"><span class="hidden">Action</span></span>
             
           </th>
         
@@ -159,7 +160,8 @@
     </thead>
     <tbody>
       
-        
+    
+      
   <tr class="summary-item-row">
     
     <td class="summary-item-field-first-wider">
@@ -178,8 +180,8 @@
   
   </tr>
 
+    
       
-        
   <tr class="summary-item-row">
     
     <td class="summary-item-field-first-wider">
@@ -198,8 +200,8 @@
   
   </tr>
 
+    
       
-        
   <tr class="summary-item-row">
     
     <td class="summary-item-field-first-wider">
@@ -218,13 +220,14 @@
   
   </tr>
 
-      
+    
+  
     </tbody>
   </table>
 
                                     <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
-<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.table</span><span style="color: #666666">(</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[</span>
     <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service 1&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;SCS&quot;</span><span style="color: #666666">},</span>
     <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service 2&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;SaaS&quot;</span><span style="color: #666666">},</span>
@@ -252,28 +255,29 @@
     Summary table
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
 
+  
   <span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;caption</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       Summary table
     <span style="color: #008000; font-weight: bold">&lt;/caption&gt;</span>
-    <span style="color: #008000; font-weight: bold">&lt;thead</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-headings-visible&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;thead</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-headings&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
         
           <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
             
-              Service
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Service<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
             
           <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
         
           <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
             
-              Lot
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Lot<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
             
           <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
         
           <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
             
-              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Action<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Action<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/span&gt;</span>
             
           <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
         
@@ -281,7 +285,8 @@
     <span style="color: #008000; font-weight: bold">&lt;/thead&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;tbody&gt;</span>
       
-        
+    
+      
   <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first-wider&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -300,8 +305,8 @@
   
   <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
 
+    
       
-        
   <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first-wider&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -320,8 +325,8 @@
   
   <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
 
+    
       
-        
   <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first-wider&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -340,7 +345,8 @@
   
   <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
 
-      
+    
+  
     <span style="color: #008000; font-weight: bold">&lt;/tbody&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
 </pre></div>
@@ -358,7 +364,7 @@
 
                                     <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with no entries&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
-<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.table</span><span style="color: #666666">(</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[],</span>
   <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table with no entries&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submited any services yet&quot;</span><span style="color: #666666">,</span>
@@ -388,46 +394,47 @@
     Summary table with many columns
 </h2>
 
+  
   <table class="summary-item-body">
     <caption class="visuallyhidden">
       Summary table with many columns
     </caption>
-    <thead class="summary-item-field-headings-visible">
+    <thead class="summary-item-field-headings">
       <tr>
         
           <th scope="col" class="summary-item-field-heading-first">
             
-              Service
+              <span class="visuallyhidden">Service</span>
             
           </th>
         
           <th scope="col" class="summary-item-field-heading">
             
-              ID
+              <span class="visuallyhidden">ID</span>
             
           </th>
         
           <th scope="col" class="summary-item-field-heading">
             
-              Framework
+              <span class="visuallyhidden">Framework</span>
             
           </th>
         
           <th scope="col" class="summary-item-field-heading">
             
-              Lot
+              <span class="visuallyhidden">Lot</span>
             
           </th>
         
           <th scope="col" class="summary-item-field-heading">
             
-              Last edited
+              <span class="visuallyhidden">Last edited</span>
             
           </th>
         
           <th scope="col" class="summary-item-field-heading">
             
-              <span class="hidden"></span>
+              <span class="visuallyhidden"><span class="hidden"></span></span>
             
           </th>
         
@@ -435,7 +442,8 @@
     </thead>
     <tbody>
       
-        
+    
+      
   <tr class="summary-item-row">
     
     <td class="summary-item-field-first">
@@ -463,8 +471,8 @@
   
   </tr>
 
+    
       
-        
   <tr class="summary-item-row">
     
     <td class="summary-item-field-first">
@@ -492,8 +500,8 @@
   
   </tr>
 
+    
       
-        
   <tr class="summary-item-row">
     
     <td class="summary-item-field-first">
@@ -521,13 +529,14 @@
   
   </tr>
 
-      
+    
+  
     </tbody>
   </table>
 
                                     <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with many columns&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
-<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.table</span><span style="color: #666666">(</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[</span>
     <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service 1&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;SCS&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;id&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;1234 5678 9012 3456&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;date&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;12 June 2015&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;framework&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;G-Cloud 6&quot;</span><span style="color: #666666">},</span>
     <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service 2&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;SaaS&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;id&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;1234 5678 9012 3456&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;date&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;12 June 2015&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;framework&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;G-Cloud 6&quot;</span><span style="color: #666666">},</span>
@@ -561,46 +570,47 @@
     Summary table with many columns
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
 
+  
   <span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;caption</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       Summary table with many columns
     <span style="color: #008000; font-weight: bold">&lt;/caption&gt;</span>
-    <span style="color: #008000; font-weight: bold">&lt;thead</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-headings-visible&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;thead</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-headings&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
         
           <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
             
-              Service
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Service<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
             
           <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
         
           <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
             
-              ID
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>ID<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
             
           <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
         
           <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
             
-              Framework
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Framework<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
             
           <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
         
           <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
             
-              Lot
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Lot<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
             
           <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
         
           <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
             
-              Last edited
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Last edited<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
             
           <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
         
           <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
             
-              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/span&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/span&gt;&lt;/span&gt;</span>
             
           <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
         
@@ -608,7 +618,8 @@
     <span style="color: #008000; font-weight: bold">&lt;/thead&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;tbody&gt;</span>
       
-        
+    
+      
   <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -636,8 +647,8 @@
   
   <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
 
+    
       
-        
   <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -665,8 +676,8 @@
   
   <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
 
+    
       
-        
   <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -694,7 +705,219 @@
   
   <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
 
+    
+  
+    <span style="color: #008000; font-weight: bold">&lt;/tbody&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
+</pre></div>
+</div>
+                                    
+                                    
+<h2 class="summary-item-heading">
+    
+    Summary table with manual rows
+</h2>
+<table class="summary-item-body">
+    <caption class="visuallyhidden">
+      Summary table with many columns
+    </caption>
+    <thead class="summary-item-field-headings">
+      <tr>
+        
+          <th scope="col" class="summary-item-field-heading-first">
+            
+              <span class="visuallyhidden">Label</span>
+            
+          </th>
+        
+          <th scope="col" class="summary-item-field-heading">
+            
+              <span class="visuallyhidden">Value</span>
+            
+          </th>
+        
+      </tr>
+    </thead>
+    <tbody>
       
+  <tr class="summary-item-row">
+    
+    <td class="summary-item-field-first">
+    <span>
+    Service Name
+  </span>
+  </td>
+    <td class="summary-item-field">
+    <span>Service 1</span>
+  </td>
+  
+  </tr>
+  <tr class="summary-item-row">
+    
+    <td class="summary-item-field-first">
+    <span>
+    Service ID
+  </span>
+  </td>
+    <td class="summary-item-field">
+    <span>1234 1234 1234</span>
+  </td>
+  
+  </tr>
+  <tr class="summary-item-row-incomplete">
+    
+    <td class="summary-item-field-first">
+    <span>
+    Description
+  </span>
+  </td>
+    <td class="summary-item-field">
+    <span>Answer required</span>
+  </td>
+  
+  </tr>
+  <tr class="summary-item-row">
+    
+    <td class="summary-item-field-first">
+    <span>
+    Clients
+  </span>
+  </td>
+    <td class="summary-item-field">
+    <span>
+    <ul>
+    
+      <li>Client 1</li>
+    
+      <li>Client 2</li>
+    
+      <li>Client 3</li>
+    
+    </ul>
+    
+  </span>
+  </td>
+  
+  </tr>
+
+    </tbody>
+  </table>
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with manual rows&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.mapping_table</span><span style="color: #666666">(</span>
+  <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table with many columns&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">field_headings</span><span style="color: #666666">=[</span>
+    <span style="color: #BA2121">&quot;Label&quot;</span><span style="color: #666666">,</span>
+    <span style="color: #BA2121">&quot;Value&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #666666">],</span>
+  <span style="color: #19177C">field_headings_visible</span><span style="color: #666666">=</span><span style="color: #008000">False</span>
+<span style="color: #666666">)</span> <span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.row</span><span style="color: #666666">()</span> <span style="color: #BC7A00">%}</span>
+    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.field_name</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Service Name&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.text</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Service 1&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.row</span><span style="color: #666666">()</span> <span style="color: #BC7A00">%}</span>
+    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.field_name</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Service ID&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.text</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;1234 1234 1234&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.row</span><span style="color: #666666">(</span><span style="color: #19177C">complete</span><span style="color: #666666">=</span><span style="color: #008000">False</span><span style="color: #666666">)</span> <span style="color: #BC7A00">%}</span>
+    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.field_name</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Description&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.text</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Answer required&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.row</span><span style="color: #666666">()</span> <span style="color: #BC7A00">%}</span>
+    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.field_name</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Clients&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.list</span><span style="color: #666666">([</span><span style="color: #BA2121">&quot;Client 1&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Client 2&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Client 3&quot;</span><span style="color: #666666">])</span> <span style="color: #BC7A00">}}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+    Summary table with manual rows
+<span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;caption</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      Summary table with many columns
+    <span style="color: #008000; font-weight: bold">&lt;/caption&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;thead</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-headings&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Label<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            
+          <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Value<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            
+          <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
+      <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/thead&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tbody&gt;</span>
+      
+  <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+    <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
+    Service Name
+  <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Service 1<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+  
+  <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+    <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
+    Service ID
+  <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>1234 1234 1234<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+  
+  <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row-incomplete&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+    <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
+    Description
+  <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Answer required<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+  
+  <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+    <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
+    Clients
+  <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Client 1<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Client 2<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Client 3<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+    <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+  
+  <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+
     <span style="color: #008000; font-weight: bold">&lt;/tbody&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
 </pre></div>
@@ -716,7 +939,7 @@
                                     <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with top-level action&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.top_link</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Add new service&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;#&#39;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
-<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.table</span><span style="color: #666666">(</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[],</span>
   <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table with top-level action&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submited any services yet&quot;</span><span style="color: #666666">,</span>
@@ -757,7 +980,7 @@
 
                                     <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with number&quot;</span><span style="color: #666666">,</span> <span style="color: #19177C">index</span><span style="color: #666666">=12)</span> <span style="color: #BC7A00">}}</span>
-<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.table</span><span style="color: #666666">(</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[],</span>
   <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table with top-level action&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submited any services yet&quot;</span><span style="color: #666666">,</span>
@@ -789,28 +1012,29 @@
     Summary table with name field as link
 </h2>
 
+  
   <table class="summary-item-body">
     <caption class="visuallyhidden">
       Summary table with name field as link
     </caption>
-    <thead class="summary-item-field-headings-visible">
+    <thead class="summary-item-field-headings">
       <tr>
         
           <th scope="col" class="summary-item-field-heading-first">
             
-              Service
+              <span class="visuallyhidden">Service</span>
             
           </th>
         
           <th scope="col" class="summary-item-field-heading">
             
-              Lot
+              <span class="visuallyhidden">Lot</span>
             
           </th>
         
           <th scope="col" class="summary-item-field-heading">
             
-              <span class="hidden">Action</span>
+              <span class="visuallyhidden"><span class="hidden">Action</span></span>
             
           </th>
         
@@ -818,7 +1042,8 @@
     </thead>
     <tbody>
       
-        
+    
+      
   <tr class="summary-item-row">
     
     <td class="summary-item-field-first-wider">
@@ -837,8 +1062,8 @@
   
   </tr>
 
+    
       
-        
   <tr class="summary-item-row">
     
     <td class="summary-item-field-first-wider">
@@ -857,8 +1082,8 @@
   
   </tr>
 
+    
       
-        
   <tr class="summary-item-row">
     
     <td class="summary-item-field-first-wider">
@@ -877,13 +1102,14 @@
   
   </tr>
 
-      
+    
+  
     </tbody>
   </table>
 
                                     <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with name field as link&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
-<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.table</span><span style="color: #666666">(</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[</span>
     <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service 1&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;SCS&quot;</span><span style="color: #666666">},</span>
     <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service 2&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;SaaS&quot;</span><span style="color: #666666">},</span>
@@ -911,28 +1137,29 @@
     Summary table with name field as link
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
 
+  
   <span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;caption</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       Summary table with name field as link
     <span style="color: #008000; font-weight: bold">&lt;/caption&gt;</span>
-    <span style="color: #008000; font-weight: bold">&lt;thead</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-headings-visible&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;thead</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-headings&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
         
           <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
             
-              Service
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Service<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
             
           <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
         
           <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
             
-              Lot
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Lot<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
             
           <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
         
           <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
             
-              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Action<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Action<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/span&gt;</span>
             
           <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
         
@@ -940,7 +1167,8 @@
     <span style="color: #008000; font-weight: bold">&lt;/thead&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;tbody&gt;</span>
       
-        
+    
+      
   <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first-wider&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -959,8 +1187,8 @@
   
   <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
 
+    
       
-        
   <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first-wider&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -979,8 +1207,8 @@
   
   <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
 
+    
       
-        
   <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first-wider&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -999,7 +1227,8 @@
   
   <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
 
-      
+    
+  
     <span style="color: #008000; font-weight: bold">&lt;/tbody&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
 </pre></div>
@@ -1011,28 +1240,29 @@
     Summary table with action button
 </h2>
 
+  
   <table class="summary-item-body">
     <caption class="visuallyhidden">
       Summary table with name field as link
     </caption>
-    <thead class="summary-item-field-headings-visible">
+    <thead class="summary-item-field-headings">
       <tr>
         
           <th scope="col" class="summary-item-field-heading-first">
             
-              Service
+              <span class="visuallyhidden">Service</span>
             
           </th>
         
           <th scope="col" class="summary-item-field-heading">
             
-              Lot
+              <span class="visuallyhidden">Lot</span>
             
           </th>
         
           <th scope="col" class="summary-item-field-heading">
             
-              <span class="hidden">Action</span>
+              <span class="visuallyhidden"><span class="hidden">Action</span></span>
             
           </th>
         
@@ -1040,7 +1270,8 @@
     </thead>
     <tbody>
       
-        
+    
+      
   <tr class="summary-item-row">
     
     <td class="summary-item-field-first-wider">
@@ -1062,8 +1293,8 @@
   
   </tr>
 
+    
       
-        
   <tr class="summary-item-row">
     
     <td class="summary-item-field-first-wider">
@@ -1085,8 +1316,8 @@
   
   </tr>
 
+    
       
-        
   <tr class="summary-item-row">
     
     <td class="summary-item-field-first-wider">
@@ -1108,13 +1339,14 @@
   
   </tr>
 
-      
+    
+  
     </tbody>
   </table>
 
                                     <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with action button&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
-<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.table</span><span style="color: #666666">(</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[</span>
     <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service 1&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;SCS&quot;</span><span style="color: #666666">},</span>
     <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service 2&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;SaaS&quot;</span><span style="color: #666666">},</span>
@@ -1142,28 +1374,29 @@
     Summary table with action button
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
 
+  
   <span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;caption</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       Summary table with name field as link
     <span style="color: #008000; font-weight: bold">&lt;/caption&gt;</span>
-    <span style="color: #008000; font-weight: bold">&lt;thead</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-headings-visible&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;thead</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-headings&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
         
           <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
             
-              Service
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Service<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
             
           <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
         
           <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
             
-              Lot
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Lot<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
             
           <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
         
           <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
             
-              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Action<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Action<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/span&gt;</span>
             
           <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
         
@@ -1171,7 +1404,8 @@
     <span style="color: #008000; font-weight: bold">&lt;/thead&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;tbody&gt;</span>
       
-        
+    
+      
   <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first-wider&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -1193,8 +1427,8 @@
   
   <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
 
+    
       
-        
   <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first-wider&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -1216,8 +1450,8 @@
   
   <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
 
+    
       
-        
   <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first-wider&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -1239,7 +1473,8 @@
   
   <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
 
-      
+    
+  
     <span style="color: #008000; font-weight: bold">&lt;/tbody&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
 </pre></div>
@@ -1250,8 +1485,7 @@
     
     Summary table with content field as list
 </h2>
-
-  <table class="summary-item-body">
+<table class="summary-item-body">
     <caption class="visuallyhidden">
       Summary table with content field as list
     </caption>
@@ -1274,7 +1508,6 @@
     </thead>
     <tbody>
       
-        
   <tr class="summary-item-row">
     
     <td class="summary-item-field-first">
@@ -1299,18 +1532,12 @@
   
   </tr>
 
-      
     </tbody>
   </table>
-
                                     <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with content field as list&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
-<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.table</span><span style="color: #666666">(</span>
-  <span style="color: #666666">[</span>
-    <span style="color: #666666">(</span><span style="color: #BA2121">&quot;Features&quot;</span><span style="color: #666666">,</span> <span style="color: #666666">[</span><span style="color: #BA2121">&quot;Feature 1&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Feature 2&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Feature 3&quot;</span><span style="color: #666666">]),</span>
-  <span style="color: #666666">],</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.mapping_table</span><span style="color: #666666">(</span>
   <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table with content field as list&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submited any services yet&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">field_headings</span><span style="color: #666666">=[</span>
     <span style="color: #BA2121">&quot;Field name&quot;</span><span style="color: #666666">,</span>
     <span style="color: #BA2121">&quot;Field value&quot;</span><span style="color: #666666">,</span>
@@ -1318,8 +1545,9 @@
   <span style="color: #19177C">field_headings_visible</span><span style="color: #666666">=</span><span style="color: #008000">False</span>
 <span style="color: #666666">)</span> <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.row</span><span style="color: #666666">()</span> <span style="color: #BC7A00">%}</span>
-    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.field_name</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">[0])</span> <span style="color: #BC7A00">}}</span>
-    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.list</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">[1],</span> <span style="color: #19177C">assurance</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Assured by independent validation of assertion&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.field_name</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Features&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.list</span><span style="color: #666666">([</span><span style="color: #BA2121">&quot;Feature 1&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Feature 2&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Feature 3&quot;</span><span style="color: #666666">],</span>
+      <span style="color: #19177C">assurance</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Assured by independent validation of assertion&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
@@ -1328,8 +1556,7 @@
     
     Summary table with content field as list
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
-
-  <span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;caption</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       Summary table with content field as list
     <span style="color: #008000; font-weight: bold">&lt;/caption&gt;</span>
@@ -1352,7 +1579,6 @@
     <span style="color: #008000; font-weight: bold">&lt;/thead&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;tbody&gt;</span>
       
-        
   <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -1377,7 +1603,6 @@
   
   <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
 
-      
     <span style="color: #008000; font-weight: bold">&lt;/tbody&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
 </pre></div>
@@ -1389,6 +1614,7 @@
     Summary table with incomplete entry
 </h2>
 
+  
   <table class="summary-item-body">
     <caption class="visuallyhidden">
       Summary table with incomplete entry
@@ -1412,7 +1638,8 @@
     </thead>
     <tbody>
       
-        
+    
+      
   <tr class="summary-item-row-incomplete">
     
     <td class="summary-item-field-first">
@@ -1426,13 +1653,14 @@
   
   </tr>
 
-      
+    
+  
     </tbody>
   </table>
 
                                     <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with incomplete entry&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
-<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.table</span><span style="color: #666666">(</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[</span>
     <span style="color: #666666">(</span><span style="color: #BA2121">&quot;Features&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Item Content&quot;</span><span style="color: #666666">),</span>
   <span style="color: #666666">],</span>
@@ -1456,6 +1684,7 @@
     Summary table with incomplete entry
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
 
+  
   <span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;caption</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       Summary table with incomplete entry
@@ -1479,7 +1708,8 @@
     <span style="color: #008000; font-weight: bold">&lt;/thead&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;tbody&gt;</span>
       
-        
+    
+      
   <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row-incomplete&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -1493,7 +1723,8 @@
   
   <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
 
-      
+    
+  
     <span style="color: #008000; font-weight: bold">&lt;/tbody&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
 </pre></div>
