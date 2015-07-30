@@ -1292,6 +1292,86 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
         height: 0px;
         overflow: hidden; }
 
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+.grid-row:after, .question:after, .question-first:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+.pricing .pricing-column {
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  min-height: 105px;
+  min-width: 2em;
+  margin: 0 10px;
+  vertical-align: bottom; }
+  .pricing .pricing-column:first-child {
+    margin-left: 0; }
+  .pricing .pricing-column label, .pricing .pricing-column .question-hint {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: 400;
+    text-transform: none; }
+    @media (max-width: 640px) {
+      .pricing .pricing-column label, .pricing .pricing-column .question-hint {
+        font-size: 16px;
+        line-height: 1.25; } }
+  .pricing .pricing-column label {
+    display: block;
+    width: 8em; }
+  .pricing .pricing-column .question-hint {
+    margin: 0; }
+.pricing .pricing-input, .pricing .pricing-input-with-unit, .pricing .pricing-input-select {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  z-index: 10; }
+  .pricing .pricing-input-with-unit {
+    padding-left: 1.6em; }
+  .pricing .pricing-input-select {
+    margin: 0 0 15px 2%;
+    width: 98%;
+    font-size: 19px;
+    width: auto;
+    margin-right: 1px; }
+.pricing .pricing-unit {
+  color: #bfc1c3;
+  position: absolute;
+  bottom: 12px;
+  left: 10px;
+  z-index: 20;
+  font-weight: bold; }
+.pricing .pricing-preposition {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 12px; }
+
+.visually-hidden {
+  position: absolute;
+  left: -999em; }
+
 @font-face {
   font-family: GDS-Logo;
   src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
