@@ -1679,6 +1679,22 @@
     
     <td class="summary-item-field-first">
     <span>
+    Pricing document
+  </span>
+  </td>
+    <td class="summary-item-field">
+    <span>
+    
+      <a href="http://example.com/pricingDocument.pdf">pricingDocument.pdf</a>
+    
+  </span>
+  </td>
+  
+  </tr>
+  <tr class="summary-item-row">
+    
+    <td class="summary-item-field-first">
+    <span>
     Description
   </span>
   </td>
@@ -1732,6 +1748,10 @@
     <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.field_name</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Uptime&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
     <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.percentage</span><span style="color: #666666">(99.999,</span>
       <span style="color: #19177C">assurance</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Independent validation of assertion&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.row</span><span style="color: #666666">()</span> <span style="color: #BC7A00">%}</span>
+    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.field_name</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Pricing document&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.upload</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;http://example.com/pricingDocument.pdf&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.row</span><span style="color: #666666">()</span> <span style="color: #BC7A00">%}</span>
     <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.field_name</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Description&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
@@ -1824,6 +1844,22 @@
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
     99.999%, assured by Independent validation of assertion
+  <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+  
+  <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+    <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
+    Pricing document
+  <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;http://example.com/pricingDocument.pdf&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>pricingDocument.pdf<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+    
   <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
   
