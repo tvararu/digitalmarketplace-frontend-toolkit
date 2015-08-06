@@ -906,16 +906,16 @@
       outline: 3px solid #ffbf47; }
 
 .browse-list-item-body {
-  margin: 5px 0 5px 0;
+  margin: 5px 0 0 0;
   font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
+  font-size: 19px;
+  line-height: 1.31579;
   font-weight: 400;
   text-transform: none; }
   @media (max-width: 640px) {
     .browse-list-item-body {
-      font-size: 14px;
-      line-height: 1.14286; } }
+      font-size: 16px;
+      line-height: 1.25; } }
 
 .browse-list-item-subtext {
   margin: 0;
@@ -924,11 +924,17 @@
   line-height: 1.25;
   font-weight: 400;
   text-transform: none;
+  padding-top: 8px;
+  padding-bottom: 7px;
   color: #6f777b; }
   @media (max-width: 640px) {
     .browse-list-item-subtext {
       font-size: 14px;
       line-height: 1.14286; } }
+  @media (min-width: 641px) {
+    .browse-list-item-subtext {
+      padding-top: 5px;
+      padding-bottom: 5px; } }
 
 @font-face {
   font-family: GDS-Logo;
