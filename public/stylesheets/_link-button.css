@@ -1,0 +1,37 @@
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+.link-button, a.link-button {
+  background: #2e8aca;
+  display: block;
+  padding: 6px 0;
+  color: #fff;
+  margin: 30px 0 0 0;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  text-align: center; }
+  @media (min-width: 641px) {
+    .link-button, a.link-button {
+      margin: 75px 0 0 30px; } }
+  @media (max-width: 640px) {
+    .link-button, a.link-button {
+      font-size: 18px;
+      line-height: 1.2; } }
+  .link-button:hover, a.link-button:hover {
+    background: #005ea5; }
