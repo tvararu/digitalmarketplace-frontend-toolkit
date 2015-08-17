@@ -1455,6 +1455,30 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
       font-size: 16px;
       line-height: 1.25; } }
 
+.question-number {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-transform: none;
+  display: block;
+  margin-bottom: -20px;
+  position: relative;
+  height: 50px;
+  display: block;
+  margin: 20px 0 -50px 0;
+  left: -100px;
+  width: 80px;
+  text-align: right; }
+  @media (max-width: 640px) {
+    .question-number {
+      font-size: 18px;
+      line-height: 1.2; } }
+  .question-number:after {
+    content: "."; }
+  .question-number:after {
+    content: ""; }
+
 @-ms-viewport {
   width: device-width; }
 
@@ -1799,6 +1823,8 @@ table.summary-item-body {
   border: 5px solid #b10e1e;
   padding: 15px 15px 20px 15px;
   margin-bottom: 30px; }
+  .validation-masthead:focus {
+    outline: 3px solid #ffbf47; }
   .validation-masthead .validation-masthead-heading {
     font-family: "nta", Arial, sans-serif;
     font-size: 24px;

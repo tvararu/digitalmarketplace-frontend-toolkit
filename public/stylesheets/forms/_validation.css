@@ -12,6 +12,8 @@
   border: 5px solid #b10e1e;
   padding: 15px 15px 20px 15px;
   margin-bottom: 30px; }
+  .validation-masthead:focus {
+    outline: 3px solid #ffbf47; }
   .validation-masthead .validation-masthead-heading {
     font-family: "nta", Arial, sans-serif;
     font-size: 24px;
