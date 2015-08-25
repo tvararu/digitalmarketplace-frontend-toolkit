@@ -1699,7 +1699,7 @@ table.summary-item-body {
       font-size: 14px;
       line-height: 1.14286; } }
 
-.summary-item-field-heading {
+.summary-item-field-heading-first, .summary-item-field-heading {
   padding: 10px 0 10px 25px; }
 
 .summary-item-field-heading-first {
