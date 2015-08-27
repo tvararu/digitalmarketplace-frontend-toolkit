@@ -119,8 +119,11 @@
                                 <header class="page-heading">
                                     <h1>Buttons</h1>
                                 </header>
+                                <div>
+                                    Buttons must be used inside a form, which they will submit when clicked
+                                </div>
                                     
-                                    <button class="button-save">Save and continue</button>
+                                    <input type="submit" class="button-save"  value="Save and continue" />
                                     <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;save&quot;</span><span style="color: #666666">,</span>
@@ -130,11 +133,11 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;button</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;button-save&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Save and continue<span style="color: #008000; font-weight: bold">&lt;/button&gt;</span>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;button-save&quot;</span>  <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Save and continue&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
 </pre></div>
 </div>
                                     
-                                    <button class="button-secondary">Return service to drafts</button>
+                                    <input type="submit" class="button-secondary"  value="Return service to drafts" />
                                     <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;secondary&quot;</span><span style="color: #666666">,</span>
@@ -144,11 +147,11 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;button</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;button-secondary&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Return service to drafts<span style="color: #008000; font-weight: bold">&lt;/button&gt;</span>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;button-secondary&quot;</span>  <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Return service to drafts&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
 </pre></div>
 </div>
                                     
-                                    <button class="button-destructive">Delete this user</button>
+                                    <input type="submit" class="button-destructive"  value="Delete this user" />
                                     <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;destructive&quot;</span><span style="color: #666666">,</span>
@@ -158,7 +161,22 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;button</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;button-destructive&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Delete this user<span style="color: #008000; font-weight: bold">&lt;/button&gt;</span>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;button-destructive&quot;</span>  <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Delete this user&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+</pre></div>
+</div>
+                                    
+                                    <input type="submit" class="button-secondary" name="continue_to_next_section" value="Save and continue" />
+                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;secondary&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;continue_to_next_section&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">label</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Save and continue&quot;</span><span style="color: #666666">,</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates//button.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;button-secondary&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;continue_to_next_section&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Save and continue&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
 </pre></div>
 </div>
                             </div>
