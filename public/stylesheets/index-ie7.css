@@ -1149,7 +1149,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 @-o-viewport {
   width: device-width; }
 
-.hint {
+.hint-underneath, .hint {
   display: block;
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
@@ -1157,11 +1157,15 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   font-weight: 400;
   text-transform: none;
   margin: 0 0 5px 0;
-  color: #6f777b; }
+  color: #6f777b;
+  clear: both; }
   @media (max-width: 640px) {
-    .hint {
+    .hint-underneath, .hint {
       font-size: 16px;
       line-height: 1.25; } }
+
+.hint-underneath {
+  padding-top: 10px; }
 
 @font-face {
   font-family: GDS-Logo;

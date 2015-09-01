@@ -137,9 +137,9 @@
                                     <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Please upload a file&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-1&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-1&quot;</span>
 <span style="color: #BC7A00">%}</span>
-  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/upload.html&quot;</span> <span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/upload.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
@@ -192,9 +192,9 @@
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Please replace the file you previously uploaded&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;1234123412341234-pricing-document.pdf&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Hint comprising further information about the question&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Hint comprising further information about the question&quot;</span>
 <span style="color: #BC7A00">%}</span>
-  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/upload.html&quot;</span> <span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/upload.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
@@ -258,9 +258,9 @@
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Example of a link to the uploaded file&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">link</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;https://assets.digitalmarketplace.service.gov.uk/documents/654321/1234123412341234-pricing-document.pdf&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-3&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Excelsior_CMS-Pricing-2015.pdf&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Excelsior_CMS-Pricing-2015.pdf&quot;</span>
 <span style="color: #BC7A00">%}</span>
-  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/upload.html&quot;</span> <span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/upload.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
@@ -316,9 +316,9 @@
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;With a bad upload&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-4&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;The file you uploaded was too big &amp;ndash; maximum file size is 5Mb&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;The file you uploaded was too big &amp;ndash; maximum file size is 5Mb&quot;</span>
 <span style="color: #BC7A00">%}</span>
-  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/templates/forms/upload.html&quot;</span> <span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/upload.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
