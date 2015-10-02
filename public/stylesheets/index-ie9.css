@@ -1035,6 +1035,68 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 @-o-viewport {
   width: device-width; }
 
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+.grid-row:after, .question:after, .question-first:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+.temporary-message-without-messages, .temporary-message {
+  background: #005ea5;
+  color: #fff;
+  padding: 15px 15px 18px 15px; }
+
+.temporary-message-without-messages {
+  padding-bottom: 5px; }
+
+.temporary-message-heading {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-transform: none;
+  margin: 0 0 10px 0; }
+  @media (max-width: 640px) {
+    .temporary-message-heading {
+      font-size: 18px;
+      line-height: 1.2; } }
+
+.temporary-message-message {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  margin: 0 0 5px 0; }
+  @media (max-width: 640px) {
+    .temporary-message-message {
+      font-size: 14px;
+      line-height: 1.14286; } }
+  .temporary-message-message a {
+    color: #fff;
+    text-decoration: underline; }
+
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
 .search-summary {
   font-family: "nta", Arial, sans-serif;
   font-size: 14px;
@@ -2114,3 +2176,19 @@ a.version-link:hover {
   .index-list li {
     margin-bottom: 5px;
     list-style: none; }
+
+.page-description {
+  margin-bottom: 30px;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 9px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-bottom: 4px; }
+  @media (max-width: 640px) {
+    .page-description {
+      font-size: 18px;
+      line-height: 1.2; } }
