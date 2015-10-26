@@ -1098,7 +1098,15 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   width: device-width; }
 
 .framework-notice {
-  margin-top: 45px; }
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none; }
+  @media (max-width: 640px) {
+    .framework-notice {
+      font-size: 14px;
+      line-height: 1.14286; } }
   .framework-notice .framework-notice-heading {
     font-family: "nta", Arial, sans-serif;
     font-size: 24px;
@@ -1111,17 +1119,8 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
         font-size: 18px;
         line-height: 1.2; } }
   .framework-notice .framework-notice-subheading {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
     color: #6f777b;
     margin: 0 0 5px 0; }
-    @media (max-width: 640px) {
-      .framework-notice .framework-notice-subheading {
-        font-size: 14px;
-        line-height: 1.14286; } }
   .framework-notice p {
     margin: 0;
     padding: 0 0 10px 0; }
