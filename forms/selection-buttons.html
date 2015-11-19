@@ -192,13 +192,13 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;radio&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Radio buttons&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;radio&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;minimumContractPeriod&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Heure&quot;</span><span style="color: #666666">,</span> 
-        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Hour&quot;</span>
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Hour&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Heure&quot;</span>
     <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Day&quot;</span>
@@ -410,8 +410,8 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Choose a category&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;categories&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #BA2121">&quot;Accounting and finance&quot;</span><span style="color: #666666">,</span> 
@@ -506,8 +506,8 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;boolean&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Offline working supported&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;boolean&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;offlineWorking&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span>
 <span style="color: #BC7A00">%}</span>
@@ -579,16 +579,16 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;radio&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Hint giving some information about how to answer the question.&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Checkbox with hint and description&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;description&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Infrastructure is the hardware that makes software work. It&#39;s the networks, hosting facilities and servers that platforms and software depend on. IaaS is infrastructure you can order and run entirely over the internet, without having to pay for your own hardware.\n&quot;</span><span style="color: #666666">,</span> 
-        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Infrastructure as a Service&quot;</span>
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Infrastructure as a Service&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;description&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Infrastructure is the hardware that makes software work. It&#39;s the networks, hosting facilities and servers that platforms and software depend on. IaaS is infrastructure you can order and run entirely over the internet, without having to pay for your own hardware.\n&quot;</span>
     <span style="color: #666666">}</span>
 <span style="color: #666666">],</span>
-  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;lot&quot;</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;radio&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Hint giving some information about how to answer the question.&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -808,8 +808,6 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Answer required&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Checkboxes with an error&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
@@ -822,7 +820,9 @@
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Collaboration&quot;</span>
     <span style="color: #666666">}</span>
 <span style="color: #666666">],</span>
-  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;vegetables&quot;</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;vegetables&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Answer required&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
