@@ -1785,6 +1785,10 @@ table.summary-item-body {
     margin: 0;
     list-style-type: disc;
     padding: 0 0 0 20px; }
+  .summary-item-field-first .multiquestion-answer, .summary-item-field-first-wider .multiquestion-answer, .summary-item-field-with-action .multiquestion-answer, .summary-item-field .multiquestion-answer {
+    padding-bottom: 10px; }
+    .summary-item-field-first .multiquestion-answer:last-child, .summary-item-field-first-wider .multiquestion-answer:last-child, .summary-item-field-with-action .multiquestion-answer:last-child, .summary-item-field .multiquestion-answer:last-child {
+      padding-bottom: 0; }
 
 .summary-item-field-first {
   width: 33.333%;

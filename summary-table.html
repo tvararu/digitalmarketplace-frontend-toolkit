@@ -893,15 +893,15 @@
     <td class="summary-item-field">
     <span>
       <ul>
-      
-        <li>Client 1</li>
-      
-        <li>Client 2</li>
-      
-        <li>Client 3</li>
-      
-      </ul>
-      
+    
+      <li>Client 1</li>
+    
+      <li>Client 2</li>
+    
+      <li>Client 3</li>
+    
+  </ul>
+  
     </span>
   </td>
   
@@ -1019,15 +1019,15 @@
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
-      
-        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Client 1<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
-      
-        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Client 2<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
-      
-        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Client 3<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
-      
-      <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
-      
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Client 1<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Client 2<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Client 3<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+  
     <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
   
@@ -1659,17 +1659,17 @@
     <td class="summary-item-field">
     <span>
       <ul>
-      
-        <li>Feature 1</li>
-      
-        <li>Feature 2</li>
-      
-        <li>Feature 3</li>
-      
-      </ul>
-      
-        Assured by Independent validation of assertion
-      
+    
+      <li>Feature 1</li>
+    
+      <li>Feature 2</li>
+    
+      <li>Feature 3</li>
+    
+  </ul>
+  
+    Assured by Independent validation of assertion
+  
     </span>
   </td>
   
@@ -1749,6 +1749,39 @@
   
   
   </tr>
+  <tr class="summary-item-row">
+    
+    <td class="summary-item-field-first">
+    <span>
+    Developer
+  </span>
+  </td>
+    <td class="summary-item-field">
+    <span>
+    
+      
+      <div class="multiquestion-answer">
+    <ul>
+    
+      <li>London</li>
+    
+      <li>Mississauga</li>
+    
+      <li>Rivière-du-Loup</li>
+    
+      <li>Singapore</li>
+    
+  </ul>
+  
+  </div>
+    
+      
+      <div class="multiquestion-answer">£100 to £1000000 per day</div>
+    
+  </span>
+  </td>
+  
+  </tr>
 
     </tbody>
   </table>
@@ -1791,6 +1824,13 @@
     <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.field_name</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Support available&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
     <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.boolean</span><span style="color: #666666">(</span><span style="color: #008000">True</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;CESG-assured components&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.row</span><span style="color: #666666">()</span> <span style="color: #BC7A00">%}</span>
+    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.field_name</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Developer&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.multiquestion</span><span style="color: #666666">([</span>
+      <span style="color: #666666">{</span><span style="color: #BA2121">&#39;type&#39;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;list&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;value&#39;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span><span style="color: #BA2121">&quot;London&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Mississauga&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Rivière-du-Loup&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Singapore&quot;</span><span style="color: #666666">]},</span>
+      <span style="color: #666666">{</span><span style="color: #BA2121">&#39;type&#39;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;text&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;value&#39;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;£100 to £1000000 per day&quot;</span><span style="color: #666666">}</span>
+     <span style="color: #666666">])</span> <span style="color: #BC7A00">}}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
@@ -1832,17 +1872,17 @@
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
-      
-        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Feature 1<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
-      
-        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Feature 2<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
-      
-        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Feature 3<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
-      
-      <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
-      
-        Assured by Independent validation of assertion
-      
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Feature 1<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Feature 2<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Feature 3<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+  
+    Assured by Independent validation of assertion
+  
     <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
   
@@ -1920,6 +1960,39 @@
   <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
   
+  
+  <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+    <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
+    Developer
+  <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
+    
+      
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;multiquestion-answer&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>London<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Mississauga<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Rivière-du-Loup<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Singapore<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+  
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+      
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;multiquestion-answer&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>£100 to £1000000 per day<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
   
   <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
 
