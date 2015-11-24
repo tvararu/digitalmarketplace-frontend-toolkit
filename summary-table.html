@@ -466,6 +466,12 @@
             
           </th>
         
+          <th scope="col" class="summary-item-field-heading">
+            
+              <span class="hidden"></span>
+            
+          </th>
+        
       </tr>
     </thead>
     <tbody>
@@ -505,7 +511,12 @@
   </td>
     <td class="summary-item-field-with-action">
     <span>
-    <a href="#">Edit</a>
+    <a href="#" class="summary-item-remove-link">Remove<span class="visuallyhidden"> Service 1</span></a>
+  </span>
+  </td>
+    <td class="summary-item-field-with-action">
+    <span>
+    <a href="#">Edit<span class="visuallyhidden"> Service 1</span></a>
   </span>
   </td>
   
@@ -546,7 +557,12 @@
   </td>
     <td class="summary-item-field-with-action">
     <span>
-    <a href="#">Edit</a>
+    <a href="#" class="summary-item-remove-link">Remove<span class="visuallyhidden"> Service 2</span></a>
+  </span>
+  </td>
+    <td class="summary-item-field-with-action">
+    <span>
+    <a href="#">Edit<span class="visuallyhidden"> Service 2</span></a>
   </span>
   </td>
   
@@ -587,7 +603,12 @@
   </td>
     <td class="summary-item-field-with-action">
     <span>
-    <a href="#">Edit</a>
+    <a href="#" class="summary-item-remove-link">Remove<span class="visuallyhidden"> Service 2</span></a>
+  </span>
+  </td>
+    <td class="summary-item-field-with-action">
+    <span>
+    <a href="#">Edit<span class="visuallyhidden"> Service 2</span></a>
   </span>
   </td>
   
@@ -614,6 +635,7 @@
     <span style="color: #BA2121">&quot;Framework&quot;</span><span style="color: #666666">,</span>
     <span style="color: #BA2121">&quot;Lot&quot;</span><span style="color: #666666">,</span>
     <span style="color: #BA2121">&quot;Last edited&quot;</span><span style="color: #666666">,</span>
+    <span style="color: #19177C">summary.hidden_field_heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;&quot;</span><span style="color: #666666">),</span>
     <span style="color: #19177C">summary.hidden_field_heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;&quot;</span><span style="color: #666666">)</span>
   <span style="color: #666666">],</span>
   <span style="color: #19177C">field_headings_visible</span><span style="color: #666666">=</span><span style="color: #008000">True</span>
@@ -624,7 +646,8 @@
     <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.text</span><span style="color: #666666">(</span><span style="color: #19177C">item.framework</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
     <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.text</span><span style="color: #666666">(</span><span style="color: #19177C">item.lot</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
     <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.text</span><span style="color: #666666">(</span><span style="color: #19177C">item.date</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
-    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.edit_link</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Edit&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;#&#39;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.remove_link</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Remove&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;#&#39;</span><span style="color: #666666">,</span> <span style="color: #19177C">item.name</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.edit_link</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Edit&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;#&#39;</span><span style="color: #666666">,</span> <span style="color: #19177C">item.name</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
@@ -678,6 +701,12 @@
             
           <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
         
+          <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/span&gt;</span>
+            
+          <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
       <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;/thead&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;tbody&gt;</span>
@@ -717,7 +746,12 @@
   <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-with-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
-    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Edit<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-remove-link&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Remove<span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> Service 1<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-with-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Edit<span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> Service 1<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
   
@@ -758,7 +792,12 @@
   <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-with-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
-    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Edit<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-remove-link&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Remove<span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> Service 2<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-with-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Edit<span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> Service 2<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
   
@@ -799,7 +838,12 @@
   <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-with-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
-    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Edit<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-remove-link&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Remove<span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> Service 2<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-with-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Edit<span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> Service 2<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
   
