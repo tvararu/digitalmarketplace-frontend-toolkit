@@ -14,12 +14,13 @@
 @-o-viewport {
   width: device-width; }
 
+@media (min-width: 900px) {
+  .column-two-thirds .pricing, .column-two-thirds .validation-wrapper-pricing {
+    margin-right: -100%; }
+ }
+
 .pricing {
   margin-top: 15px; }
-  @media (min-width: 900px) {
-    .column-two-thirds .pricing {
-      margin-right: -100%; }
- }
   .pricing .pricing-column {
     position: relative;
     display: -moz-inline-stack;

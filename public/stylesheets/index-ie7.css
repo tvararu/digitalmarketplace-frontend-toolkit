@@ -1507,10 +1507,11 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 @-o-viewport {
   width: device-width; }
 
+.column-two-thirds .pricing, .column-two-thirds .validation-wrapper-pricing {
+  margin-right: -100%; }
+
 .pricing {
   margin-top: 15px; }
-  .column-two-thirds .pricing {
-    margin-right: -100%; }
   .pricing .pricing-column {
     position: relative;
     display: -moz-inline-stack;
