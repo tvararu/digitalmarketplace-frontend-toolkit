@@ -1760,8 +1760,8 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 
 .summary-item-heading, .summary-item-heading-first {
   font-family: "nta", Arial, sans-serif;
-  font-size: 24px;
-  line-height: 1.25;
+  font-size: 27px;
+  line-height: 1.11111;
   font-weight: 700;
   text-transform: none;
   position: relative;
@@ -1772,8 +1772,8 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   box-sizing: border-box; }
   @media (max-width: 640px) {
     .summary-item-heading, .summary-item-heading-first {
-      font-size: 18px;
-      line-height: 1.2; } }
+      font-size: 20px;
+      line-height: 1.11111; } }
 
 .summary-item-heading-first {
   padding-top: 0; }
@@ -1783,6 +1783,22 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   width: 40px;
   left: -55px;
   text-align: right; }
+
+.summary-item-description {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 2px;
+  padding-bottom: 8px;
+  padding-top: 0;
+  padding-bottom: 5px;
+  margin: 0 0 4px 0; }
+  @media (max-width: 640px) {
+    .summary-item-description {
+      font-size: 16px;
+      line-height: 1.25; } }
 
 .summary-item-top-level-action {
   font-family: "nta", Arial, sans-serif;
@@ -1795,7 +1811,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   padding-top: 0;
   padding-bottom: 5px;
   text-align: right;
-  margin: -36px 0 0 0;
+  margin: -33px 0 0 0;
   padding-left: 75%;
   position: relative;
   z-index: 10;
@@ -1814,8 +1830,8 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   font-weight: 400;
   text-transform: none;
   margin: 0 0 15px 0;
-  border-top: 1px solid #dee0e2;
-  border-bottom: 1px solid #dee0e2;
+  border-top: 1px solid #bfc1c3;
+  border-bottom: 1px solid #bfc1c3;
   padding-top: 10px;
   padding-bottom: 10px;
   max-width: 100%; }
@@ -1827,7 +1843,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 table.summary-item-body {
   width: 100%;
   margin: 0 0 15px 0;
-  border-bottom: 1px solid #dee0e2; }
+  border-bottom: 1px solid #bfc1c3; }
 
 .summary-item-row-incomplete, .summary-item-row {
   font-family: "nta", Arial, sans-serif;
@@ -1836,7 +1852,7 @@ table.summary-item-body {
   font-weight: 400;
   text-transform: none;
   text-align: right;
-  border-top: 1px solid #dee0e2; }
+  border-top: 1px solid #bfc1c3; }
   @media (max-width: 640px) {
     .summary-item-row-incomplete, .summary-item-row {
       font-size: 16px;
@@ -1846,8 +1862,8 @@ table.summary-item-body {
   border-collapse: collapse;
   border-spacing: 0; }
   table.summary-item-body tbody td {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 9px;
     vertical-align: top; }
 
 .summary-item-field-first, .summary-item-field-first-wider, .summary-item-field-with-action, .summary-item-field {
@@ -1895,7 +1911,7 @@ table.summary-item-body {
   font-weight: 700;
   text-transform: none;
   text-align: left;
-  border-top: 1px solid #dee0e2; }
+  border-top: 1px solid #bfc1c3; }
   @media (max-width: 640px) {
     .summary-item-field-headings-visible {
       font-size: 14px;

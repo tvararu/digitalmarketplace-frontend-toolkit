@@ -864,6 +864,9 @@
       
       Summary table with manual rows
   </h2>
+<p class="summary-item-description">
+    This will be displayed on the Digital Marketplace.
+  </p>
 <table class="summary-item-body">
     <caption class="visuallyhidden">
       Summary table with manual rows
@@ -959,6 +962,7 @@
   </table>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with manual rows&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+<span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.description</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;This will be displayed on the Digital Marketplace.&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.mapping_table</span><span style="color: #666666">(</span>
   <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table with manual rows&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">field_headings</span><span style="color: #666666">=[</span>
@@ -990,6 +994,9 @@
       
       Summary table with manual rows
   <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-description&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    This will be displayed on the Digital Marketplace.
+  <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
 <span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;caption</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visuallyhidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       Summary table with manual rows
@@ -1091,6 +1098,9 @@
       
       Summary table with top-level action
   </h2>
+<p class="summary-item-description">
+    You must add at least one service to be eligable.
+  </p>
 <p class="summary-item-top-level-action">
     <a href="#" class="summary-change-link">Add new service</a>
   </p>
@@ -1101,6 +1111,7 @@
   
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with top-level action&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+<span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.description</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;You must add at least one service to be eligable.&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.top_link</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Add new service&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;#&#39;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[],</span>
@@ -1119,6 +1130,9 @@
       
       Summary table with top-level action
   <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-description&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    You must add at least one service to be eligable.
+  <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
 <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-top-level-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-change-link&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Add new service<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
@@ -1146,7 +1160,7 @@
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with number&quot;</span><span style="color: #666666">,</span> <span style="color: #19177C">index</span><span style="color: #666666">=12)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[],</span>
-  <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table with top-level action&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table with number&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submited any services yet&quot;</span><span style="color: #666666">,</span>
 <span style="color: #666666">)</span> <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.row</span><span style="color: #666666">()</span> <span style="color: #BC7A00">%}</span>
