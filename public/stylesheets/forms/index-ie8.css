@@ -221,8 +221,11 @@
   line-height: 1.25;
   font-weight: 700;
   text-transform: none;
-  display: block;
-  margin-bottom: -20px;
+  display: inline;
+  word-spacing: -0.1em;
+  margin-right: 0.2em;
+  float: left;
+  float: none;
   position: relative;
   height: 50px;
   display: block;
@@ -236,6 +239,8 @@
       line-height: 1.2; } }
   .question-number:after {
     content: "."; }
+  .validation-wrapper .question-number {
+    left: -120px; }
   .question-number:after {
     content: ""; }
 

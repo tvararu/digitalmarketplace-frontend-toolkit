@@ -227,8 +227,10 @@
   line-height: 1.25;
   font-weight: 700;
   text-transform: none;
-  display: block;
-  margin-bottom: -20px; }
+  display: inline;
+  word-spacing: -0.1em;
+  margin-right: 0.2em;
+  float: left; }
   @media (max-width: 640px) {
     .question-number {
       font-size: 18px;
@@ -237,6 +239,7 @@
     content: "."; }
   @media (min-width: 1080px) {
     .question-number {
+      float: none;
       position: relative;
       height: 50px;
       display: block;
@@ -244,6 +247,8 @@
       left: -100px;
       width: 80px;
       text-align: right; }
+      .validation-wrapper .question-number {
+        left: -120px; }
       .question-number:after {
         content: ""; } }
 

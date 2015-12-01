@@ -10,7 +10,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -89,7 +89,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -106,7 +106,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -133,7 +133,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -255,7 +255,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -504,7 +504,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -697,7 +697,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -1021,7 +1021,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -1207,7 +1207,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -1281,7 +1281,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -1437,7 +1437,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -1592,8 +1592,11 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   line-height: 1.25;
   font-weight: 700;
   text-transform: none;
-  display: block;
-  margin-bottom: -20px;
+  display: inline;
+  word-spacing: -0.1em;
+  margin-right: 0.2em;
+  float: left;
+  float: none;
   position: relative;
   height: 50px;
   display: block;
@@ -1607,6 +1610,8 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
       line-height: 1.2; } }
   .question-number:after {
     content: "."; }
+  .validation-wrapper .question-number {
+    left: -120px; }
   .question-number:after {
     content: ""; }
 
@@ -1890,7 +1895,7 @@ a.summary-item-remove-link {
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -1974,6 +1979,17 @@ a.summary-item-remove-link {
 @-o-viewport {
   width: device-width; }
 
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
+  content: "";
+  display: block;
+  clear: both; }
+
 .validation-masthead {
   border: 5px solid #b10e1e;
   padding: 15px 15px 20px 15px;
@@ -2028,8 +2044,7 @@ a.summary-item-remove-link {
 .validation-wrapper {
   border-left: 5px solid #b10e1e;
   padding: 0 0 0 15px;
-  margin: 15px 0 30px 0;
-  overflow: hidden; }
+  margin: 15px 0 30px 0; }
   .validation-wrapper .question {
     margin: 0; }
   .validation-wrapper .question-heading, .validation-wrapper .question-heading-with-hint {
@@ -2132,7 +2147,7 @@ a.summary-item-remove-link {
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }

@@ -484,6 +484,10 @@
     <legend>
       <span class="question-heading ">
         
+          <span class="question-number">
+            19
+          </span>
+        
         Offline working supported
       </span>
       
@@ -507,6 +511,7 @@
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Offline working supported&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;19&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;boolean&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;offlineWorking&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span>
@@ -518,6 +523,10 @@
             <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;fieldset</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question first-question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;offlineWorking&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;legend&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading &quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-number&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            19
+          <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
         
         Offline working supported
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
@@ -760,6 +769,10 @@
     <legend>
       <span class="question-heading ">
         
+          <span class="question-number">
+            77
+          </span>
+        
         Checkboxes with an error
       </span>
       
@@ -808,7 +821,11 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;vegetables&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Checkboxes with an error&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #666666">77,</span>
+  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Answer required&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Carrot&quot;</span>
@@ -819,10 +836,7 @@
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Collaboration&quot;</span>
     <span style="color: #666666">}</span>
-<span style="color: #666666">],</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;vegetables&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Answer required&quot;</span>
+<span style="color: #666666">]</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -833,6 +847,10 @@
   <span style="color: #008000; font-weight: bold">&lt;fieldset</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question first-question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;vegetables&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;legend&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading &quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-number&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            77
+          <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
         
         Checkboxes with an error
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
