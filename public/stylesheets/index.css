@@ -1639,7 +1639,6 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   text-transform: none;
   padding-top: 9px;
   padding-bottom: 6px;
-  font-weight: bold;
   margin: 0 0 10px 0; }
   @media (max-width: 640px) {
     .question-heading, .question-heading-with-hint {
