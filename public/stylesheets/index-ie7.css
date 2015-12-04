@@ -1908,17 +1908,17 @@ table.summary-item-body {
     padding-bottom: 10px; }
     .summary-item-field-first .multiquestion-answer:last-child, .summary-item-field-first-wider .multiquestion-answer:last-child, .summary-item-field-with-action .multiquestion-answer:last-child, .summary-item-field .multiquestion-answer:last-child {
       padding-bottom: 0; }
-  .summary-item-field-first a[rel="external"]:after, .summary-item-field-first-wider a[rel="external"]:after, .summary-item-field-with-action a[rel="external"]:after, .summary-item-field a[rel="external"]:after {
+  .summary-item-field-first a[rel~="external"]:after, .summary-item-field-first-wider a[rel~="external"]:after, .summary-item-field-with-action a[rel~="external"]:after, .summary-item-field a[rel~="external"]:after {
     background-image: url('../images/external-links/external-link.png');
     background-repeat: no-repeat; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20/10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-      .summary-item-field-first a[rel="external"]:after, .summary-item-field-first-wider a[rel="external"]:after, .summary-item-field-with-action a[rel="external"]:after, .summary-item-field a[rel="external"]:after {
+      .summary-item-field-first a[rel~="external"]:after, .summary-item-field-first-wider a[rel~="external"]:after, .summary-item-field-with-action a[rel~="external"]:after, .summary-item-field a[rel~="external"]:after {
         background-image: url('../images/external-links/external-link-24x24.png');
         background-size: 12px 400px; } }
-  .summary-item-field-first a[rel="external"]:after, .summary-item-field-first-wider a[rel="external"]:after, .summary-item-field-with-action a[rel="external"]:after, .summary-item-field a[rel="external"]:after {
+  .summary-item-field-first a[rel~="external"]:after, .summary-item-field-first-wider a[rel~="external"]:after, .summary-item-field-with-action a[rel~="external"]:after, .summary-item-field a[rel~="external"]:after {
     content: "\A0\A0\A0\A0\A0";
     background-position: right 3px; }
-  .summary-item-field-first a[rel="external"]:hover:after, .summary-item-field-first-wider a[rel="external"]:hover:after, .summary-item-field-with-action a[rel="external"]:hover:after, .summary-item-field a[rel="external"]:hover:after {
+  .summary-item-field-first a[rel~="external"]:hover:after, .summary-item-field-first-wider a[rel~="external"]:hover:after, .summary-item-field-with-action a[rel~="external"]:hover:after, .summary-item-field a[rel~="external"]:hover:after {
     background-position: right -385px; }
 
 .summary-item-field-first {
