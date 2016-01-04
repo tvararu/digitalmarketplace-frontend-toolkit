@@ -1,0 +1,45 @@
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+.secondary-action-link {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 2px;
+  padding-bottom: 8px;
+  margin-top: 30px; }
+  @media (max-width: 640px) {
+    .secondary-action-link {
+      font-size: 16px;
+      line-height: 1.25; } }
+  @media (min-width: 641px) {
+    .secondary-action-link {
+      padding-top: 0;
+      padding-bottom: 5px; } }
+
+.secondary-action-link-bigger {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 9px;
+  padding-bottom: 6px;
+  margin-top: 45px; }
+  @media (max-width: 640px) {
+    .secondary-action-link-bigger {
+      font-size: 18px;
+      line-height: 1.2; } }
+  @media (min-width: 641px) {
+    .secondary-action-link-bigger {
+      padding-top: 6px;
+      padding-bottom: 4px; } }

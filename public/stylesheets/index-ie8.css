@@ -203,7 +203,7 @@
 @-o-viewport {
   width: device-width; }
 
-.back-link {
+.secondary-action-link {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
@@ -215,9 +215,25 @@
   padding-bottom: 5px;
   margin-top: 30px; }
   @media (max-width: 640px) {
-    .back-link {
+    .secondary-action-link {
       font-size: 16px;
       line-height: 1.25; } }
+
+.secondary-action-link-bigger {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 9px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  margin-top: 45px; }
+  @media (max-width: 640px) {
+    .secondary-action-link-bigger {
+      font-size: 18px;
+      line-height: 1.2; } }
 
 @-ms-viewport {
   width: device-width; }
