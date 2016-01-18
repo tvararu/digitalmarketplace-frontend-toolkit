@@ -139,10 +139,10 @@
             </div>
         </div>
         <div class="grid-row">
-            <div class="column-one-half">
+            <div class="column-one-third">
             
-            <aside role="complementary" class="temporary-message">
-  <h2 class="temporary-message-heading">
+            <aside role="complementary" class="temporary-message" aria-labelledby="closed-notice">
+  <h2 class="temporary-message-heading" id="closed-notice">
     G‑Cloud 7 is closed for applications
   </h2>
   <p class="temporary-message-message">
@@ -156,6 +156,8 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">headingId</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;closed-notice&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">grid</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;column-one-third&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">messages</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #BA2121">&quot;Applications are being reviewed.&quot;</span><span style="color: #666666">,</span> 
     <span style="color: #BA2121">&quot;G\u2011Cloud 7 services will be available from 23 November 2015.&quot;</span>
@@ -166,8 +168,8 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;aside</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;complementary&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-  <span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;aside</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;complementary&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message&quot;</span> <span style="color: #7D9029">aria-labelledby=</span><span style="color: #BA2121">&quot;closed-notice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-heading&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;closed-notice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     G‑Cloud 7 is closed for applications
   <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -180,10 +182,10 @@
 </pre></div>
 </div>
         <div class="grid-row">
-            <div class="column-one-half">
+            <div class="column-one-whole">
             
-            <aside role="complementary" class="temporary-message">
-  <h2 class="temporary-message-heading">
+            <aside role="complementary" class="temporary-message" aria-labelledby="closed-notice">
+  <h2 class="temporary-message-heading" id="closed-notice">
     The G-Cloud 7 application deadline has passed
   </h2>
   <p class="temporary-message-message">
@@ -197,6 +199,7 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">headingId</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;closed-notice&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">messages</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #BA2121">&quot;No services were submitted because you didn\u2019t mark any as complete.&quot;</span><span style="color: #666666">,</span> 
     <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;View your application&lt;/a&gt;&quot;</span>
@@ -207,8 +210,8 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;aside</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;complementary&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-  <span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;aside</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;complementary&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message&quot;</span> <span style="color: #7D9029">aria-labelledby=</span><span style="color: #BA2121">&quot;closed-notice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-heading&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;closed-notice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     The G-Cloud 7 application deadline has passed
   <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -221,10 +224,10 @@
 </pre></div>
 </div>
         <div class="grid-row">
-            <div class="column-one-half">
+            <div class="column-two-thirds">
             
-            <aside role="complementary" class="temporary-message-without-messages">
-  <h2 class="temporary-message-heading">
+            <aside role="complementary" class="temporary-message-without-messages" aria-labelledby="closed-notice">
+  <h2 class="temporary-message-heading" id="closed-notice">
     Example without any body copy that is quite long and may wrap onto multiple lines
   </h2>
 </aside>
@@ -232,14 +235,16 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">headingId</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;closed-notice&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">grid</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;column-two-thirds&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Example without any body copy that is quite long and may wrap onto multiple lines&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/temporary-message.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;aside</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;complementary&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-without-messages&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-  <span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;aside</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;complementary&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-without-messages&quot;</span> <span style="color: #7D9029">aria-labelledby=</span><span style="color: #BA2121">&quot;closed-notice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-heading&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;closed-notice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     Example without any body copy that is quite long and may wrap onto multiple lines
   <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
 <span style="color: #008000; font-weight: bold">&lt;/aside&gt;</span>

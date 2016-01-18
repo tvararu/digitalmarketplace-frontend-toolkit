@@ -1,3 +1,15 @@
+/* Blocks shared between multiple selectors */
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+.banner-temporary-message-without-action, .temporary-message, .temporary-message-without-messages {
+  background: #005ea5;
+  color: #fff;
+  padding: 15px 15px 18px 15px; }
+
 @-ms-viewport {
   width: device-width; }
 
@@ -670,7 +682,7 @@
 @-o-viewport {
   width: device-width; }
 
-.banner-destructive-without-action, .banner-destructive-with-action, .banner-warning-with-action, .banner-warning-without-action, .banner-success-with-action, .banner-success-without-action {
+.banner-destructive-without-action, .banner-destructive-with-action, .banner-warning-with-action, .banner-warning-without-action, .banner-success-with-action, .banner-success-without-action, .banner-temporary-message-without-action {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
@@ -681,7 +693,7 @@
   border-width: 5px;
   border-style: solid; }
   @media (max-width: 640px) {
-    .banner-destructive-without-action, .banner-destructive-with-action, .banner-warning-with-action, .banner-warning-without-action, .banner-success-with-action, .banner-success-without-action {
+    .banner-destructive-without-action, .banner-destructive-with-action, .banner-warning-with-action, .banner-warning-without-action, .banner-success-with-action, .banner-success-without-action, .banner-temporary-message-without-action {
       font-size: 18px;
       line-height: 1.2; } }
 
@@ -710,6 +722,33 @@
     .banner-message {
       font-size: 18px;
       line-height: 1.2; } }
+
+.banner-temporary-message-without-action {
+  border: none;
+  margin-bottom: 30px;
+  margin-bottom: 10px; }
+  .banner-temporary-message-without-action h2 {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 1.11111;
+    font-weight: 700;
+    text-transform: none;
+    margin-bottom: 15px;
+    margin-bottom: 20px; }
+    @media (max-width: 640px) {
+      .banner-temporary-message-without-action h2 {
+        font-size: 24px;
+        line-height: 1.04167; } }
+  .banner-temporary-message-without-action .banner-message {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: 400;
+    text-transform: none; }
+    @media (max-width: 640px) {
+      .banner-temporary-message-without-action .banner-message {
+        font-size: 16px;
+        line-height: 1.25; } }
 
 @font-face {
   font-family: GDS-Logo;
@@ -1118,10 +1157,10 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 @-o-viewport {
   width: device-width; }
 
-.temporary-message-without-messages, .temporary-message {
-  background: #005ea5;
-  color: #fff;
-  padding: 15px 15px 18px 15px;
+.temporary-message, .temporary-message-without-messages {
+  margin-bottom: 30px; }
+
+.temporary-message {
   margin-bottom: 30px; }
 
 .temporary-message-without-messages {
