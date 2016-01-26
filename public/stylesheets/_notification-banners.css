@@ -1,3 +1,15 @@
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
 @font-face {
   font-family: GDS-Logo;
   src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
@@ -66,7 +78,7 @@
       .banner-temporary-message-without-action h2 {
         font-size: 24px;
         line-height: 1.04167; } }
-    @media (min-width: 769px) {
+    @media (min-width: 641px) {
       .banner-temporary-message-without-action h2 {
         margin-bottom: 20px; } }
   .banner-temporary-message-without-action .banner-message {
@@ -74,8 +86,20 @@
     font-size: 19px;
     line-height: 1.31579;
     font-weight: 400;
-    text-transform: none; }
+    text-transform: none;
+    padding: 0 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0; }
     @media (max-width: 640px) {
       .banner-temporary-message-without-action .banner-message {
         font-size: 16px;
         line-height: 1.25; } }
+    @media (min-width: 641px) {
+      .banner-temporary-message-without-action .banner-message {
+        float: left;
+        width: 66.66667%; } }
+    @media (min-width: 641px) {
+      .banner-temporary-message-without-action .banner-message {
+        float: none; } }

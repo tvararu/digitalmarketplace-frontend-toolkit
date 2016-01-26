@@ -640,6 +640,33 @@
   .document-icon-blank:before {
     content: ""; }
 
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.phase-banner, #wrapper {
+  max-width: 960px;
+  width: 960px;
+  margin: 0 15px;
+  margin: 0 30px;
+  margin: 0 auto; }
+
+.grid-row {
+  margin: 0 -15px; }
+
 @font-face {
   font-family: GDS-Logo;
   src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
@@ -712,7 +739,15 @@
     font-size: 19px;
     line-height: 1.31579;
     font-weight: 400;
-    text-transform: none; }
+    text-transform: none;
+    float: left;
+    width: 66.66667%;
+    padding: 0 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    float: none; }
     @media (max-width: 640px) {
       .banner-temporary-message-without-action .banner-message {
         font-size: 16px;
