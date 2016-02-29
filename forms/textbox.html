@@ -740,6 +740,127 @@
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            
+  <div class="question" id="question-9">
+    <label for="input-question-9">
+      <span class="question-heading">
+        
+        Smaller textbox
+        
+      </span>
+      
+      
+    </label>
+    
+      
+      <input type="text" name="question-9" id="input-question-9" class="text-box text-box-smaller" value="Smaller box" />
+      
+    
+  </div>
+
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">smaller</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Smaller textbox&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-9&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Smaller box&quot;</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/textbox.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-9&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-9&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+        Smaller textbox
+        
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+      
+    <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+      
+      <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-9&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-9&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box text-box-smaller&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Smaller box&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+      
+    
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            
+  <div class="validation-wrapper">
+
+  <div class="question" id="question-9">
+    <label for="input-question-9">
+      <span class="question-heading">
+        
+        Smaller textbox with error
+        
+      </span>
+      
+      
+        <span class="validation-message" id="error-question-9">
+          Answer must not be a colour
+        </span>
+      
+    </label>
+    
+      
+      <input type="text" name="question-9" id="input-question-9" class="text-box-with-error text-box-smaller" value="Blue" />
+      
+    
+  </div>
+
+  </div>
+
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">smaller</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Smaller textbox with error&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-9&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Blue&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Answer must not be a colour&quot;</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/textbox.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-9&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-9&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+        Smaller textbox with error
+        
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+      
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;error-question-9&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Answer must not be a colour
+        <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+      
+      <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-9&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-9&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-with-error text-box-smaller&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Blue&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+      
+    
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
     </div>
 </main>
 

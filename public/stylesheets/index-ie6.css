@@ -2088,7 +2088,7 @@ a.summary-item-remove-link {
     display: block;
     clear: both; }
 
-.text-box-with-error, .text-box-with-unit-before-with-error, .text-box-with-unit-before, .text-box-with-unit-after-with-error, .text-box-with-unit-after, .text-box {
+.text-box-with-error, .text-box-smaller, .text-box-with-unit-before-with-error, .text-box-with-unit-before, .text-box-with-unit-after-with-error, .text-box-with-unit-after, .text-box {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
@@ -2106,7 +2106,7 @@ a.summary-item-remove-link {
   /* IE<8 cannot include borders and padding as part of width */
   width: 98%; }
   @media (max-width: 640px) {
-    .text-box-with-error, .text-box-with-unit-before-with-error, .text-box-with-unit-before, .text-box-with-unit-after-with-error, .text-box-with-unit-after, .text-box {
+    .text-box-with-error, .text-box-smaller, .text-box-with-unit-before-with-error, .text-box-with-unit-before, .text-box-with-unit-after-with-error, .text-box-with-unit-after, .text-box {
       font-size: 16px;
       line-height: 1.25; } }
 
@@ -2120,12 +2120,14 @@ a.summary-item-remove-link {
 .text-box-large-with-error, .text-box-large {
   height: 10.25em; }
 
+.text-box-smaller, .text-box-with-unit-before-with-error, .text-box-with-unit-before, .text-box-with-unit-after-with-error, .text-box-with-unit-after {
+  width: 7em; }
+
 .text-box-with-unit-before-with-error, .text-box-with-unit-before, .text-box-with-unit-after-with-error, .text-box-with-unit-after {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  display: inline;
-  width: 7em; }
+  display: inline; }
 
 .text-box-with-unit-before-with-error, .text-box-with-unit-before {
   margin-left: -40px;
