@@ -1168,7 +1168,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   text-align: center; }
   @media (min-width: 641px) {
     .link-button, a.link-button {
-      margin: 75px 0 0 30px; } }
+      margin: 75px 0 0; } }
   @media (max-width: 640px) {
     .link-button, a.link-button {
       font-size: 18px;
