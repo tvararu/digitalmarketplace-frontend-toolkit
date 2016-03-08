@@ -26,7 +26,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
+.grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -120,7 +120,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
+.grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -137,7 +137,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
+.grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -167,7 +167,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
+.grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -346,7 +346,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
+.grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -577,7 +577,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
+.grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -676,7 +676,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
+.grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -859,7 +859,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
+.grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -1007,6 +1007,112 @@
 
 .browse-list-item-status-angry {
   color: #b10e1e; }
+
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+.grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+.list-bullet {
+  list-style-type: disc;
+  padding-left: 20px; }
+
+.list-number, .instruction-list, .sublist {
+  list-style-type: decimal;
+  padding-left: 20px;
+  margin-bottom: 20px; }
+
+.list-bullet, .list-number, .instruction-list, .sublist {
+  margin-top: 5px; }
+
+.list-bullet li, .list-number li, .instruction-list li, .sublist li {
+  margin-bottom: 5px; }
+
+.instruction-list {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: bold; }
+  @media (max-width: 640px) {
+    .instruction-list {
+      font-size: 16px;
+      line-height: 1.25; } }
+
+.instruction-list h2 {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: bold; }
+  @media (max-width: 640px) {
+    .instruction-list h2 {
+      font-size: 16px;
+      line-height: 1.25; } }
+
+.instruction-list .divider p, .instruction-list .divider-first p {
+  margin: 0; }
+
+.divider, .divider-first {
+  padding: 20px 0 15px 0;
+  border-top: 1px solid #dee0e2; }
+
+.divider-first {
+  border-top: none; }
+
+.sublist {
+  font-weight: normal;
+  margin-top: 10px; }
+
+.instruction-list-item-body, .instruction-list-item-extra-information, .lead-in {
+  font-weight: normal; }
+
+.instruction-list .document-list {
+  padding: 0; }
+
+.notice {
+  position: relative; }
+  .notice .icon {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -17px;
+    background: url('../images/icon-important.png') no-repeat 0;
+    background-size: 34px 34px; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20/10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      .notice .icon {
+        background: url('../images/icon-important-2x.png') no-repeat 0;
+        background-size: 34px 34px; } }
+  .notice strong {
+    display: block;
+    padding-left: 65px;
+    margin-left: -15px; }
 
 @font-face {
   font-family: GDS-Logo;
@@ -1192,7 +1298,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
+.grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -1382,7 +1488,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
+.grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -1459,7 +1565,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
+.grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -1607,7 +1713,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
+.grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -2096,7 +2202,7 @@ a.summary-item-remove-link {
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
+.grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -2188,7 +2294,7 @@ a.summary-item-remove-link {
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
+.grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -2354,7 +2460,7 @@ a.summary-item-remove-link {
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
+.grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
