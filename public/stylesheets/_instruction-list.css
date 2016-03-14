@@ -64,15 +64,21 @@
       font-size: 16px;
       line-height: 1.25; } }
 
-.instruction-list .divider p, .instruction-list .divider-first p {
+.instruction-list .divider p {
   margin: 0; }
 
-.divider, .divider-first {
+.divider {
   padding: 20px 0 15px 0;
   border-top: 1px solid #dee0e2; }
 
-.divider-first {
+.instruction-list .divider:first-child {
   border-top: none; }
+
+.instruction-list[start] .divider {
+  border-top: 1px solid #dee0e2; }
+
+.instruction-list .divider:last-child .question:last-child {
+  margin: 15px 0 0 0; }
 
 .sublist {
   font-weight: normal;
