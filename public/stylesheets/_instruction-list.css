@@ -64,6 +64,9 @@
       font-size: 16px;
       line-height: 1.25; } }
 
+.instruction-list p {
+  margin-bottom: 10px; }
+
 .instruction-list .divider p {
   margin: 0; }
 
