@@ -263,6 +263,81 @@
 @-o-viewport {
   width: device-width; }
 
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+/* TODO: Remove once _reset.scss is migrated */
+body {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none; }
+  @media (max-width: 640px) {
+    body {
+      font-size: 16px;
+      line-height: 1.25; } }
+
+ul, ol {
+  list-style-type: none;
+  padding: 0; }
+
+.list-bullet {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 5px; }
+  .list-bullet li {
+    margin-bottom: 5px; }
+
+.list-number {
+  list-style-type: decimal;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px; }
+  .list-number li {
+    margin-bottom: 5px; }
+
+.list-no-bullet {
+  list-style-type: none;
+  margin-top: 5px; }
+  .list-no-bullet li {
+    margin-bottom: 10px; }
+
+.check-list > .list-bullet, .check-list > .list-number {
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  margin-top: 15px; }
+  .check-list > .list-bullet li, .check-list > .list-number li {
+    margin-bottom: 15px; }
+  @media (min-width: 641px) {
+    .check-list > .list-bullet, .check-list > .list-number {
+      padding-bottom: 15px; } }
+  .check-list > .list-bullet p, .check-list > .list-number p {
+    margin: 0; }
+  .check-list > .list-bullet a, .check-list > .list-number a {
+    word-wrap: break-word; }
+
+.explanation-list .lead {
+  padding-bottom: 0;
+  margin: 0; }
+.explanation-list > .list-bullet, .explanation-list > .list-number {
+  margin-top: 0; }
+  .explanation-list > .list-bullet li, .explanation-list > .list-number li {
+    margin-bottom: 0; }
+
 .hint-underneath, .hint {
   display: block;
   font-family: "nta", Arial, sans-serif;
@@ -280,6 +355,13 @@
 
 .hint-underneath {
   padding-top: 10px; }
+
+.hint ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 5px; }
+  .hint ul li {
+    margin-bottom: 5px; }
 
 @font-face {
   font-family: GDS-Logo;
