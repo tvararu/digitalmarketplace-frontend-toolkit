@@ -137,6 +137,9 @@
             <div class="column-two-thirds">
             
             
+
+
+
   <div class="question" id="question-1">
     <label for="input-question-1">
       <span class="question-heading">
@@ -145,11 +148,19 @@
         
       </span>
       
-      
     </label>
     
+    
+    
       
-      <input type="text" name="question-1" id="input-question-1" class="text-box" value="" />
+      <input
+        type="text"
+        name="question-1"
+        id="input-question-1"
+        class="text-box"
+        value=""
+        
+      />
       
     
   </div>
@@ -173,11 +184,19 @@
         
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
-      
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
     
+    
+    
       
-      <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-1&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-1&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;input</span>
+        <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span>
+        <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-1&quot;</span>
+        <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-1&quot;</span>
+        <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box&quot;</span>
+        <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;&quot;</span>
+        
+      <span style="color: #008000; font-weight: bold">/&gt;</span>
       
     
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
@@ -187,6 +206,11 @@
             <div class="column-two-thirds">
             
             
+  
+
+
+
+
   <div class="question" id="question-2">
     <label for="input-question-2">
       <span class="question-heading-with-hint">
@@ -199,15 +223,23 @@
         
       </span>
       
-        <span class="hint">
-          Hint comprising further information about the question
-        </span>
-      
-      
     </label>
     
+    
+    <span class="hint" id="input-question-2-answer-advice">
+      Advice about how to answer
+    </span>
+    
+    
       
-      <input type="text" name="question-2" id="input-question-2" class="text-box" value="Now I know what to type here" />
+      <input
+        type="text"
+        name="question-2"
+        id="input-question-2"
+        class="text-box"
+        value="Now I know what to type here"
+        aria-describedby=" input-question-2-answer-advice"
+      />
       
     
   </div>
@@ -220,13 +252,18 @@
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Text box with hint and question number&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Now I know what to type here&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Hint comprising further information about the question&quot;</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about how to answer&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/textbox.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  
+
+
+
+
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading-with-hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         
@@ -238,15 +275,23 @@
         
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
-        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          Hint comprising further information about the question
-        <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
-      
-      
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
     
+    
+    <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2-answer-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      Advice about how to answer
+    <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+    
       
-      <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-2&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Now I know what to type here&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;input</span>
+        <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span>
+        <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-2&quot;</span>
+        <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2&quot;</span>
+        <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box&quot;</span>
+        <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Now I know what to type here&quot;</span>
+        <span style="color: #7D9029">aria-describedby=</span><span style="color: #BA2121">&quot; input-question-2-answer-advice&quot;</span>
+      <span style="color: #008000; font-weight: bold">/&gt;</span>
       
     
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
@@ -256,6 +301,117 @@
             <div class="column-two-thirds">
             
             
+  
+
+
+  
+
+
+
+  <div class="question" id="question-2">
+    <label for="input-question-2">
+      <span class="question-heading-with-hint">
+        
+          <span class="question-number">
+            22
+          </span>
+        
+        Text box with hint, question_advice and question number
+        
+      </span>
+      
+    </label>
+    
+    <span class="question-advice" id="input-question-2-question-advice">
+      Advice about the question
+    </span>
+    
+    
+    <span class="hint" id="input-question-2-answer-advice">
+      Advice about how to answer
+    </span>
+    
+    
+      
+      <input
+        type="text"
+        name="question-2"
+        id="input-question-2"
+        class="text-box"
+        value="Now I know what to type here"
+        aria-describedby="input-question-2-question-advice input-question-2-answer-advice"
+      />
+      
+    
+  </div>
+
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about how to answer&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Text box with hint, question_advice and question number&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Now I know what to type here&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_advice</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about the question&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;22&quot;</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/textbox.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  
+
+
+  
+
+
+
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading-with-hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-number&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            22
+          <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+        
+        Text box with hint, question_advice and question number
+        
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+    <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-advice&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2-question-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      Advice about the question
+    <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+    
+    <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2-answer-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      Advice about how to answer
+    <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+    
+      
+      <span style="color: #008000; font-weight: bold">&lt;input</span>
+        <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span>
+        <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-2&quot;</span>
+        <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2&quot;</span>
+        <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box&quot;</span>
+        <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Now I know what to type here&quot;</span>
+        <span style="color: #7D9029">aria-describedby=</span><span style="color: #BA2121">&quot;input-question-2-question-advice input-question-2-answer-advice&quot;</span>
+      <span style="color: #008000; font-weight: bold">/&gt;</span>
+      
+    
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            
+
+
+
   <div class="question" id="question-3">
     <label for="input-question-3">
       <span class="question-heading">
@@ -264,8 +420,9 @@
         
       </span>
       
-      
     </label>
+    
+    
     
       
         <textarea class="text-box text-box-large" name="question-3" id="input-question-3">Large textbox</textarea>
@@ -294,8 +451,9 @@
         
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
-      
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+    
     
       
         <span style="color: #008000; font-weight: bold">&lt;textarea</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box text-box-large&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-3&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-3&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Large textbox<span style="color: #008000; font-weight: bold">&lt;/textarea&gt;</span>
@@ -308,6 +466,9 @@
             <div class="column-two-thirds">
             
             
+
+
+
   <div class="question" id="question-4">
     <label for="input-question-4">
       <span class="question-heading">
@@ -316,8 +477,9 @@
         
       </span>
       
-      
     </label>
+    
+    
     
       
         <div class="word-count">
@@ -355,8 +517,9 @@
         
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
-      
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+    
     
       
         <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;word-count&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -377,6 +540,9 @@
             <div class="column-two-thirds">
             
             
+
+
+
   <div class="validation-wrapper">
 
   <div class="question" id="question-5">
@@ -387,15 +553,23 @@
         
       </span>
       
-      
-        <span class="validation-message" id="error-question-5">
+        <span class="validation-message">
           Answer cannot be more than 50 characters
         </span>
       
     </label>
     
+    
+    
       
-      <input type="text" name="question-5" id="input-question-5" class="text-box-with-error" value="hello2example.com" />
+      <input
+        type="text"
+        name="question-5"
+        id="input-question-5"
+        class="text-box-with-error"
+        value="hello2example.com"
+        
+      />
       
     
   </div>
@@ -425,15 +599,23 @@
         
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
-      
-        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;error-question-5&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
           Answer cannot be more than 50 characters
         <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
     
+    
+    
       
-      <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-5&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-5&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-with-error&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;hello2example.com&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;input</span>
+        <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span>
+        <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-5&quot;</span>
+        <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-5&quot;</span>
+        <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-with-error&quot;</span>
+        <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;hello2example.com&quot;</span>
+        
+      <span style="color: #008000; font-weight: bold">/&gt;</span>
       
     
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
@@ -445,6 +627,11 @@
             <div class="column-two-thirds">
             
             
+  
+
+
+
+
   <div class="validation-wrapper">
 
   <div class="question" id="question-6">
@@ -459,19 +646,27 @@
         
       </span>
       
-        <span class="hint">
-          eg hello@example.com
-        </span>
-      
-      
-        <span class="validation-message" id="error-question-6">
+        <span class="validation-message">
           Must be a valid email address
         </span>
       
     </label>
     
+    
+    <span class="hint" id="input-question-6-answer-advice">
+      eg hello@example.com
+    </span>
+    
+    
       
-      <input type="text" name="question-6" id="input-question-6" class="text-box-with-error" value="hello2example.com" />
+      <input
+        type="text"
+        name="question-6"
+        id="input-question-6"
+        class="text-box-with-error"
+        value="hello2example.com"
+        aria-describedby=" input-question-6-answer-advice"
+      />
       
     
   </div>
@@ -493,7 +688,12 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  
+
+
+
+
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
 
   <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-6&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-6&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -507,19 +707,27 @@
         
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
-        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          eg hello@example.com
-        <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
-      
-      
-        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;error-question-6&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
           Must be a valid email address
         <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
     
+    
+    <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-6-answer-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      eg hello@example.com
+    <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+    
       
-      <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-6&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-6&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-with-error&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;hello2example.com&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;input</span>
+        <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span>
+        <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-6&quot;</span>
+        <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-6&quot;</span>
+        <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-with-error&quot;</span>
+        <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;hello2example.com&quot;</span>
+        <span style="color: #7D9029">aria-describedby=</span><span style="color: #BA2121">&quot; input-question-6-answer-advice&quot;</span>
+      <span style="color: #008000; font-weight: bold">/&gt;</span>
       
     
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
@@ -531,6 +739,9 @@
             <div class="column-two-thirds">
             
             
+
+
+
   <div class="question" id="question-7">
     <label for="input-question-7">
       <span class="question-heading">
@@ -541,15 +752,23 @@
         
       </span>
       
-      
     </label>
+    
+    
     
       
         <label for="input-question-7" class="text-box-unit">
           $
         </label>
       
-      <input type="text" name="question-7" id="input-question-7" class="text-box-with-unit-before" value="" />
+      <input
+        type="text"
+        name="question-7"
+        id="input-question-7"
+        class="text-box-with-unit-before"
+        value=""
+        
+      />
       
     
   </div>
@@ -578,15 +797,23 @@
         
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
-      
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+    
     
       
         <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-7&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-unit&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
           $
         <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
       
-      <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-7&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-7&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-with-unit-before&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;input</span>
+        <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span>
+        <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-7&quot;</span>
+        <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-7&quot;</span>
+        <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-with-unit-before&quot;</span>
+        <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;&quot;</span>
+        
+      <span style="color: #008000; font-weight: bold">/&gt;</span>
       
     
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
@@ -596,6 +823,9 @@
             <div class="column-two-thirds">
             
             
+
+
+
   <div class="question" id="question-7">
     <label for="input-question-7">
       <span class="question-heading">
@@ -606,11 +836,19 @@
         
       </span>
       
-      
     </label>
     
+    
+    
       
-      <input type="text" name="question-7" id="input-question-7" class="text-box-with-unit-after" value="" />
+      <input
+        type="text"
+        name="question-7"
+        id="input-question-7"
+        class="text-box-with-unit-after"
+        value=""
+        
+      />
       
         <label for="input-question-7" class="text-box-unit">
           %
@@ -643,11 +881,19 @@
         
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
-      
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
     
+    
+    
       
-      <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-7&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-7&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-with-unit-after&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;input</span>
+        <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span>
+        <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-7&quot;</span>
+        <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-7&quot;</span>
+        <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-with-unit-after&quot;</span>
+        <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;&quot;</span>
+        
+      <span style="color: #008000; font-weight: bold">/&gt;</span>
       
         <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-7&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-unit&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
           %
@@ -661,6 +907,9 @@
             <div class="column-two-thirds">
             
             
+
+
+
   <div class="validation-wrapper">
 
   <div class="question" id="question-8">
@@ -673,19 +922,27 @@
         
       </span>
       
-      
-        <span class="validation-message" id="error-question-8">
+        <span class="validation-message">
           Price must not contain letters
         </span>
       
     </label>
+    
+    
     
       
         <label for="input-question-8" class="text-box-unit">
           $
         </label>
       
-      <input type="text" name="question-8" id="input-question-8" class="text-box-with-unit-before-with-error" value="aaaaaa" />
+      <input
+        type="text"
+        name="question-8"
+        id="input-question-8"
+        class="text-box-with-unit-before-with-error"
+        value="aaaaaa"
+        
+      />
       
     
   </div>
@@ -720,19 +977,27 @@
         
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
-      
-        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;error-question-8&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
           Price must not contain letters
         <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+    
     
       
         <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-8&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-unit&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
           $
         <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
       
-      <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-8&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-8&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-with-unit-before-with-error&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;aaaaaa&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;input</span>
+        <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span>
+        <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-8&quot;</span>
+        <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-8&quot;</span>
+        <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-with-unit-before-with-error&quot;</span>
+        <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;aaaaaa&quot;</span>
+        
+      <span style="color: #008000; font-weight: bold">/&gt;</span>
       
     
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
@@ -744,6 +1009,9 @@
             <div class="column-two-thirds">
             
             
+
+
+
   <div class="question" id="question-9">
     <label for="input-question-9">
       <span class="question-heading">
@@ -752,11 +1020,19 @@
         
       </span>
       
-      
     </label>
     
+    
+    
       
-      <input type="text" name="question-9" id="input-question-9" class="text-box text-box-smaller" value="Smaller box" />
+      <input
+        type="text"
+        name="question-9"
+        id="input-question-9"
+        class="text-box text-box-smaller"
+        value="Smaller box"
+        
+      />
       
     
   </div>
@@ -782,11 +1058,19 @@
         
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
-      
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
     
+    
+    
       
-      <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-9&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-9&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box text-box-smaller&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Smaller box&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;input</span>
+        <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span>
+        <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-9&quot;</span>
+        <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-9&quot;</span>
+        <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box text-box-smaller&quot;</span>
+        <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Smaller box&quot;</span>
+        
+      <span style="color: #008000; font-weight: bold">/&gt;</span>
       
     
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
@@ -796,6 +1080,9 @@
             <div class="column-two-thirds">
             
             
+
+
+
   <div class="validation-wrapper">
 
   <div class="question" id="question-9">
@@ -806,15 +1093,23 @@
         
       </span>
       
-      
-        <span class="validation-message" id="error-question-9">
+        <span class="validation-message">
           Answer must not be a colour
         </span>
       
     </label>
     
+    
+    
       
-      <input type="text" name="question-9" id="input-question-9" class="text-box-with-error text-box-smaller" value="Blue" />
+      <input
+        type="text"
+        name="question-9"
+        id="input-question-9"
+        class="text-box-with-error text-box-smaller"
+        value="Blue"
+        
+      />
       
     
   </div>
@@ -845,15 +1140,23 @@
         
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
-      
-        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;error-question-9&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
           Answer must not be a colour
         <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
     
+    
+    
       
-      <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-9&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-9&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-with-error text-box-smaller&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Blue&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;input</span>
+        <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span>
+        <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-9&quot;</span>
+        <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-9&quot;</span>
+        <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-with-error text-box-smaller&quot;</span>
+        <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Blue&quot;</span>
+        
+      <span style="color: #008000; font-weight: bold">/&gt;</span>
       
     
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>

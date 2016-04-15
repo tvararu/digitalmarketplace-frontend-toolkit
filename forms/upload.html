@@ -137,6 +137,9 @@
             <div class="column-two-thirds">
             
             
+
+
+
   <div class="question" id="question-1">
     <label for="input-question-1">
       
@@ -146,10 +149,17 @@
         </span>
       
       
-      
     </label>
     
-    <input type="file" name="question-1" id="input-question-1" class="file-upload-input"  />
+    
+    
+    <input
+      type="file"
+      name="question-1"
+      id="input-question-1"
+      class="file-upload-input"
+      
+    />
   </div>
 
             </div>
@@ -172,10 +182,17 @@
         <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
       
-      
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
     
-    <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;file&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-1&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-1&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-input&quot;</span>  <span style="color: #008000; font-weight: bold">/&gt;</span>
+    
+    
+    <span style="color: #008000; font-weight: bold">&lt;input</span>
+      <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;file&quot;</span>
+      <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-1&quot;</span>
+      <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-1&quot;</span>
+      <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-input&quot;</span>
+      
+    <span style="color: #008000; font-weight: bold">/&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -183,6 +200,11 @@
             <div class="column-two-thirds">
             
             
+  
+
+
+
+
   <div class="question" id="question-2">
     <label for="input-question-2">
       
@@ -192,12 +214,13 @@
         </span>
       
       
-        <span class="hint">
-          Hint comprising further information about the question
-        </span>
-      
-      
     </label>
+    
+    
+      <span class="hint" id="input-question-2-answer-advice">
+        Advice about the answer
+      </span>
+    
     
       <p class="file-upload-existing-value">
         
@@ -210,7 +233,13 @@
         
       </p>
     
-    <input type="file" name="question-2" id="input-question-2" class="file-upload-input"  />
+    <input
+      type="file"
+      name="question-2"
+      id="input-question-2"
+      class="file-upload-input"
+      aria-describedby=" input-question-2-answer-advice"
+    />
   </div>
 
             </div>
@@ -220,13 +249,18 @@
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Please replace the file you previously uploaded&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;1234123412341234-pricing-document.pdf&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Hint comprising further information about the question&quot;</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about the answer&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/upload.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  
+
+
+
+
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       
         <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading-with-hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -235,12 +269,13 @@
         <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
       
-        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          Hint comprising further information about the question
-        <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
-      
-      
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+    
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2-answer-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        Advice about the answer
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
     
       <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-existing-value&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         
@@ -253,7 +288,13 @@
         
       <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
     
-    <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;file&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-2&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-input&quot;</span>  <span style="color: #008000; font-weight: bold">/&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;input</span>
+      <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;file&quot;</span>
+      <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-2&quot;</span>
+      <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2&quot;</span>
+      <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-input&quot;</span>
+      <span style="color: #7D9029">aria-describedby=</span><span style="color: #BA2121">&quot; input-question-2-answer-advice&quot;</span>
+    <span style="color: #008000; font-weight: bold">/&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -261,6 +302,124 @@
             <div class="column-two-thirds">
             
             
+  
+
+
+  
+
+
+
+  <div class="question" id="question-2">
+    <label for="input-question-2">
+      
+        <span class="question-heading-with-hint">
+          
+          Please replace the file you previously uploaded
+        </span>
+      
+      
+    </label>
+    
+      <span class="question_advice" id="input-question-2-question-advice">
+        Advice about the question
+      </span>
+    
+    
+      <span class="hint" id="input-question-2-answer-advice">
+        Advice about the answer
+      </span>
+    
+    
+      <p class="file-upload-existing-value">
+        
+          <span class='document-link-with-narrow-icon'>
+        
+            <span class='document-icon-blank'></span>
+            1234123412341234-pricing-document.pdf
+        
+          </span>
+        
+      </p>
+    
+    <input
+      type="file"
+      name="question-2"
+      id="input-question-2"
+      class="file-upload-input"
+      aria-describedby="input-question-2-question-advice input-question-2-answer-advice"
+    />
+  </div>
+
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">question_advice</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about the question&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Please replace the file you previously uploaded&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;1234123412341234-pricing-document.pdf&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about the answer&quot;</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/upload.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  
+
+
+  
+
+
+
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading-with-hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          
+          Please replace the file you previously uploaded
+        <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+      
+    <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question_advice&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2-question-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        Advice about the question
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+    
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2-answer-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        Advice about the answer
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+    
+      <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-existing-value&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;document-link-with-narrow-icon&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+            <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;document-icon-blank&#39;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/span&gt;</span>
+            1234123412341234-pricing-document.pdf
+        
+          <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+        
+      <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    
+    <span style="color: #008000; font-weight: bold">&lt;input</span>
+      <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;file&quot;</span>
+      <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-2&quot;</span>
+      <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2&quot;</span>
+      <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-input&quot;</span>
+      <span style="color: #7D9029">aria-describedby=</span><span style="color: #BA2121">&quot;input-question-2-question-advice input-question-2-answer-advice&quot;</span>
+    <span style="color: #008000; font-weight: bold">/&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            
+
+
+
   <div class="question" id="question-3">
     <label for="input-question-3">
       
@@ -270,8 +429,9 @@
         </span>
       
       
-      
     </label>
+    
+    
     
       <p class="file-upload-existing-value">
         
@@ -284,7 +444,13 @@
         
       </p>
     
-    <input type="file" name="question-3" id="input-question-3" class="file-upload-input"  />
+    <input
+      type="file"
+      name="question-3"
+      id="input-question-3"
+      class="file-upload-input"
+      
+    />
   </div>
 
             </div>
@@ -309,8 +475,9 @@
         <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
       
-      
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+    
     
       <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-existing-value&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         
@@ -323,7 +490,13 @@
         
       <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
     
-    <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;file&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-3&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-3&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-input&quot;</span>  <span style="color: #008000; font-weight: bold">/&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;input</span>
+      <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;file&quot;</span>
+      <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-3&quot;</span>
+      <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-3&quot;</span>
+      <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-input&quot;</span>
+      
+    <span style="color: #008000; font-weight: bold">/&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -331,6 +504,9 @@
             <div class="column-two-thirds">
             
             
+
+
+
 <div class="validation-wrapper">
 
   <div class="question" id="question-4">
@@ -342,14 +518,21 @@
         </span>
       
       
-      
-        <span class="validation-message" id="error-question-4">
+        <span class="validation-message">
           The file you uploaded was too big &ndash; maximum file size is 5Mb
         </span>
       
     </label>
     
-    <input type="file" name="question-4" id="input-question-4" class="file-upload-input" aria-describedby="error-question-4" />
+    
+    
+    <input
+      type="file"
+      name="question-4"
+      id="input-question-4"
+      class="file-upload-input"
+      
+    />
   </div>
 
 </div>
@@ -377,14 +560,21 @@
         <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
       
-      
-        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;error-question-4&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
           The file you uploaded was too big <span style="color: #999999; font-weight: bold">&amp;ndash;</span> maximum file size is 5Mb
         <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
     
-    <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;file&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-4&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-4&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-input&quot;</span> <span style="color: #7D9029">aria-describedby=</span><span style="color: #BA2121">&quot;error-question-4&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+    
+    
+    <span style="color: #008000; font-weight: bold">&lt;input</span>
+      <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;file&quot;</span>
+      <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-4&quot;</span>
+      <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-4&quot;</span>
+      <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-input&quot;</span>
+      
+    <span style="color: #008000; font-weight: bold">/&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 
 <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
