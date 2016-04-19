@@ -1944,7 +1944,9 @@
     
     <span>
         
-        <div class="multiquestion-answer">
+        <div class="multiquestion">
+          <p>Where they'll work</p>
+          <div>
     <ul>
     
       <li>London</li>
@@ -1958,9 +1960,13 @@
   </ul>
   
   </div>
+        </div>
       
         
-        <div class="multiquestion-answer">£100 to £1000000 per day</div>
+        <div class="multiquestion">
+          <p>Day rate</p>
+          <div>£100 to £1000000 per day</div>
+        </div>
       </span>
     
   </td>
@@ -2011,8 +2017,8 @@
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.row</span><span style="color: #666666">()</span> <span style="color: #BC7A00">%}</span>
     <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.field_name</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Developer&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
     <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.multiquestion</span><span style="color: #666666">([</span>
-      <span style="color: #666666">{</span><span style="color: #BA2121">&#39;type&#39;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;list&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;value&#39;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span><span style="color: #BA2121">&quot;London&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Mississauga&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Rivière-du-Loup&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Singapore&quot;</span><span style="color: #666666">]},</span>
-      <span style="color: #666666">{</span><span style="color: #BA2121">&#39;type&#39;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;text&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;value&#39;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;£100 to £1000000 per day&quot;</span><span style="color: #666666">}</span>
+      <span style="color: #666666">{</span><span style="color: #BA2121">&#39;name&#39;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Where they&#39;ll work&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;type&#39;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;list&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;value&#39;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span><span style="color: #BA2121">&quot;London&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Mississauga&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Rivière-du-Loup&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Singapore&quot;</span><span style="color: #666666">]},</span>
+      <span style="color: #666666">{</span><span style="color: #BA2121">&#39;name&#39;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Day rate&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;type&#39;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;text&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;value&#39;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;£100 to £1000000 per day&quot;</span><span style="color: #666666">}</span>
      <span style="color: #666666">])</span> <span style="color: #BC7A00">}}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
@@ -2172,7 +2178,9 @@
     
     <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
         
-        <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;multiquestion-answer&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;multiquestion&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Where they&#39;ll work<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;div&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
     
       <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>London<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
@@ -2186,9 +2194,13 @@
   <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
   
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
       
         
-        <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;multiquestion-answer&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>£100 to £1000000 per day<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;multiquestion&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Day rate<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;div&gt;</span>£100 to £1000000 per day<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
     
   <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
