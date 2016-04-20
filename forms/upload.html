@@ -153,6 +153,7 @@
     
     
     
+    
     <input
       type="file"
       name="question-1"
@@ -183,6 +184,81 @@
       
       
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+    
+    
+    
+    <span style="color: #008000; font-weight: bold">&lt;input</span>
+      <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;file&quot;</span>
+      <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-1&quot;</span>
+      <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-1&quot;</span>
+      <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-input&quot;</span>
+      
+    <span style="color: #008000; font-weight: bold">/&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            
+
+
+
+  <div class="question" id="question-1">
+    <label for="input-question-1">
+      
+        <span class="question-heading">
+          
+          Optionally upload a file
+        </span>
+      
+      
+    </label>
+    
+      <span class="question-optional">
+        <strong>Optional</strong>
+      </span>
+    
+    
+    
+    
+    <input
+      type="file"
+      name="question-1"
+      id="input-question-1"
+      class="file-upload-input"
+      
+    />
+  </div>
+
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Optionally upload a file&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-1&quot;</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/upload.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          
+          Optionally upload a file
+        <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+      
+    <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-optional&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;strong&gt;</span>Optional<span style="color: #008000; font-weight: bold">&lt;/strong&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
     
     
     
@@ -217,8 +293,9 @@
     </label>
     
     
+    
       <span class="hint" id="input-question-2-answer-advice">
-        Advice about the answer
+        <p>Advice about the answer</p>
       </span>
     
     
@@ -272,8 +349,9 @@
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
     
     
+    
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2-answer-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-        Advice about the answer
+        <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Advice about the answer<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
     
     
@@ -320,13 +398,14 @@
       
     </label>
     
-      <span class="question_advice" id="input-question-2-question-advice">
-        Advice about the question
+    
+      <span class="question-advice" id="input-question-2-question-advice">
+        <p>Advice about the question</p>
       </span>
     
     
       <span class="hint" id="input-question-2-answer-advice">
-        Advice about the answer
+        <p>Advice about the answer</p>
       </span>
     
     
@@ -382,13 +461,14 @@
       
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
     
-      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question_advice&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2-question-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-        Advice about the question
+    
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-advice&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2-question-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Advice about the question<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
     
     
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2-answer-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-        Advice about the answer
+        <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Advice about the answer<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
     
     
@@ -430,6 +510,7 @@
       
       
     </label>
+    
     
     
     
@@ -476,6 +557,7 @@
       
       
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
     
     
     
@@ -526,6 +608,7 @@
     
     
     
+    
     <input
       type="file"
       name="question-4"
@@ -568,12 +651,287 @@
     
     
     
+    
     <span style="color: #008000; font-weight: bold">&lt;input</span>
       <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;file&quot;</span>
       <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-4&quot;</span>
       <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-4&quot;</span>
       <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-input&quot;</span>
       
+    <span style="color: #008000; font-weight: bold">/&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            
+
+
+
+<div class="validation-wrapper">
+
+  <div class="question" id="question-4">
+    <label for="input-question-4">
+      
+        <span class="question-heading">
+          
+          Optional with a bad upload
+        </span>
+      
+      
+        <span class="validation-message">
+          The file you uploaded was too big &ndash; maximum file size is 5Mb
+        </span>
+      
+    </label>
+    
+      <span class="question-optional">
+        <strong>Optional</strong>
+      </span>
+    
+    
+    
+    
+    <input
+      type="file"
+      name="question-4"
+      id="input-question-4"
+      class="file-upload-input"
+      
+    />
+  </div>
+
+</div>
+
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Optional with a bad upload&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-4&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;The file you uploaded was too big &amp;ndash; maximum file size is 5Mb&quot;</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/upload.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-4&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-4&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          
+          Optional with a bad upload
+        <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+      
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          The file you uploaded was too big <span style="color: #999999; font-weight: bold">&amp;ndash;</span> maximum file size is 5Mb
+        <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-optional&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;strong&gt;</span>Optional<span style="color: #008000; font-weight: bold">&lt;/strong&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+    
+    
+    
+    <span style="color: #008000; font-weight: bold">&lt;input</span>
+      <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;file&quot;</span>
+      <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-4&quot;</span>
+      <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-4&quot;</span>
+      <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-input&quot;</span>
+      
+    <span style="color: #008000; font-weight: bold">/&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            
+  
+
+
+  
+
+
+
+<div class="validation-wrapper">
+
+  <div class="question" id="question-2">
+    <label for="input-question-2">
+      
+        <span class="question-heading-with-hint">
+          
+          Optional with a bad upload despite loads of guidance
+        </span>
+      
+      
+        <span class="validation-message">
+          From 12th January 1973 it will no longer be legal
+        </span>
+      
+    </label>
+    
+      <span class="question-optional">
+        <strong>Optional</strong>
+      </span>
+    
+    
+      <span class="question-advice" id="input-question-2-question-advice">
+        <p>To find the best specialist to meet your needs, you should:</p>
+<ul>
+<li>list as many types of skills and experience as you can</li>
+<li>be specific about the skills and experience you're looking for</li>
+</ul>
+<p>If too many suppliers have all the essential skills and experience, you’ll use the nice-to-have skills and
+experience to exclude suppliers.</p>
+<p>You must tell suppliers if you want to score individual criteria.</p>
+<p><a href="https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria">Read more about how to set evaluation criteria</a></p>
+<p>List the skills and experience you’d like the specialist to have,
+eg experience working on government digital projects</p>
+      </span>
+    
+    
+      <span class="hint" id="input-question-2-answer-advice">
+        <p>To find the best specialist to meet your needs, you should:</p>
+<ul>
+<li>list as many types of skills and experience as you can</li>
+<li>be specific about the skills and experience you're looking for</li>
+</ul>
+<p>If too many suppliers have all the essential skills and experience, you’ll use the nice-to-have skills and
+experience to exclude suppliers.</p>
+<p>You must tell suppliers if you want to score individual criteria.</p>
+<p><a href="https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria">Read more about how to set evaluation criteria</a></p>
+<p>List the skills and experience you’d like the specialist to have,
+eg experience working on government digital projects</p>
+      </span>
+    
+    
+      <p class="file-upload-existing-value">
+        
+          <span class='document-link-with-narrow-icon'>
+        
+            <span class='document-icon-blank'></span>
+            kak-dont-owl-poster-final-FINAL__V2.pdf
+        
+          </span>
+        
+      </p>
+    
+    <input
+      type="file"
+      name="question-2"
+      id="input-question-2"
+      class="file-upload-input"
+      aria-describedby="input-question-2-question-advice input-question-2-answer-advice"
+    />
+  </div>
+
+</div>
+
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;To find the best specialist to meet your needs, you should:\n\n- list as many types of skills and experience as you can\n- be specific about the skills and experience you&#39;re looking for\n\nIf too many suppliers have all the essential skills and experience, you\u2019ll use the nice-to-have skills and\nexperience to exclude suppliers.\n\nYou must tell suppliers if you want to score individual criteria.\n\n[Read more about how to set evaluation criteria](https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria)\n\nList the skills and experience you\u2019d like the specialist to have,\neg experience working on government digital projects\n&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Optional with a bad upload despite loads of guidance&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;kak-dont-owl-poster-final-FINAL__V2.pdf&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_advice</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;To find the best specialist to meet your needs, you should:\n\n- list as many types of skills and experience as you can\n- be specific about the skills and experience you&#39;re looking for\n\nIf too many suppliers have all the essential skills and experience, you\u2019ll use the nice-to-have skills and\nexperience to exclude suppliers.\n\nYou must tell suppliers if you want to score individual criteria.\n\n[Read more about how to set evaluation criteria](https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria)\n\nList the skills and experience you\u2019d like the specialist to have,\neg experience working on government digital projects\n&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;From 12th January 1973 it will no longer be legal&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/upload.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  
+
+
+  
+
+
+
+<span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading-with-hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          
+          Optional with a bad upload despite loads of guidance
+        <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+      
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          From 12th January 1973 it will no longer be legal
+        <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-optional&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;strong&gt;</span>Optional<span style="color: #008000; font-weight: bold">&lt;/strong&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+    
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-advice&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2-question-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>To find the best specialist to meet your needs, you should:<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;li&gt;</span>list as many types of skills and experience as you can<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;li&gt;</span>be specific about the skills and experience you&#39;re looking for<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>If too many suppliers have all the essential skills and experience, you’ll use the nice-to-have skills and
+experience to exclude suppliers.<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>You must tell suppliers if you want to score individual criteria.<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Read more about how to set evaluation criteria<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>List the skills and experience you’d like the specialist to have,
+eg experience working on government digital projects<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+    
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2-answer-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>To find the best specialist to meet your needs, you should:<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;li&gt;</span>list as many types of skills and experience as you can<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;li&gt;</span>be specific about the skills and experience you&#39;re looking for<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>If too many suppliers have all the essential skills and experience, you’ll use the nice-to-have skills and
+experience to exclude suppliers.<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>You must tell suppliers if you want to score individual criteria.<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Read more about how to set evaluation criteria<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>List the skills and experience you’d like the specialist to have,
+eg experience working on government digital projects<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+    
+      <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-existing-value&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;document-link-with-narrow-icon&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+            <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;document-icon-blank&#39;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/span&gt;</span>
+            kak-dont-owl-poster-final-FINAL__V2.pdf
+        
+          <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+        
+      <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    
+    <span style="color: #008000; font-weight: bold">&lt;input</span>
+      <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;file&quot;</span>
+      <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-2&quot;</span>
+      <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2&quot;</span>
+      <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;file-upload-input&quot;</span>
+      <span style="color: #7D9029">aria-describedby=</span><span style="color: #BA2121">&quot;input-question-2-question-advice input-question-2-answer-advice&quot;</span>
     <span style="color: #008000; font-weight: bold">/&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 

@@ -152,6 +152,7 @@
     
     
     
+    
       
       <input
         type="text"
@@ -185,6 +186,7 @@
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
     
     
     
@@ -226,8 +228,9 @@
     </label>
     
     
+    
     <span class="hint" id="input-question-2-answer-advice">
-      Advice about how to answer
+      <p>Advice about how to answer</p>
     </span>
     
     
@@ -278,8 +281,9 @@
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
     
     
+    
     <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2-answer-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-      Advice about how to answer
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Advice about how to answer<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
     
     
@@ -316,19 +320,24 @@
             22
           </span>
         
-        Text box with hint, question_advice and question number
+        Optional text box with hint, question_advice and question number
         
       </span>
       
     </label>
     
+      <span class="question-optional" style="margin-top: 10px;">
+        <strong>Optional</strong>
+      </span>
+    
+    
     <span class="question-advice" id="input-question-2-question-advice">
-      Advice about the question
+      <p>Advice about the question</p>
     </span>
     
     
     <span class="hint" id="input-question-2-answer-advice">
-      Advice about how to answer
+      <p>Advice about how to answer</p>
     </span>
     
     
@@ -351,10 +360,11 @@
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about how to answer&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Text box with hint, question_advice and question number&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Optional text box with hint, question_advice and question number&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Now I know what to type here&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question_advice</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about the question&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;22&quot;</span>
+  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;22&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/textbox.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -375,19 +385,24 @@
             22
           <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
         
-        Text box with hint, question_advice and question number
+        Optional text box with hint, question_advice and question number
         
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
     
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-optional&quot;</span> <span style="color: #7D9029">style=</span><span style="color: #BA2121">&quot;margin-top: 10px;&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;strong&gt;</span>Optional<span style="color: #008000; font-weight: bold">&lt;/strong&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+    
     <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-advice&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2-question-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-      Advice about the question
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Advice about the question<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
     
     
     <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-2-answer-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-      Advice about how to answer
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Advice about how to answer<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
     
     
@@ -424,6 +439,7 @@
     
     
     
+    
       
         <textarea class="text-box text-box-large" name="question-3" id="input-question-3">Large textbox</textarea>
       
@@ -455,6 +471,7 @@
     
     
     
+    
       
         <span style="color: #008000; font-weight: bold">&lt;textarea</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box text-box-large&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-3&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-3&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Large textbox<span style="color: #008000; font-weight: bold">&lt;/textarea&gt;</span>
       
@@ -478,6 +495,7 @@
       </span>
       
     </label>
+    
     
     
     
@@ -521,6 +539,7 @@
     
     
     
+    
       
         <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;word-count&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
           <span style="color: #008000; font-weight: bold">&lt;textarea</span>
@@ -558,6 +577,7 @@
         </span>
       
     </label>
+    
     
     
     
@@ -607,6 +627,7 @@
     
     
     
+    
       
       <span style="color: #008000; font-weight: bold">&lt;input</span>
         <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span>
@@ -642,7 +663,7 @@
             13
           </span>
         
-        Text box with hint, question number and error
+        Optional text box with hint, question number and error
         
       </span>
       
@@ -652,9 +673,14 @@
       
     </label>
     
+      <span class="question-optional" style="margin-top: 10px;">
+        <strong>Optional</strong>
+      </span>
+    
+    
     
     <span class="hint" id="input-question-6-answer-advice">
-      eg hello@example.com
+      <p>eg hello@example.com</p>
     </span>
     
     
@@ -679,10 +705,11 @@
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-6&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;eg hello@example.com&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Text box with hint, question number and error&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Optional text box with hint, question number and error&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;hello2example.com&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;13&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Must be a valid email address&quot;</span>
+  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Must be a valid email address&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/textbox.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -703,7 +730,7 @@
             13
           <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
         
-        Text box with hint, question number and error
+        Optional text box with hint, question number and error
         
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
@@ -713,9 +740,14 @@
       
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
     
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-optional&quot;</span> <span style="color: #7D9029">style=</span><span style="color: #BA2121">&quot;margin-top: 10px;&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;strong&gt;</span>Optional<span style="color: #008000; font-weight: bold">&lt;/strong&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+    
     
     <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-6-answer-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-      eg hello@example.com
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>eg hello@example.com<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
     
     
@@ -727,6 +759,182 @@
         <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-with-error&quot;</span>
         <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;hello2example.com&quot;</span>
         <span style="color: #7D9029">aria-describedby=</span><span style="color: #BA2121">&quot; input-question-6-answer-advice&quot;</span>
+      <span style="color: #008000; font-weight: bold">/&gt;</span>
+      
+    
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            
+  
+
+
+  
+
+
+
+  <div class="validation-wrapper">
+
+  <div class="question" id="question-6">
+    <label for="input-question-6">
+      <span class="question-heading-with-hint">
+        
+          <span class="question-number">
+            13
+          </span>
+        
+        Optional text box with error despite loads of guidance
+        
+      </span>
+      
+        <span class="validation-message">
+          From 12th January 1973 it will no longer be legal
+        </span>
+      
+    </label>
+    
+      <span class="question-optional" style="margin-top: 10px;">
+        <strong>Optional</strong>
+      </span>
+    
+    
+    <span class="question-advice" id="input-question-6-question-advice">
+      <p>To find the best specialist to meet your needs, you should:</p>
+<ul>
+<li>list as many types of skills and experience as you can</li>
+<li>be specific about the skills and experience you're looking for</li>
+</ul>
+<p>If too many suppliers have all the essential skills and experience, you’ll use the nice-to-have skills and
+experience to exclude suppliers.</p>
+<p>You must tell suppliers if you want to score individual criteria.</p>
+<p><a href="https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria">Read more about how to set evaluation criteria</a></p>
+<p>List the skills and experience you’d like the specialist to have,
+eg experience working on government digital projects</p>
+    </span>
+    
+    
+    <span class="hint" id="input-question-6-answer-advice">
+      <p>To find the best specialist to meet your needs, you should:</p>
+<ul>
+<li>list as many types of skills and experience as you can</li>
+<li>be specific about the skills and experience you're looking for</li>
+</ul>
+<p>If too many suppliers have all the essential skills and experience, you’ll use the nice-to-have skills and
+experience to exclude suppliers.</p>
+<p>You must tell suppliers if you want to score individual criteria.</p>
+<p><a href="https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria">Read more about how to set evaluation criteria</a></p>
+<p>List the skills and experience you’d like the specialist to have,
+eg experience working on government digital projects</p>
+    </span>
+    
+    
+      
+      <input
+        type="text"
+        name="question-6"
+        id="input-question-6"
+        class="text-box-with-error"
+        value="Whatever you do"
+        aria-describedby="input-question-6-question-advice input-question-6-answer-advice"
+      />
+      
+    
+  </div>
+
+  </div>
+
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-6&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;To find the best specialist to meet your needs, you should:\n\n- list as many types of skills and experience as you can\n- be specific about the skills and experience you&#39;re looking for\n\nIf too many suppliers have all the essential skills and experience, you\u2019ll use the nice-to-have skills and\nexperience to exclude suppliers.\n\nYou must tell suppliers if you want to score individual criteria.\n\n[Read more about how to set evaluation criteria](https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria)\n\nList the skills and experience you\u2019d like the specialist to have,\neg experience working on government digital projects\n&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Optional text box with error despite loads of guidance&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Whatever you do&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_advice</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;To find the best specialist to meet your needs, you should:\n\n- list as many types of skills and experience as you can\n- be specific about the skills and experience you&#39;re looking for\n\nIf too many suppliers have all the essential skills and experience, you\u2019ll use the nice-to-have skills and\nexperience to exclude suppliers.\n\nYou must tell suppliers if you want to score individual criteria.\n\n[Read more about how to set evaluation criteria](https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria)\n\nList the skills and experience you\u2019d like the specialist to have,\neg experience working on government digital projects\n&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;13&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;From 12th January 1973 it will no longer be legal&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/textbox.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  
+
+
+  
+
+
+
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-6&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-6&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading-with-hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-number&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            13
+          <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+        
+        Optional text box with error despite loads of guidance
+        
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          From 12th January 1973 it will no longer be legal
+        <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-optional&quot;</span> <span style="color: #7D9029">style=</span><span style="color: #BA2121">&quot;margin-top: 10px;&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;strong&gt;</span>Optional<span style="color: #008000; font-weight: bold">&lt;/strong&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+    
+    <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-advice&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-6-question-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>To find the best specialist to meet your needs, you should:<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;li&gt;</span>list as many types of skills and experience as you can<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;li&gt;</span>be specific about the skills and experience you&#39;re looking for<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>If too many suppliers have all the essential skills and experience, you’ll use the nice-to-have skills and
+experience to exclude suppliers.<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>You must tell suppliers if you want to score individual criteria.<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Read more about how to set evaluation criteria<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>List the skills and experience you’d like the specialist to have,
+eg experience working on government digital projects<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+    
+    <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-6-answer-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>To find the best specialist to meet your needs, you should:<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;li&gt;</span>list as many types of skills and experience as you can<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;li&gt;</span>be specific about the skills and experience you&#39;re looking for<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>If too many suppliers have all the essential skills and experience, you’ll use the nice-to-have skills and
+experience to exclude suppliers.<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>You must tell suppliers if you want to score individual criteria.<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Read more about how to set evaluation criteria<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>List the skills and experience you’d like the specialist to have,
+eg experience working on government digital projects<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+    
+      
+      <span style="color: #008000; font-weight: bold">&lt;input</span>
+        <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span>
+        <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;question-6&quot;</span>
+        <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-question-6&quot;</span>
+        <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-with-error&quot;</span>
+        <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Whatever you do&quot;</span>
+        <span style="color: #7D9029">aria-describedby=</span><span style="color: #BA2121">&quot;input-question-6-question-advice input-question-6-answer-advice&quot;</span>
       <span style="color: #008000; font-weight: bold">/&gt;</span>
       
     
@@ -753,6 +961,7 @@
       </span>
       
     </label>
+    
     
     
     
@@ -801,6 +1010,7 @@
     
     
     
+    
       
         <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-7&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-unit&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
           $
@@ -837,6 +1047,7 @@
       </span>
       
     </label>
+    
     
     
     
@@ -885,6 +1096,7 @@
     
     
     
+    
       
       <span style="color: #008000; font-weight: bold">&lt;input</span>
         <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span>
@@ -927,6 +1139,7 @@
         </span>
       
     </label>
+    
     
     
     
@@ -985,6 +1198,7 @@
     
     
     
+    
       
         <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-8&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-unit&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
           $
@@ -1021,6 +1235,7 @@
       </span>
       
     </label>
+    
     
     
     
@@ -1062,6 +1277,7 @@
     
     
     
+    
       
       <span style="color: #008000; font-weight: bold">&lt;input</span>
         <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span>
@@ -1098,6 +1314,7 @@
         </span>
       
     </label>
+    
     
     
     
@@ -1145,6 +1362,7 @@
         <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
     
     
     

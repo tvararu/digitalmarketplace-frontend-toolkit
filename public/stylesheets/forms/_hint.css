@@ -8,6 +8,16 @@
 @-o-viewport {
   width: device-width; }
 
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
 @-ms-viewport {
   width: device-width; }
 
@@ -83,27 +93,47 @@ ul, ol {
   .explanation-list > .list-bullet li, .explanation-list > .list-number li {
     margin-bottom: 0; }
 
+.dmspeak {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none; }
+  @media (max-width: 640px) {
+    .dmspeak {
+      font-size: 16px;
+      line-height: 1.25; } }
+  .dmspeak p {
+    padding-bottom: 10px; }
+
 .hint-underneath, .hint {
-  display: block;
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
   font-weight: 400;
   text-transform: none;
-  margin: 0 0 5px 0;
-  color: #6f777b;
-  clear: both; }
+  padding-bottom: 10px; }
   @media (max-width: 640px) {
     .hint-underneath, .hint {
       font-size: 16px;
       line-height: 1.25; } }
+  .hint-underneath p, .hint p {
+    margin: 0;
+    padding-bottom: 10px; }
+  .hint-underneath p + ul, .hint p + ul {
+    margin-top: -10px; }
+    .hint-underneath p + ul li, .hint p + ul li {
+      margin-bottom: 0; }
+  .hint-underneath ul, .hint ul {
+    margin-bottom: 10px;
+    list-style-type: disc;
+    padding-left: 25px; }
+
+.hint-underneath, .hint {
+  display: block;
+  margin: 0 0 5px 0;
+  color: #6f777b;
+  clear: both; }
 
 .hint-underneath {
   padding-top: 10px; }
-
-.hint ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-top: 5px; }
-  .hint ul li {
-    margin-bottom: 5px; }

@@ -151,6 +151,7 @@
     
     
     
+    
       
         
         <label class="selection-button" for="input-minimumContractPeriod-1">
@@ -258,6 +259,7 @@
     
     
     
+    
       
         
         <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-minimumContractPeriod-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -346,6 +348,7 @@
     
     
     
+    
       
         
         <label class="selection-button selection-button-inline" for="input-serviceStatus-1">
@@ -416,6 +419,7 @@
     
     
     
+    
       
         
         <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button selection-button-inline&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-serviceStatus-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -469,6 +473,7 @@
       </span>
       
     </legend>
+    
     
     
     
@@ -563,6 +568,7 @@
     
     
     
+    
       
         
         <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-categories-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -639,6 +645,7 @@
     
     
     
+    
       <label class="selection-button selection-button-boolean" for="input-offlineWorking-yes">
         Yes
         <input
@@ -694,6 +701,7 @@
     
     
     
+    
       <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button selection-button-boolean&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-offlineWorking-yes&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         Yes
         <span style="color: #008000; font-weight: bold">&lt;input</span>
@@ -740,8 +748,9 @@
     </legend>
     
     
+    
       <span class="hint" id="input-lot-answer-advice">
-        Advice about how to answer the question
+        <p>Advice about how to answer the question</p>
       </span>
     
     
@@ -805,8 +814,9 @@
     <span style="color: #008000; font-weight: bold">&lt;/legend&gt;</span>
     
     
+    
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-lot-answer-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-        Advice about how to answer the question
+        <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Advice about how to answer the question<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
     
     
@@ -852,18 +862,23 @@
     <legend>
       <span class="question-heading question-heading-with-hint">
         
-        Checkbox with question advice, hint and option description
+        Optional radios with question advice, hint and option description
       </span>
       
     </legend>
     
+      <span class="question-optional">
+        <strong>Optional</strong>
+      </span>
+    
+    
       <span class="question-advice" id="input-lot-question-advice">
-        Advice about the question
+        <p>Advice about the question</p>
       </span>
     
     
       <span class="hint" id="input-lot-answer-advice">
-        Advice about how to answer the question
+        <p>Advice about how to answer the question</p>
       </span>
     
     
@@ -899,7 +914,8 @@
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about how to answer the question&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Checkbox with question advice, hint and option description&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Optional radios with question advice, hint and option description&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question_advice</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about the question&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;radio&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
@@ -924,18 +940,23 @@
     <span style="color: #008000; font-weight: bold">&lt;legend&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading question-heading-with-hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         
-        Checkbox with question advice, hint and option description
+        Optional radios with question advice, hint and option description
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
     <span style="color: #008000; font-weight: bold">&lt;/legend&gt;</span>
     
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-optional&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;strong&gt;</span>Optional<span style="color: #008000; font-weight: bold">&lt;/strong&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+    
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-advice&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-lot-question-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-        Advice about the question
+        <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Advice about the question<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
     
     
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-lot-answer-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-        Advice about how to answer the question
+        <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Advice about how to answer the question<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
     
     
@@ -985,8 +1006,9 @@
     </legend>
     
     
+    
       <span class="hint" id="input-lot-answer-advice">
-        Advice about how to answer the question
+        <p>Advice about how to answer the question</p>
       </span>
     
     
@@ -1051,8 +1073,9 @@
     <span style="color: #008000; font-weight: bold">&lt;/legend&gt;</span>
     
     
+    
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-lot-answer-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-        Advice about how to answer the question
+        <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Advice about how to answer the question<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
     
     
@@ -1100,6 +1123,7 @@
       </span>
       
     </legend>
+    
     
     
     
@@ -1155,7 +1179,7 @@
     
     
       <div class="hint-underneath" id="input-lot-answer-advice">
-        The hint for this question only makes sense when it's underneath the options.
+        <p>The hint for this question only makes sense when it's underneath the options.</p>
       </div>
     
   </fieldset>
@@ -1198,6 +1222,7 @@
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
     <span style="color: #008000; font-weight: bold">&lt;/legend&gt;</span>
+    
     
     
     
@@ -1253,7 +1278,7 @@
     
     
       <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint-underneath&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-lot-answer-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-        The hint for this question only makes sense when it&#39;s underneath the options.
+        <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>The hint for this question only makes sense when it&#39;s underneath the options.<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
     
   <span style="color: #008000; font-weight: bold">&lt;/fieldset&gt;</span>
@@ -1284,6 +1309,7 @@
         </span>
       
     </legend>
+    
     
     
     
@@ -1388,6 +1414,7 @@
     
     
     
+    
       
         
         <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-vegetables-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -1431,6 +1458,271 @@
               <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-vegetables-3&quot;</span>
               <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Collaboration&quot;</span>
               
+              
+            <span style="color: #008000; font-weight: bold">/&gt;</span>
+          
+          
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+      
+    
+    
+  <span style="color: #008000; font-weight: bold">&lt;/fieldset&gt;</span>
+
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            
+  
+
+
+  
+
+
+
+  <div class="validation-wrapper">
+
+  <fieldset class="question first-question" id="dont">
+    <legend>
+      <span class="question-heading question-heading-with-hint">
+        
+          <span class="question-number">
+            77
+          </span>
+        
+        Optional checkboxes with an error despite loads of guidance
+      </span>
+      
+        <span class="validation-message" id="error-dont">
+          From 12th January 1973 it will no longer be legal
+        </span>
+      
+    </legend>
+    
+      <span class="question-optional">
+        <strong>Optional</strong>
+      </span>
+    
+    
+      <span class="question-advice" id="input-dont-question-advice">
+        <p>To find the best specialist to meet your needs, you should:</p>
+<ul>
+<li>list as many types of skills and experience as you can</li>
+<li>be specific about the skills and experience you're looking for</li>
+</ul>
+<p>If too many suppliers have all the essential skills and experience, you’ll use the nice-to-have skills and
+experience to exclude suppliers.</p>
+<p>You must tell suppliers if you want to score individual criteria.</p>
+<p><a href="https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria">Read more about how to set evaluation criteria</a></p>
+<p>List the skills and experience you’d like the specialist to have,
+eg experience working on government digital projects</p>
+      </span>
+    
+    
+      <span class="hint" id="input-dont-answer-advice">
+        <p>To find the best specialist to meet your needs, you should:</p>
+<ul>
+<li>list as many types of skills and experience as you can</li>
+<li>be specific about the skills and experience you're looking for</li>
+</ul>
+<p>If too many suppliers have all the essential skills and experience, you’ll use the nice-to-have skills and
+experience to exclude suppliers.</p>
+<p>You must tell suppliers if you want to score individual criteria.</p>
+<p><a href="https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria">Read more about how to set evaluation criteria</a></p>
+<p>List the skills and experience you’d like the specialist to have,
+eg experience working on government digital projects</p>
+      </span>
+    
+    
+      
+        
+        <label class="selection-button" for="input-dont-1">
+          Don’t
+          
+            <input
+              type="checkbox"
+              name="dont"
+              id="input-dont-1"
+              value="Don’t"
+              aria-describedby="input-dont-question-advice input-dont-answer-advice"
+              
+            />
+          
+          
+        </label>
+      
+        
+        <label class="selection-button" for="input-dont-2">
+          Don’t
+          
+            <input
+              type="checkbox"
+              name="dont"
+              id="input-dont-2"
+              value="Don’t"
+              aria-describedby="input-dont-question-advice input-dont-answer-advice"
+              
+            />
+          
+          
+        </label>
+      
+        
+        <label class="selection-button" for="input-dont-3">
+          Don’t
+          
+            <input
+              type="checkbox"
+              name="dont"
+              id="input-dont-3"
+              value="Don’t"
+              aria-describedby="input-dont-question-advice input-dont-answer-advice"
+              
+            />
+          
+          
+        </label>
+      
+    
+    
+  </fieldset>
+
+  </div>
+
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;dont&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;To find the best specialist to meet your needs, you should:\n\n- list as many types of skills and experience as you can\n- be specific about the skills and experience you&#39;re looking for\n\nIf too many suppliers have all the essential skills and experience, you\u2019ll use the nice-to-have skills and\nexperience to exclude suppliers.\n\nYou must tell suppliers if you want to score individual criteria.\n\n[Read more about how to set evaluation criteria](https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria)\n\nList the skills and experience you\u2019d like the specialist to have,\neg experience working on government digital projects\n&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Optional checkboxes with an error despite loads of guidance&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_advice</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;To find the best specialist to meet your needs, you should:\n\n- list as many types of skills and experience as you can\n- be specific about the skills and experience you&#39;re looking for\n\nIf too many suppliers have all the essential skills and experience, you\u2019ll use the nice-to-have skills and\nexperience to exclude suppliers.\n\nYou must tell suppliers if you want to score individual criteria.\n\n[Read more about how to set evaluation criteria](https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria)\n\nList the skills and experience you\u2019d like the specialist to have,\neg experience working on government digital projects\n&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #666666">77,</span>
+  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;From 12th January 1973 it will no longer be legal&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Don\u2019t&quot;</span>
+    <span style="color: #666666">},</span> 
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Don\u2019t&quot;</span>
+    <span style="color: #666666">},</span> 
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Don\u2019t&quot;</span>
+    <span style="color: #666666">}</span>
+<span style="color: #666666">]</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  
+
+
+  
+
+
+
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+
+  <span style="color: #008000; font-weight: bold">&lt;fieldset</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question first-question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;dont&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;legend&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading question-heading-with-hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-number&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            77
+          <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+        
+        Optional checkboxes with an error despite loads of guidance
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;error-dont&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          From 12th January 1973 it will no longer be legal
+        <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/legend&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-optional&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;strong&gt;</span>Optional<span style="color: #008000; font-weight: bold">&lt;/strong&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+    
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-advice&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-dont-question-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>To find the best specialist to meet your needs, you should:<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;li&gt;</span>list as many types of skills and experience as you can<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;li&gt;</span>be specific about the skills and experience you&#39;re looking for<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>If too many suppliers have all the essential skills and experience, you’ll use the nice-to-have skills and
+experience to exclude suppliers.<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>You must tell suppliers if you want to score individual criteria.<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Read more about how to set evaluation criteria<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>List the skills and experience you’d like the specialist to have,
+eg experience working on government digital projects<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+    
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-dont-answer-advice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>To find the best specialist to meet your needs, you should:<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;li&gt;</span>list as many types of skills and experience as you can<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;li&gt;</span>be specific about the skills and experience you&#39;re looking for<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>If too many suppliers have all the essential skills and experience, you’ll use the nice-to-have skills and
+experience to exclude suppliers.<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>You must tell suppliers if you want to score individual criteria.<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Read more about how to set evaluation criteria<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>List the skills and experience you’d like the specialist to have,
+eg experience working on government digital projects<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+    
+      
+        
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-dont-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Don’t
+          
+            <span style="color: #008000; font-weight: bold">&lt;input</span>
+              <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span>
+              <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;dont&quot;</span>
+              <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-dont-1&quot;</span>
+              <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Don’t&quot;</span>
+              <span style="color: #7D9029">aria-describedby=</span><span style="color: #BA2121">&quot;input-dont-question-advice input-dont-answer-advice&quot;</span>
+              
+            <span style="color: #008000; font-weight: bold">/&gt;</span>
+          
+          
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+      
+        
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-dont-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Don’t
+          
+            <span style="color: #008000; font-weight: bold">&lt;input</span>
+              <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span>
+              <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;dont&quot;</span>
+              <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-dont-2&quot;</span>
+              <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Don’t&quot;</span>
+              <span style="color: #7D9029">aria-describedby=</span><span style="color: #BA2121">&quot;input-dont-question-advice input-dont-answer-advice&quot;</span>
+              
+            <span style="color: #008000; font-weight: bold">/&gt;</span>
+          
+          
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+      
+        
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-dont-3&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Don’t
+          
+            <span style="color: #008000; font-weight: bold">&lt;input</span>
+              <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span>
+              <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;dont&quot;</span>
+              <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-dont-3&quot;</span>
+              <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Don’t&quot;</span>
+              <span style="color: #7D9029">aria-describedby=</span><span style="color: #BA2121">&quot;input-dont-question-advice input-dont-answer-advice&quot;</span>
               
             <span style="color: #008000; font-weight: bold">/&gt;</span>
           
