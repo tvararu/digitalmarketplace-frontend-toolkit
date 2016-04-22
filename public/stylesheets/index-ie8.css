@@ -1643,14 +1643,17 @@ ul, ol {
   .hint-underneath p, .hint p, .question-advice p {
     margin: 0;
     padding-bottom: 10px; }
-  .hint-underneath p + ul, .hint p + ul, .question-advice p + ul {
+  .hint-underneath p + ul, .hint p + ul, .question-advice p + ul, .hint-underneath p + ol, .hint p + ol, .question-advice p + ol {
     margin-top: -10px; }
-    .hint-underneath p + ul li, .hint p + ul li, .question-advice p + ul li {
+    .hint-underneath p + ul li, .hint p + ul li, .question-advice p + ul li, .hint-underneath p + ol li, .hint p + ol li, .question-advice p + ol li {
       margin-bottom: 0; }
-  .hint-underneath ul, .hint ul, .question-advice ul {
+  .hint-underneath ul, .hint ul, .question-advice ul, .hint-underneath ol, .hint ol, .question-advice ol {
     margin-bottom: 10px;
-    list-style-type: disc;
-    padding-left: 25px; }
+    padding-left: 20px; }
+  .hint-underneath ul, .hint ul, .question-advice ul {
+    list-style-type: disc; }
+  .hint-underneath ol, .hint ol, .question-advice ol {
+    list-style: decimal; }
 
 .hint-underneath, .hint {
   display: block;
@@ -2116,14 +2119,17 @@ ul, ol {
   .hint-underneath p, .hint p, .question-advice p {
     margin: 0;
     padding-bottom: 10px; }
-  .hint-underneath p + ul, .hint p + ul, .question-advice p + ul {
+  .hint-underneath p + ul, .hint p + ul, .question-advice p + ul, .hint-underneath p + ol, .hint p + ol, .question-advice p + ol {
     margin-top: -10px; }
-    .hint-underneath p + ul li, .hint p + ul li, .question-advice p + ul li {
+    .hint-underneath p + ul li, .hint p + ul li, .question-advice p + ul li, .hint-underneath p + ol li, .hint p + ol li, .question-advice p + ol li {
       margin-bottom: 0; }
-  .hint-underneath ul, .hint ul, .question-advice ul {
+  .hint-underneath ul, .hint ul, .question-advice ul, .hint-underneath ol, .hint ol, .question-advice ol {
     margin-bottom: 10px;
-    list-style-type: disc;
-    padding-left: 25px; }
+    padding-left: 20px; }
+  .hint-underneath ul, .hint ul, .question-advice ul {
+    list-style-type: disc; }
+  .hint-underneath ol, .hint ol, .question-advice ol {
+    list-style: decimal; }
 
 .question, .question-first {
   margin: 15px 0 30px 0;
