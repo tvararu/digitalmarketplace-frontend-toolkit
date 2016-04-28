@@ -84,7 +84,8 @@
     padding-top: 0; }
 
 .validation-message {
-  display: block;
+  display: -moz-inline-stack;
+  display: inline-block;
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;

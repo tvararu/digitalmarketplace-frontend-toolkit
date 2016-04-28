@@ -1674,8 +1674,7 @@ ul, ol {
   font-size: 19px;
   line-height: 1.31579;
   font-weight: 400;
-  text-transform: none;
-  padding-bottom: 10px; }
+  text-transform: none; }
   @media (max-width: 640px) {
     .hint-underneath, .hint, .question-advice {
       font-size: 16px;
@@ -2150,8 +2149,7 @@ ul, ol {
   font-size: 19px;
   line-height: 1.31579;
   font-weight: 400;
-  text-transform: none;
-  padding-bottom: 10px; }
+  text-transform: none; }
   @media (max-width: 640px) {
     .hint-underneath, .hint, .question-advice {
       font-size: 16px;
@@ -2767,7 +2765,8 @@ a.summary-item-remove-link {
     padding-top: 0; }
 
 .validation-message {
-  display: block;
+  display: -moz-inline-stack;
+  display: inline-block;
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;

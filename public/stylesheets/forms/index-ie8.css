@@ -273,8 +273,7 @@ ul, ol {
   font-size: 19px;
   line-height: 1.31579;
   font-weight: 400;
-  text-transform: none;
-  padding-bottom: 10px; }
+  text-transform: none; }
   @media (max-width: 640px) {
     .question-advice, .hint-underneath, .hint {
       font-size: 16px;
@@ -499,8 +498,7 @@ ul, ol {
   font-size: 19px;
   line-height: 1.31579;
   font-weight: 400;
-  text-transform: none;
-  padding-bottom: 10px; }
+  text-transform: none; }
   @media (max-width: 640px) {
     .question-advice, .hint-underneath, .hint {
       font-size: 16px;
