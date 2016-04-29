@@ -20,10 +20,7 @@
 @-o-viewport {
   width: device-width; }
 
-.temporary-message, .temporary-message-without-messages {
-  margin-bottom: 30px; }
-
-.temporary-message {
+.temporary-message-main, .temporary-message-without-messages, .temporary-message {
   margin-bottom: 30px; }
 
 .temporary-message-main {

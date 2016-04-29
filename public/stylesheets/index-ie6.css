@@ -5,13 +5,13 @@
 @-o-viewport {
   width: device-width; }
 
-.banner-temporary-message-without-action, .temporary-message, .temporary-message-without-messages, .temporary-message-main {
+.banner-temporary-message-without-action, .temporary-message-main, .temporary-message-without-messages, .temporary-message {
   background: #005ea5;
   color: #fff;
   padding: 15px 15px 18px 15px; }
-  .banner-temporary-message-without-action a, .temporary-message a, .temporary-message-without-messages a, .temporary-message-main a, .banner-temporary-message-without-action a:visited, .temporary-message a:visited, .temporary-message-without-messages a:visited, .temporary-message-main a:visited {
+  .banner-temporary-message-without-action a, .temporary-message-main a, .temporary-message-without-messages a, .temporary-message a, .banner-temporary-message-without-action a:visited, .temporary-message-main a:visited, .temporary-message-without-messages a:visited, .temporary-message a:visited {
     color: #fff; }
-  .banner-temporary-message-without-action a:hover, .temporary-message a:hover, .temporary-message-without-messages a:hover, .temporary-message-main a:hover, .banner-temporary-message-without-action a:active, .temporary-message a:active, .temporary-message-without-messages a:active, .temporary-message-main a:active {
+  .banner-temporary-message-without-action a:hover, .temporary-message-main a:hover, .temporary-message-without-messages a:hover, .temporary-message a:hover, .banner-temporary-message-without-action a:active, .temporary-message-main a:active, .temporary-message-without-messages a:active, .temporary-message a:active {
     color: #96c6e2; }
 
 @-ms-viewport {
@@ -1369,10 +1369,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 @-o-viewport {
   width: device-width; }
 
-.temporary-message, .temporary-message-without-messages {
-  margin-bottom: 30px; }
-
-.temporary-message {
+.temporary-message-main, .temporary-message-without-messages, .temporary-message {
   margin-bottom: 30px; }
 
 .temporary-message-main {
