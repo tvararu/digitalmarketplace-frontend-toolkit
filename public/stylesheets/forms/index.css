@@ -322,6 +322,10 @@ ul, ol {
     .question-heading, .question-heading-with-hint {
       padding-top: 6px;
       padding-bottom: 4px; } }
+  .question-heading p, .question-heading-with-hint p {
+    margin-bottom: 10px; }
+    .question-heading p:last-child, .question-heading-with-hint p:last-child {
+      margin-bottom: 0; }
 
 .question-heading-with-hint {
   margin-bottom: 0; }

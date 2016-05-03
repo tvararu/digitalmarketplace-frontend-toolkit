@@ -324,6 +324,10 @@ ul, ol {
     .question-heading, .question-heading-with-hint {
       font-size: 18px;
       line-height: 1.2; } }
+  .question-heading p, .question-heading-with-hint p {
+    margin-bottom: 10px; }
+    .question-heading p:last-child, .question-heading-with-hint p:last-child {
+      margin-bottom: 0; }
 
 .question-heading-with-hint {
   margin-bottom: 0; }

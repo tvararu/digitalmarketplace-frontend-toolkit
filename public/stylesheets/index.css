@@ -438,6 +438,13 @@
     .button-save {
       font-size: 18px;
       line-height: 1.2; } }
+  @media (min-width: 641px) {
+    .button-save {
+      margin-top: 55px; } }
+
+a.button-save {
+  display: -moz-inline-stack;
+  display: inline-block; }
 
 .button-secondary {
   background-color: #dee0e2;
@@ -2265,6 +2272,10 @@ ul, ol {
     .question-heading, .question-heading-with-hint {
       padding-top: 6px;
       padding-bottom: 4px; } }
+  .question-heading p, .question-heading-with-hint p {
+    margin-bottom: 10px; }
+    .question-heading p:last-child, .question-heading-with-hint p:last-child {
+      margin-bottom: 0; }
 
 .question-heading-with-hint {
   margin-bottom: 0; }

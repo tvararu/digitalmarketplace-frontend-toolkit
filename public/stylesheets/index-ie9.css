@@ -357,7 +357,8 @@
   font-weight: 400;
   text-transform: none;
   display: block;
-  margin: 0 0 25px 0; }
+  margin: 0 0 25px 0;
+  margin-top: 55px; }
   .button-save:visited {
     background-color: #00823b; }
   .button-save:hover, .button-save:focus {
@@ -402,6 +403,10 @@
     .button-save {
       font-size: 18px;
       line-height: 1.2; } }
+
+a.button-save {
+  display: -moz-inline-stack;
+  display: inline-block; }
 
 .button-secondary {
   background-color: #dee0e2;
@@ -2170,6 +2175,10 @@ ul, ol {
     .question-heading, .question-heading-with-hint {
       font-size: 18px;
       line-height: 1.2; } }
+  .question-heading p, .question-heading-with-hint p {
+    margin-bottom: 10px; }
+    .question-heading p:last-child, .question-heading-with-hint p:last-child {
+      margin-bottom: 0; }
 
 .question-heading-with-hint {
   margin-bottom: 0; }
