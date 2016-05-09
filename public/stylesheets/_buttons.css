@@ -91,13 +91,14 @@
     .button-save {
       font-size: 18px;
       line-height: 1.2; } }
-  @media (min-width: 641px) {
-    .button-save {
-      margin-top: 55px; } }
 
 a.button-save {
   display: -moz-inline-stack;
   display: inline-block; }
+
+@media (min-width: 641px) {
+  input.button-save {
+    margin-top: 55px; } }
 
 .button-secondary {
   background-color: #dee0e2;
