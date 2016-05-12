@@ -124,7 +124,7 @@ ul, ol {
     .hint-underneath p + ul li, .hint p + ul li, .hint-underneath p + ol li, .hint p + ol li {
       margin-bottom: 0; }
   .hint-underneath ul, .hint ul, .hint-underneath ol, .hint ol {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     padding-left: 20px; }
   .hint-underneath ul, .hint ul {
     list-style-type: disc; }

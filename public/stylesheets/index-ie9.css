@@ -1678,7 +1678,7 @@ ul, ol {
     .hint-underneath p + ul li, .hint p + ul li, .question-advice p + ul li, .hint-underneath p + ol li, .hint p + ol li, .question-advice p + ol li {
       margin-bottom: 0; }
   .hint-underneath ul, .hint ul, .question-advice ul, .hint-underneath ol, .hint ol, .question-advice ol {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     padding-left: 20px; }
   .hint-underneath ul, .hint ul, .question-advice ul {
     list-style-type: disc; }
@@ -2147,16 +2147,22 @@ ul, ol {
     .hint-underneath p + ul li, .hint p + ul li, .question-advice p + ul li, .hint-underneath p + ol li, .hint p + ol li, .question-advice p + ol li {
       margin-bottom: 0; }
   .hint-underneath ul, .hint ul, .question-advice ul, .hint-underneath ol, .hint ol, .question-advice ol {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     padding-left: 20px; }
   .hint-underneath ul, .hint ul, .question-advice ul {
     list-style-type: disc; }
   .hint-underneath ol, .hint ol, .question-advice ol {
     list-style: decimal; }
 
+.single-question-page form [class^="question-heading"] {
+  position: absolute;
+  left: -9999em; }
+
 .question, .question-first {
   margin: 15px 0 30px 0;
   clear: both; }
+  .question .hint, .question-first .hint {
+    margin-bottom: 0; }
 
 .question-first {
   margin-top: 0; }
@@ -2247,10 +2253,18 @@ ul, ol {
 
 .question-advice {
   margin-top: 10px;
+  margin-bottom: 10px;
   display: block; }
 
 .question-optional + .question-advice {
   margin-top: 0; }
+
+.single-question-page {
+  /* Visual users have the h1 as the label, so hide it for them */ }
+  .single-question-page .question {
+    margin-top: 0; }
+    .single-question-page .question .question-advice {
+      margin-top: 0; }
 
 @-ms-viewport {
   width: device-width; }
