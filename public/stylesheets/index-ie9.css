@@ -2027,8 +2027,8 @@ legend {
 @-o-viewport {
   width: device-width; }
 
-.column-two-thirds .pricing, .column-two-thirds .validation-wrapper-pricing {
-  margin-right: -100%; }
+.column-two-thirds .pricing {
+  margin-right: -50%; }
 
 .pricing {
   margin-top: 15px; }
