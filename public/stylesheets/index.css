@@ -2115,7 +2115,7 @@ body {
 @-o-viewport {
   width: device-width; }
 
-@media (min-width: 900px) {
+@media (min-width: 950px) {
   .column-two-thirds .pricing {
     margin-right: -50%; }
  }
@@ -2136,7 +2136,7 @@ body {
       width: 100%;
       margin-left: 0;
       margin-top: 15px; }
-      @media (min-width: 900px) {
+      @media (min-width: 950px) {
         .column-two-thirds .pricing .pricing-column {
           min-height: 105px;
           width: auto;
@@ -2167,7 +2167,7 @@ body {
     left: 0;
     margin: 0;
     z-index: 10; }
-    @media (min-width: 900px) {
+    @media (min-width: 950px) {
       .pricing .pricing-input, .pricing .pricing-input-with-unit, .pricing .pricing-input-select {
         position: absolute; } }
   .pricing .pricing-input-with-unit {
@@ -2176,7 +2176,7 @@ body {
     margin: 0 0 15px 0;
     width: 98%;
     font-size: 19px; }
-    @media (min-width: 900px) {
+    @media (min-width: 950px) {
       .pricing .pricing-input-select {
         margin-left: 0; } }
   .pricing .pricing-unit {
@@ -2194,7 +2194,7 @@ body {
     text-align: center;
     padding-bottom: 12px;
     display: none; }
-    @media (min-width: 900px) {
+    @media (min-width: 950px) {
       .pricing .pricing-preposition {
         display: block; } }
 
