@@ -1172,7 +1172,7 @@ legend {
   margin-bottom: 10px; }
 
 .instruction-list .divider p {
-  margin: 0; }
+  margin-bottom: 0; }
 
 .divider {
   padding: 20px 0 15px 0;
@@ -1191,8 +1191,11 @@ legend {
   font-weight: normal;
   margin-top: 10px; }
 
-.instruction-list-item-body, .instruction-list-item-extra-information, .lead-in {
+.instruction-list-item-body, .instruction-list-item-top, .instruction-list-item-bottom, .lead-in {
   font-weight: normal; }
+
+.instruction-list-item-bottom {
+  margin-top: 10px; }
 
 .instruction-list .document-list {
   padding: 0; }
