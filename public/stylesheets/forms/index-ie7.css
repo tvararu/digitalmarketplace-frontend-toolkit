@@ -911,31 +911,31 @@ table.summary-item-body-no-bottom-border-row-bold-borders-text-large {
     table.summary-item-body-no-bottom-border-row-bold-borders-text-large tbody tr.summary-item-row-no-border .summary-item-field-border {
       padding-top: 12px; }
 
-table.summary-item-body tbody .summary-item-field-first-narrow-no-padding, table.summary-item-body tbody .summary-item-field-no-padding, .summary-item-field-border, .summary-item-field-first, .summary-item-field-first-narrow, .summary-item-field-first-wider, .summary-item-field-with-action, .summary-item-field {
+table.summary-item-body tbody .summary-item-field-first-narrow-no-padding, table.summary-item-body tbody .summary-item-field-no-padding, .summary-item-field-border, .summary-item-field-first, .summary-item-field-first-narrow, .summary-item-field-first-half, .summary-item-field-first-two-thirds, .summary-item-field-with-action, .summary-item-field {
   vertical-align: middle;
   text-align: left; }
-  table.summary-item-body tbody .summary-item-field-first-narrow-no-padding ul, table.summary-item-body tbody .summary-item-field-no-padding ul, .summary-item-field-border ul, .summary-item-field-first ul, .summary-item-field-first-narrow ul, .summary-item-field-first-wider ul, .summary-item-field-with-action ul, .summary-item-field ul {
+  table.summary-item-body tbody .summary-item-field-first-narrow-no-padding ul, table.summary-item-body tbody .summary-item-field-no-padding ul, .summary-item-field-border ul, .summary-item-field-first ul, .summary-item-field-first-narrow ul, .summary-item-field-first-half ul, .summary-item-field-first-two-thirds ul, .summary-item-field-with-action ul, .summary-item-field ul {
     margin: 0;
     list-style-type: disc;
     padding: 0 0 0 20px; }
-  table.summary-item-body tbody .summary-item-field-first-narrow-no-padding .multiquestion, table.summary-item-body tbody .summary-item-field-no-padding .multiquestion, .summary-item-field-border .multiquestion, .summary-item-field-first .multiquestion, .summary-item-field-first-narrow .multiquestion, .summary-item-field-first-wider .multiquestion, .summary-item-field-with-action .multiquestion, .summary-item-field .multiquestion {
+  table.summary-item-body tbody .summary-item-field-first-narrow-no-padding .multiquestion, table.summary-item-body tbody .summary-item-field-no-padding .multiquestion, .summary-item-field-border .multiquestion, .summary-item-field-first .multiquestion, .summary-item-field-first-narrow .multiquestion, .summary-item-field-first-half .multiquestion, .summary-item-field-first-two-thirds .multiquestion, .summary-item-field-with-action .multiquestion, .summary-item-field .multiquestion {
     padding-bottom: 10px; }
-    table.summary-item-body tbody .summary-item-field-first-narrow-no-padding .multiquestion:last-child, table.summary-item-body tbody .summary-item-field-no-padding .multiquestion:last-child, .summary-item-field-border .multiquestion:last-child, .summary-item-field-first .multiquestion:last-child, .summary-item-field-first-narrow .multiquestion:last-child, .summary-item-field-first-wider .multiquestion:last-child, .summary-item-field-with-action .multiquestion:last-child, .summary-item-field .multiquestion:last-child {
+    table.summary-item-body tbody .summary-item-field-first-narrow-no-padding .multiquestion:last-child, table.summary-item-body tbody .summary-item-field-no-padding .multiquestion:last-child, .summary-item-field-border .multiquestion:last-child, .summary-item-field-first .multiquestion:last-child, .summary-item-field-first-narrow .multiquestion:last-child, .summary-item-field-first-half .multiquestion:last-child, .summary-item-field-first-two-thirds .multiquestion:last-child, .summary-item-field-with-action .multiquestion:last-child, .summary-item-field .multiquestion:last-child {
       padding-bottom: 0; }
-    table.summary-item-body tbody .summary-item-field-first-narrow-no-padding .multiquestion > p:first-child, table.summary-item-body tbody .summary-item-field-no-padding .multiquestion > p:first-child, .summary-item-field-border .multiquestion > p:first-child, .summary-item-field-first .multiquestion > p:first-child, .summary-item-field-first-narrow .multiquestion > p:first-child, .summary-item-field-first-wider .multiquestion > p:first-child, .summary-item-field-with-action .multiquestion > p:first-child, .summary-item-field .multiquestion > p:first-child {
+    table.summary-item-body tbody .summary-item-field-first-narrow-no-padding .multiquestion > p:first-child, table.summary-item-body tbody .summary-item-field-no-padding .multiquestion > p:first-child, .summary-item-field-border .multiquestion > p:first-child, .summary-item-field-first .multiquestion > p:first-child, .summary-item-field-first-narrow .multiquestion > p:first-child, .summary-item-field-first-half .multiquestion > p:first-child, .summary-item-field-first-two-thirds .multiquestion > p:first-child, .summary-item-field-with-action .multiquestion > p:first-child, .summary-item-field .multiquestion > p:first-child {
       margin-top: 0;
       margin-bottom: 5px; }
-  table.summary-item-body tbody .summary-item-field-first-narrow-no-padding a[rel~="external"]:after, table.summary-item-body tbody .summary-item-field-no-padding a[rel~="external"]:after, .summary-item-field-border a[rel~="external"]:after, .summary-item-field-first a[rel~="external"]:after, .summary-item-field-first-narrow a[rel~="external"]:after, .summary-item-field-first-wider a[rel~="external"]:after, .summary-item-field-with-action a[rel~="external"]:after, .summary-item-field a[rel~="external"]:after {
+  table.summary-item-body tbody .summary-item-field-first-narrow-no-padding a[rel~="external"]:after, table.summary-item-body tbody .summary-item-field-no-padding a[rel~="external"]:after, .summary-item-field-border a[rel~="external"]:after, .summary-item-field-first a[rel~="external"]:after, .summary-item-field-first-narrow a[rel~="external"]:after, .summary-item-field-first-half a[rel~="external"]:after, .summary-item-field-first-two-thirds a[rel~="external"]:after, .summary-item-field-with-action a[rel~="external"]:after, .summary-item-field a[rel~="external"]:after {
     background-image: url('../../images/external-links/external-link.png');
     background-repeat: no-repeat; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20/10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-      table.summary-item-body tbody .summary-item-field-first-narrow-no-padding a[rel~="external"]:after, table.summary-item-body tbody .summary-item-field-no-padding a[rel~="external"]:after, .summary-item-field-border a[rel~="external"]:after, .summary-item-field-first a[rel~="external"]:after, .summary-item-field-first-narrow a[rel~="external"]:after, .summary-item-field-first-wider a[rel~="external"]:after, .summary-item-field-with-action a[rel~="external"]:after, .summary-item-field a[rel~="external"]:after {
+      table.summary-item-body tbody .summary-item-field-first-narrow-no-padding a[rel~="external"]:after, table.summary-item-body tbody .summary-item-field-no-padding a[rel~="external"]:after, .summary-item-field-border a[rel~="external"]:after, .summary-item-field-first a[rel~="external"]:after, .summary-item-field-first-narrow a[rel~="external"]:after, .summary-item-field-first-half a[rel~="external"]:after, .summary-item-field-first-two-thirds a[rel~="external"]:after, .summary-item-field-with-action a[rel~="external"]:after, .summary-item-field a[rel~="external"]:after {
         background-image: url('../../images/external-links/external-link-24x24.png');
         background-size: 12px 400px; } }
-  table.summary-item-body tbody .summary-item-field-first-narrow-no-padding a[rel~="external"]:after, table.summary-item-body tbody .summary-item-field-no-padding a[rel~="external"]:after, .summary-item-field-border a[rel~="external"]:after, .summary-item-field-first a[rel~="external"]:after, .summary-item-field-first-narrow a[rel~="external"]:after, .summary-item-field-first-wider a[rel~="external"]:after, .summary-item-field-with-action a[rel~="external"]:after, .summary-item-field a[rel~="external"]:after {
+  table.summary-item-body tbody .summary-item-field-first-narrow-no-padding a[rel~="external"]:after, table.summary-item-body tbody .summary-item-field-no-padding a[rel~="external"]:after, .summary-item-field-border a[rel~="external"]:after, .summary-item-field-first a[rel~="external"]:after, .summary-item-field-first-narrow a[rel~="external"]:after, .summary-item-field-first-half a[rel~="external"]:after, .summary-item-field-first-two-thirds a[rel~="external"]:after, .summary-item-field-with-action a[rel~="external"]:after, .summary-item-field a[rel~="external"]:after {
     content: "\A0\A0\A0\A0\A0";
     background-position: right 3px; }
-  table.summary-item-body tbody .summary-item-field-first-narrow-no-padding a[rel~="external"]:hover:after, table.summary-item-body tbody .summary-item-field-no-padding a[rel~="external"]:hover:after, .summary-item-field-border a[rel~="external"]:hover:after, .summary-item-field-first a[rel~="external"]:hover:after, .summary-item-field-first-narrow a[rel~="external"]:hover:after, .summary-item-field-first-wider a[rel~="external"]:hover:after, .summary-item-field-with-action a[rel~="external"]:hover:after, .summary-item-field a[rel~="external"]:hover:after {
+  table.summary-item-body tbody .summary-item-field-first-narrow-no-padding a[rel~="external"]:hover:after, table.summary-item-body tbody .summary-item-field-no-padding a[rel~="external"]:hover:after, .summary-item-field-border a[rel~="external"]:hover:after, .summary-item-field-first a[rel~="external"]:hover:after, .summary-item-field-first-narrow a[rel~="external"]:hover:after, .summary-item-field-first-half a[rel~="external"]:hover:after, .summary-item-field-first-two-thirds a[rel~="external"]:hover:after, .summary-item-field-with-action a[rel~="external"]:hover:after, .summary-item-field a[rel~="external"]:hover:after {
     background-position: right -385px; }
 
 table.summary-item-body tbody .summary-item-field-first-narrow-no-padding, table.summary-item-body tbody .summary-item-field-no-padding {
@@ -954,8 +954,13 @@ table.summary-item-body tbody .summary-item-field-first-narrow-no-padding, table
 .summary-item-field-first-narrow {
   width: 20%; }
 
-.summary-item-field-first-wider {
-  width: 50%; }
+.summary-item-field-first-half {
+  width: 50%;
+  padding-right: 12px; }
+
+.summary-item-field-first-two-thirds {
+  width: 67%;
+  padding-right: 12px; }
 
 .summary-item-field-with-action {
   text-align: right; }
