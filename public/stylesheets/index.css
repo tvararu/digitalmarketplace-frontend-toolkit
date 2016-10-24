@@ -1360,27 +1360,35 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 @-o-viewport {
   width: device-width; }
 
-.link-button, a.link-button {
+.link-button, a.link-button, .link-button-with-advice, a.link-button-with-advice {
   background: #2e8aca;
   display: block;
   padding: 6px 0;
   color: #fff;
-  margin: 30px 0 0 0;
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
   font-weight: 400;
   text-transform: none;
   text-align: center; }
+  @media (max-width: 640px) {
+    .link-button, a.link-button, .link-button-with-advice, a.link-button-with-advice {
+      font-size: 18px;
+      line-height: 1.2; } }
+  .link-button:hover, .link-button-with-advice:hover {
+    background: #005ea5; }
+
+.link-button, a.link-button {
+  margin: 30px 0 0 0; }
   @media (min-width: 641px) {
     .link-button, a.link-button {
       margin: 75px 0 0; } }
-  @media (max-width: 640px) {
-    .link-button, a.link-button {
-      font-size: 18px;
-      line-height: 1.2; } }
-  .link-button:hover, a.link-button:hover {
-    background: #005ea5; }
+
+.link-button-with-advice, a.link-button-with-advice {
+  margin: 15px 0 0 0; }
+  @media (min-width: 641px) {
+    .link-button-with-advice, a.link-button-with-advice {
+      margin: 15px 0 0; } }
 
 @font-face {
   font-family: GDS-Logo;

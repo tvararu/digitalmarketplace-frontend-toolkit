@@ -147,6 +147,21 @@
             <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;link-button&#39;</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&#39;#&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>View service<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
 </pre></div>
 </div>
+            
+            <a class='link-button-with-advice' href='#'>View service with advice</a>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">url</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;#&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">advice</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">label</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;View service with advice&quot;</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/link-button.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;link-button-with-advice&#39;</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&#39;#&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>View service with advice<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+</pre></div>
+</div>
     </div>
 </main>
 
