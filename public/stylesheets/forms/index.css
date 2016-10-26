@@ -16,8 +16,8 @@
   line-height: 1.11111;
   font-weight: 700;
   text-transform: none;
-  margin-top: 35;
-  margin-bottom: 10; }
+  margin-top: 35px;
+  margin-bottom: 10px; }
   @media (max-width: 640px) {
     .dmspeak .heading-xmedium {
       font-size: 20px;
