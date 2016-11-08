@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>Digital Marketplace frontend toolkit</title>
+    <title>Phase banner - Digital Marketplace frontend toolkit</title>
 
     <script type="text/javascript">
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -119,78 +119,65 @@
     </div>
     <!--end global-header-bar-->
 
-    <main role="main" id="content" class="wrapper">
-  <div id="wrapper">
-    <header class="page-heading page-heading-no-breadcrumb">
-      <p class="context">
-        <a class="version-link" href="https://github.com/alphagov/digitalmarketplace-frontend-toolkit/releases/tag/v19.0.0">Version 19.0.0</a>
-      </p>
-      <h1>Digital Marketplace frontend toolkit</h1>
-    </header>
-    <ul class="index-list">
-      <li><a href="breadcrumb.html">Breadcrumb</a></li>
-      <li><a href="browse-list.html">Browse list</a></li>
-      <li><a href="button.html">Buttons</a></li>
-      <li><a href="contact-details.html">Contact details</a></li>
-      <li><a href="documents.html">Documents</a></li>
-      <li><a href="external-link.html">External Link</a></li>
+    <div id="global-breadcrumb" class="header-context">
+  <nav>
+    <ol class="group" role="breadcrumbs">
       <li>
-        <a href="forms/">Forms</a>
-        <ul class="index-list">
-          <li>
-            <a href="forms/upload.html">File upload</a>
-          </li>
-          <li>
-            <a href="forms/keyword-search.html">Keyword search</a>
-          </li>
-          <li>
-            <a href="forms/list-entry.html">List entry textbox</a>
-          </li>
-          <li>
-            <a href="forms/option-select.html">Option select</a>
-          </li>
-          <li>
-            <a href="forms/pricing.html">Pricing</a>
-          </li>
-          <li>
-            <a href="forms/selection-buttons.html">Selection buttons</a>
-          </li>
-          <li>
-            <a href="forms/textbox.html">Textboxes</a>
-          </li>
-          <li>
-            <a href="forms/single-question-page.html">Single question page</a>
-          </li>
-          <li>
-            <a href="forms/validation.html">Validation</a>
-          </li>
-        </ul>
+        <a href="/digitalmarketplace-frontend-toolkit/">Home</a>
       </li>
-      <li><a href="grids.html">Grids</a></li>
-      <li><a href="instruction-list.html">Instruction list</a></li>
-      <li><a href="link-button.html">Link button</a></li>
-      <li><a href="notification-banner.html">Notification banners</a></li>
-      <li><a href="page-heading.html">Page headings</a></li>
-      <li><a href="phase-banner.html">Phase banner</a></li>
-      <li><a href="previous-next-navigation.html">Previous/next navigation</a></li>
-      <li><a href="search-summary.html">Search summary</a></li>
-      <li><a href="secondary-action-link.html">Secondary action link</a></li>
-      <li><a href="service-id.html">Service ID</a></li>
-      <li>
-        <a href="shared_scss/">Shared SCSS</a>
-        <ul class="index-list">
-          <li>
-            <a href="shared_scss/lists.html">Lists</a>
-          </li>
-          <li>
-            <a href="shared_scss/dmspeak.html">DMSpeak</a>
-          </li>
-        </ul>
-      </li>
-      <li><a href="summary-table.html">Summary tables</a></li>
-      <li><a href="temporary-message.html">Temporary message</a></li>
-    </ul>
-  </div>
+    </ol>
+  </nav>
+</div>
+<main role="main" id="content" class="wrapper">
+    <div id="wrapper">
+        <header class="page-heading">
+            <h1>Phase banner</h1>
+        </header>
+            
+            
+<div class="phase-banner phase-banner-beta">
+  <p>
+    <strong class="phase-tag">BETA</strong> This is a <a href="https://www.gov.uk/help/beta">beta service</a>  – please send your feedback to  <a href="mailto:enquiries@digitalmarketplace.service.gov.uk?subject=Digital%20Marketplace%20feedback" title="Please send feedback to enquiries@digitalmarketplace.service.gov.uk">enquiries@digitalmarketplace.service.gov.uk</a>
+  </p>
+</div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">alpha</span> <span style="color: #666666">=</span> <span style="color: #19177C">null</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/phase-banner.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;phase-banner phase-banner-beta&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;strong</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;phase-tag&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>BETA<span style="color: #008000; font-weight: bold">&lt;/strong&gt;</span> This is a <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;https://www.gov.uk/help/beta&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>beta service<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>  – please send your feedback to  <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;mailto:enquiries@digitalmarketplace.service.gov.uk?subject=Digital%20Marketplace%20feedback&quot;</span> <span style="color: #7D9029">title=</span><span style="color: #BA2121">&quot;Please send feedback to enquiries@digitalmarketplace.service.gov.uk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>enquiries@digitalmarketplace.service.gov.uk<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+            
+            
+<div class="phase-banner phase-banner-alpha">
+  <p>
+    <strong class="phase-tag">ALPHA</strong> This is an alpha service  – please send your feedback to  <a href="mailto:enquiries@digitalmarketplace.service.gov.uk?subject=Digital%20Marketplace%20feedback" title="Please send feedback to enquiries@digitalmarketplace.service.gov.uk">enquiries@digitalmarketplace.service.gov.uk</a>
+  </p>
+</div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">alpha</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/phase-banner.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;phase-banner phase-banner-alpha&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;strong</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;phase-tag&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>ALPHA<span style="color: #008000; font-weight: bold">&lt;/strong&gt;</span> This is an alpha service  – please send your feedback to  <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;mailto:enquiries@digitalmarketplace.service.gov.uk?subject=Digital%20Marketplace%20feedback&quot;</span> <span style="color: #7D9029">title=</span><span style="color: #BA2121">&quot;Please send feedback to enquiries@digitalmarketplace.service.gov.uk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>enquiries@digitalmarketplace.service.gov.uk<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+    </div>
 </main>
 
 
