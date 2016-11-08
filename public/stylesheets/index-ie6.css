@@ -43,6 +43,20 @@
       font-size: 20px;
       line-height: 1.11111; } }
 
+.dmspeak .heading-small {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 700;
+  text-transform: none;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-top: 20px; }
+  @media (max-width: 640px) {
+    .dmspeak .heading-small {
+      font-size: 16px;
+      line-height: 1.25; } }
+
 @-ms-viewport {
   width: device-width; }
 
@@ -1989,13 +2003,18 @@ legend {
   font-size: 19px;
   line-height: 1.31579;
   font-weight: 400;
-  text-transform: none; }
+  text-transform: none;
+  /* The first heading in a .dmspeak section has nothing above it to be separated from */ }
   @media (max-width: 640px) {
     .dmspeak {
       font-size: 16px;
       line-height: 1.25; } }
-  .dmspeak p {
+  .dmspeak p,
+  .dmspeak ul, .dmspeak ol {
     padding-bottom: 10px; }
+  .dmspeak > h2:first-child,
+  .dmspeak > h3:first-child {
+    margin-top: 0; }
 
 .hint-underneath,
 .hint, .question-advice {
@@ -2633,13 +2652,18 @@ legend {
   font-size: 19px;
   line-height: 1.31579;
   font-weight: 400;
-  text-transform: none; }
+  text-transform: none;
+  /* The first heading in a .dmspeak section has nothing above it to be separated from */ }
   @media (max-width: 640px) {
     .dmspeak {
       font-size: 16px;
       line-height: 1.25; } }
-  .dmspeak p {
+  .dmspeak p,
+  .dmspeak ul, .dmspeak ol {
     padding-bottom: 10px; }
+  .dmspeak > h2:first-child,
+  .dmspeak > h3:first-child {
+    margin-top: 0; }
 
 .hint-underneath,
 .hint, .question-advice {
