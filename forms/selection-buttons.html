@@ -646,7 +646,7 @@
     
     
     
-      <label class="selection-button selection-button-boolean" for="input-offlineWorking-yes">
+      <label class="selection-button selection-button-boolean " for="input-offlineWorking-yes" >
         Yes
         <input
           type="radio"
@@ -702,7 +702,7 @@
     
     
     
-      <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button selection-button-boolean&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-offlineWorking-yes&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button selection-button-boolean &quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-offlineWorking-yes&quot;</span> <span style="color: #008000; font-weight: bold">&gt;</span>
         Yes
         <span style="color: #008000; font-weight: bold">&lt;input</span>
           <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span>
@@ -1760,6 +1760,130 @@ eg experience working on government digital projects<span style="color: #008000;
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            <form>
+  
+
+
+
+  <fieldset class="question first-question" id="contact">
+    <legend>
+      <span class="question-heading ">
+        
+          <span class="question-number">
+            93
+          </span>
+        
+        Can you do this essential requirement
+      </span>
+      
+    </legend>
+    
+    
+    
+    
+      <label class="selection-button selection-button-boolean block-label" for="input-contact-yes" data-target="evidence-wrapper">
+        Yes
+        <input
+          type="radio"
+          name="contact"
+          id="input-contact-yes"
+          value="true"
+          
+           checked
+        />
+      </label>
+      <label class="selection-button selection-button-boolean" for="input-contact-no">
+        No
+        <input
+          type="radio"
+          name="contact"
+          id="input-contact-no"
+          value="false"
+          
+          
+        />
+      </label>
+    
+    
+  </fieldset>
+
+  <!-- div below is not included in the macro output, you'll need to add it yourself -->
+  <div id="evidence-wrapper">
+    <textarea id="evidence" name="evidence" class="text-box text-box-large"></textarea>
+  </div>
+</form>
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">followup</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;evidence-wrapper&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;contact&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Can you do this essential requirement&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #666666">93,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;boolean&quot;</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;form&gt;</span>
+  
+
+
+
+  <span style="color: #008000; font-weight: bold">&lt;fieldset</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question first-question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;contact&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;legend&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading &quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-number&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            93
+          <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+        
+        Can you do this essential requirement
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/legend&gt;</span>
+    
+    
+    
+    
+      <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button selection-button-boolean block-label&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-contact-yes&quot;</span> <span style="color: #7D9029">data-target=</span><span style="color: #BA2121">&quot;evidence-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        Yes
+        <span style="color: #008000; font-weight: bold">&lt;input</span>
+          <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span>
+          <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;contact&quot;</span>
+          <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-contact-yes&quot;</span>
+          <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;true&quot;</span>
+          
+           <span style="color: #7D9029">checked</span>
+        <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button selection-button-boolean&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-contact-no&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        No
+        <span style="color: #008000; font-weight: bold">&lt;input</span>
+          <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span>
+          <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;contact&quot;</span>
+          <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-contact-no&quot;</span>
+          <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;false&quot;</span>
+          
+          
+        <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+    
+  <span style="color: #008000; font-weight: bold">&lt;/fieldset&gt;</span>
+
+  <span style="color: #408080; font-style: italic">&lt;!-- div below is not included in the macro output, you&#39;ll need to add it yourself --&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;evidence-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;textarea</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;evidence&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;evidence&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box text-box-large&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/textarea&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/form&gt;</span>
+</pre></div>
+</div>
     </div>
 </main>
 
@@ -1793,7 +1917,7 @@ eg experience working on government digital projects<span style="color: #008000;
     <script src="../govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
 
     <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script>
-<script type="text/javascript" src="../public/javascripts/govuk_frontend_toolkit/vendor/polyfills/bind.js"></script> <script type="text/javascript" src="../public/javascripts/govuk_frontend_toolkit/govuk/selection-buttons.js"></script>
+<script type="text/javascript" src="../public/javascripts/govuk_frontend_toolkit/vendor/polyfills/bind.js"></script> <script type="text/javascript" src="../public/javascripts/govuk_frontend_toolkit/govuk/selection-buttons.js"></script> <script type="text/javascript" src="../public/javascripts/govuk_frontend_toolkit/govuk/show-hide-content.js"></script>
 
 <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
 

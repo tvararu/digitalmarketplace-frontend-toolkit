@@ -1306,7 +1306,8 @@ table.summary-item-body tbody .summary-item-field-no-padding {
   padding-right: 12px; }
 
 .summary-item-field-with-action {
-  text-align: right; }
+  text-align: right;
+  padding-left: 12px; }
 
 .summary-item-field-headings th {
   height: 0;

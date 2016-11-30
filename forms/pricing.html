@@ -144,6 +144,8 @@
 
 
 
+
+
   <fieldset class="question first-question" id="price">
     <legend>
       <span class="question-heading question-heading-with-hint">
@@ -310,6 +312,7 @@
     </div>
   </fieldset>
 
+
             </div>
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
@@ -332,6 +335,8 @@
 </pre></div>
 </div>
             <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  
+
+
 
 
 
@@ -516,6 +521,8 @@
 
 
 
+
+
   <fieldset class="question first-question" id="price">
     <legend>
       <span class="question-heading question-heading-with-hint">
@@ -690,6 +697,7 @@
     </div>
   </fieldset>
 
+
             </div>
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
@@ -717,6 +725,8 @@
 
 
   
+
+
 
 
 
@@ -906,6 +916,8 @@
 
 
 
+
+
   <fieldset class="question first-question" id="price">
     <legend>
       <span class="question-heading question-heading-with-hint">
@@ -1074,6 +1086,7 @@
     </div>
   </fieldset>
 
+
             </div>
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
@@ -1101,6 +1114,8 @@
 </pre></div>
 </div>
             <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  
+
+
 
 
 
@@ -1285,6 +1300,8 @@
 
   <div class="validation-wrapper validation-wrapper-pricing">
 
+
+
   <fieldset class="question first-question" id="anotherPrice">
     <legend>
       <span class="question-heading ">
@@ -1449,6 +1466,7 @@
     </div>
   </fieldset>
 
+
   </div>
 
             </div>
@@ -1474,6 +1492,8 @@
 </pre></div>
 </div>
             <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper validation-wrapper-pricing&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+
+
 
   <span style="color: #008000; font-weight: bold">&lt;fieldset</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question first-question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;anotherPrice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;legend&gt;</span>
@@ -1639,6 +1659,7 @@
     <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/fieldset&gt;</span>
 
+
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -1646,6 +1667,8 @@
             <div class="column-two-thirds">
             
             
+
+
 
 
 
@@ -1707,6 +1730,7 @@
       
     </div>
   </fieldset>
+
 
             </div>
         </div>
@@ -1790,6 +1814,87 @@
 
 
 
+
+
+<div class="question" id="price">
+  <label for="input-price">
+    <span class="question-heading">
+      Price question with only the price field
+    </span>
+    <span class="text-box-unit-qualifier">
+      (in pounds)
+    </span>
+    
+  </label>
+  
+  
+  
+  <label for="input-price" class="text-box-unit">
+    £
+  </label>
+  <input
+    type="text"
+    class="text-box-with-unit-before"
+    name="price"
+    id="input-price"
+    value=""
+    
+  />
+</div>
+
+
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">fields</span> <span style="color: #666666">=</span> <span style="color: #666666">{</span>
+    <span style="color: #BA2121">&quot;price&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;price&quot;</span>
+<span style="color: #666666">},</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Price question with only the price field&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;price&quot;</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/pricing.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;price&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-price&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      Price question with only the price field
+    <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-unit-qualifier&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      (in pounds)
+    <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+  
+  
+  
+  <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-price&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-unit&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    £
+  <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;input</span>
+    <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span>
+    <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box-with-unit-before&quot;</span>
+    <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;price&quot;</span>
+    <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-price&quot;</span>
+    <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;&quot;</span>
+    
+  <span style="color: #008000; font-weight: bold">/&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            
+
+
+
+
+
+
+
   <fieldset class="question first-question" id="price">
     <legend>
       <span class="question-heading ">
@@ -1868,6 +1973,7 @@
       
     </div>
   </fieldset>
+
 
             </div>
         </div>
@@ -1980,6 +2086,8 @@
 
 
   <div class="validation-wrapper validation-wrapper-pricing">
+
+
 
   <fieldset class="question first-question" id="anotherPrice">
     <legend>
@@ -2189,6 +2297,7 @@ eg experience working on government digital projects</p>
     </div>
   </fieldset>
 
+
   </div>
 
             </div>
@@ -2224,6 +2333,8 @@ eg experience working on government digital projects</p>
 
 
   <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper validation-wrapper-pricing&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+
+
 
   <span style="color: #008000; font-weight: bold">&lt;fieldset</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question first-question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;anotherPrice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;legend&gt;</span>
@@ -2432,6 +2543,7 @@ eg experience working on government digital projects<span style="color: #008000;
       
     <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/fieldset&gt;</span>
+
 
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>

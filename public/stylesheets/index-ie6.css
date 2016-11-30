@@ -3224,7 +3224,8 @@ table.summary-item-body tbody .summary-item-field-no-padding {
   padding-right: 12px; }
 
 .summary-item-field-with-action {
-  text-align: right; }
+  text-align: right;
+  padding-left: 12px; }
 
 .summary-item-field-headings th {
   height: 0;
@@ -3598,6 +3599,9 @@ a.summary-item-remove-link {
   .grid-example p {
     margin: 0;
     color: rgba(177, 14, 30, 0.3); }
+
+.js-hidden {
+  display: none; }
 
 .code {
   background: whitesmoke;
