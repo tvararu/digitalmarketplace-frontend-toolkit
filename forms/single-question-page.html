@@ -156,6 +156,30 @@
     </form>
   </div>
 </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">&lt;div class=&quot;single-question-page&quot;&gt;
+  &lt;header class=&quot;page-heading page-heading-without-breadcrumb&quot;&gt;
+    &lt;h1&gt;DUNS number&lt;/h1&gt;
+  &lt;/header&gt;
+&lt;div class=&quot;grid-row&quot;&gt;
+  &lt;div class=&quot;column-two-thirds&quot;&gt;
+    &lt;form method=&quot;POST&quot; action=&quot;/suppliers/duns-number&quot;&gt;
+      &lt;input type=&quot;hidden&quot; name=&quot;csrf_token&quot; value=&quot;##fa3c0dda184bfbb021bac53fd569ca3d077997b8&quot;&gt;
+      &lt;div class=&quot;question&quot; id=&quot;duns_number&quot;&gt;
+        &lt;label for=&quot;input-duns_number&quot;&gt;
+          &lt;span class=&quot;question-heading-with-hint&quot;&gt;DUNS number&lt;/span&gt;
+        &lt;/label&gt;
+        &lt;span class=&quot;question-advice&quot; id=&quot;input-duns_number-question-advice&quot;&gt;
+          &lt;p&gt;The Digital Marketplace uses your head office’s 9‑digit DUNS number to see if you’re already a supplier on the G‑Cloud framework.&lt;/p&gt;
+          &lt;p&gt;&lt;a href=&quot;http://www.dnb.co.uk/dandb-duns-number&quot; rel=&quot;external&quot;&gt;Find out how to get a DUNS number&lt;/a&gt;&lt;/p&gt;
+        &lt;/span&gt;
+        &lt;input type=&quot;text&quot; name=&quot;duns_number&quot; id=&quot;input-duns_number&quot; class=&quot;text-box&quot; value=&quot;&quot; aria-describedby=&quot;input-duns_number-question-advice &quot;&gt;
+      &lt;/div&gt;
+      &lt;input type=&quot;submit&quot; class=&quot;button-save&quot; value=&quot;Continue&quot;&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre></div>
+</div>
             <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;single-question-page&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;header</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;page-heading page-heading-without-breadcrumb&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;h1&gt;</span>DUNS number<span style="color: #008000; font-weight: bold">&lt;/h1&gt;</span>

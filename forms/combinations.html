@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang=""><![endif]-->
+<!--[if gt IE 8]><!--><html lang=""><!--<![endif]-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <title>Combinations - Digital Marketplace frontend toolkit</title>
+
+    <script type="text/javascript">
+      (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
+    </script>
+
+    <!--[if gt IE 8]><!--><link href="../govuk_template/assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+    <!--[if IE 6]><link href="../govuk_template/assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if IE 7]><link href="../govuk_template/assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if IE 8]><link href="../govuk_template/assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+
+    <link href="../govuk_template/assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+
+    <!--[if IE 8]>
+    <script type="text/javascript">
+      (function(){if(window.opera){return;}
+       setTimeout(function(){var a=document,g,b={families:(g=
+       ["nta"]),urls:["../govuk_template/assets/stylesheets/fonts-ie8.css?0.12.0"]},
+       c="../govuk_template/assets/javascripts/vendor/goog/webfont-debug.js?0.12.0",d="script",
+       e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+       ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+       .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+      })()
+    </script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+      <link href="../govuk_template/assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+    <!--<![endif]-->
+
+
+    <!--[if lt IE 9]>
+      <script src="../govuk_template/assets/javascripts/ie.js?0.12.0" type="text/javascript"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="../govuk_template/assets/images/favicon.ico?0.12.0" type="image/x-icon" />
+
+    <!-- Size for iPad and iPad mini (high resolution) -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../govuk_template/assets/images/apple-touch-icon-152x152.png?0.12.0">
+    <!-- Size for iPhone and iPod touch (high resolution) -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../govuk_template/assets/images/apple-touch-icon-120x120.png?0.12.0">
+    <!-- Size for iPad 2 and iPad mini (standard resolution) -->
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../govuk_template/assets/images/apple-touch-icon-76x76.png?0.12.0">
+    <!-- Default non-defined size, also used for Android 2.1+ devices -->
+    <link rel="apple-touch-icon-precomposed" href="../govuk_template/assets/images/apple-touch-icon-60x60.png?0.12.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="../govuk_template/assets/images/opengraph-image.png?0.12.0">
+
+    <!--[if !IE]><!-->
+<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index.css "/>
+<!--<![endif]-->
+<!--[if IE 6]>
+<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie6.css "/>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie7.css "/>
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie8.css "/>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie9.css "/>
+<![endif]-->
+
+  </head>
+
+  <body class="">
+    <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">Skip to main content</a>
+      </div>
+    </div>
+
+    <div id="global-cookie-message">
+      <div class="outer-block">
+        <div class="inner-block">
+          
+            
+          
+        </div>
+      </div>
+    </div>
+    <!--end global-cookie-message-->
+
+    
+    <header role="banner" id="global-header" class="">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="https://www.gov.uk/" title="Go to the GOV.UK homepage" id="logo" class="content">
+              <img src="../govuk_template/assets/images/gov.uk_logotype_crown.png?0.12.0" width="35" height="31" alt=""> GOV.UK
+            </a>
+          </div>
+          
+        </div>
+        
+      </div>
+    </header>
+    <!--end header-->
+    
+
+    
+
+    <div id="global-header-bar">
+      <div class="inner-block">
+        <div class="header-bar"></div>
+      </div>
+    </div>
+    <!--end global-header-bar-->
+
+    <div id="global-breadcrumb" class="header-context">
+  <nav>
+    <ol class="group" role="breadcrumbs">
+      <li>
+        <a href="/digitalmarketplace-frontend-toolkit/">Home</a>
+      </li>
+    </ol>
+  </nav>
+</div>
+<main role="main" id="content" class="wrapper">
+    <div id="wrapper">
+        <header class="page-heading">
+            <h1>Combinations</h1>
+        </header>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            <form>
+  
+<!-- `followup` field must be set to the `name` of the evidence textbox -->
+
+  
+
+
+
+  <fieldset class="question first-question" id="requirement-1">
+    <legend>
+      <span class="question-heading">
+        
+        Can you do this essential requirement
+      </span>
+      
+    </legend>
+    
+    
+    
+    
+      <label class="selection-button selection-button-boolean block-label" for="input-requirement-1-yes" data-target="requirement-evidence-1">
+        Yes
+        <input
+          type="radio"
+          name="requirement-1"
+          id="input-requirement-1-yes"
+          value="true"
+          
+           checked
+        />
+      </label>
+      <label class="selection-button selection-button-boolean" for="input-requirement-1-no">
+        No
+        <input
+          type="radio"
+          name="requirement-1"
+          id="input-requirement-1-no"
+          value="false"
+          
+          
+        />
+      </label>
+    
+    
+  </fieldset>
+
+
+
+  
+
+
+
+  <div class="question js-hidden related-information" id="requirement-evidence-1">
+    <label for="input-requirement-evidence-1">
+      <span class="question-heading">
+        
+        Evidence for the requirement
+        
+      </span>
+      
+    </label>
+    
+    
+    
+    
+      
+        <textarea class="text-box text-box-large" name="requirement-evidence-1" id="input-requirement-evidence-1"></textarea>
+      
+    
+  </div>
+
+
+
+</form>
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">&lt;form&gt;
+  
+&lt;!-- `followup` field must be set to the `name` of the evidence textbox --&gt;
+<span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">followup</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;requirement-evidence-1&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;requirement-1&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Can you do this essential requirement&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;boolean&quot;</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">large</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Evidence for the requirement&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;requirement-evidence-1&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">hidden</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&quot;</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;forms/textbox.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+
+&lt;/form&gt;
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;form&gt;</span>
+  
+<span style="color: #408080; font-style: italic">&lt;!-- `followup` field must be set to the `name` of the evidence textbox --&gt;</span>
+
+  
+
+
+
+  <span style="color: #008000; font-weight: bold">&lt;fieldset</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question first-question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;requirement-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;legend&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+        Can you do this essential requirement
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/legend&gt;</span>
+    
+    
+    
+    
+      <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button selection-button-boolean block-label&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-requirement-1-yes&quot;</span> <span style="color: #7D9029">data-target=</span><span style="color: #BA2121">&quot;requirement-evidence-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        Yes
+        <span style="color: #008000; font-weight: bold">&lt;input</span>
+          <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span>
+          <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;requirement-1&quot;</span>
+          <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-requirement-1-yes&quot;</span>
+          <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;true&quot;</span>
+          
+           <span style="color: #7D9029">checked</span>
+        <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button selection-button-boolean&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-requirement-1-no&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        No
+        <span style="color: #008000; font-weight: bold">&lt;input</span>
+          <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span>
+          <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;requirement-1&quot;</span>
+          <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-requirement-1-no&quot;</span>
+          <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;false&quot;</span>
+          
+          
+        <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+    
+  <span style="color: #008000; font-weight: bold">&lt;/fieldset&gt;</span>
+
+
+
+  
+
+
+
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question js-hidden related-information&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;requirement-evidence-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-requirement-evidence-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+        Evidence for the requirement
+        
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+    
+    
+    
+      
+        <span style="color: #008000; font-weight: bold">&lt;textarea</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box text-box-large&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;requirement-evidence-1&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-requirement-evidence-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/textarea&gt;</span>
+      
+    
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+
+
+
+<span style="color: #008000; font-weight: bold">&lt;/form&gt;</span>
+</pre></div>
+</div>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            <form>
+  
+<!-- `followup` field must be set to the `name` of the evidence textbox -->
+
+  
+
+
+
+  <fieldset class="question first-question" id="evidence-2">
+    <legend>
+      <span class="question-heading">
+        
+        Can you do this essential requirement - with errors
+      </span>
+      
+    </legend>
+    
+    
+    
+    
+      <label class="selection-button selection-button-boolean block-label" for="input-evidence-2-yes" data-target="requirement-evidence-2">
+        Yes
+        <input
+          type="radio"
+          name="evidence-2"
+          id="input-evidence-2-yes"
+          value="true"
+          
+           checked
+        />
+      </label>
+      <label class="selection-button selection-button-boolean" for="input-evidence-2-no">
+        No
+        <input
+          type="radio"
+          name="evidence-2"
+          id="input-evidence-2-no"
+          value="false"
+          
+          
+        />
+      </label>
+    
+    
+  </fieldset>
+
+
+
+  
+
+
+
+  <div class="validation-wrapper">
+
+  <div class="question js-hidden related-information" id="requirement-evidence-2">
+    <label for="input-requirement-evidence-2">
+      <span class="question-heading">
+        
+        Evidence for the requirement
+        
+      </span>
+      
+        <span class="validation-message">
+          Answer can't be more than 50 words
+        </span>
+      
+    </label>
+    
+    
+    
+    
+      
+        <textarea class="text-box text-box-large-with-error" name="requirement-evidence-2" id="input-requirement-evidence-2"></textarea>
+      
+    
+  </div>
+
+  </div>
+
+
+</form>
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">&lt;form&gt;
+  
+&lt;!-- `followup` field must be set to the `name` of the evidence textbox --&gt;
+<span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">followup</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;requirement-evidence-2&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;evidence-2&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Can you do this essential requirement - with errors&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;boolean&quot;</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">large</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Evidence for the requirement&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;requirement-evidence-2&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">hidden</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Answer can&#39;t be more than 50 words&quot;</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;forms/textbox.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+&lt;/form&gt;
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;form&gt;</span>
+  
+<span style="color: #408080; font-style: italic">&lt;!-- `followup` field must be set to the `name` of the evidence textbox --&gt;</span>
+
+  
+
+
+
+  <span style="color: #008000; font-weight: bold">&lt;fieldset</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question first-question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;evidence-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;legend&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+        Can you do this essential requirement - with errors
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/legend&gt;</span>
+    
+    
+    
+    
+      <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button selection-button-boolean block-label&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-evidence-2-yes&quot;</span> <span style="color: #7D9029">data-target=</span><span style="color: #BA2121">&quot;requirement-evidence-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        Yes
+        <span style="color: #008000; font-weight: bold">&lt;input</span>
+          <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span>
+          <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;evidence-2&quot;</span>
+          <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-evidence-2-yes&quot;</span>
+          <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;true&quot;</span>
+          
+           <span style="color: #7D9029">checked</span>
+        <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button selection-button-boolean&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-evidence-2-no&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        No
+        <span style="color: #008000; font-weight: bold">&lt;input</span>
+          <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span>
+          <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;evidence-2&quot;</span>
+          <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-evidence-2-no&quot;</span>
+          <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;false&quot;</span>
+          
+          
+        <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+    
+  <span style="color: #008000; font-weight: bold">&lt;/fieldset&gt;</span>
+
+
+
+  
+
+
+
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question js-hidden related-information&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;requirement-evidence-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-requirement-evidence-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+        Evidence for the requirement
+        
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Answer can&#39;t be more than 50 words
+        <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    
+    
+    
+    
+      
+        <span style="color: #008000; font-weight: bold">&lt;textarea</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box text-box-large-with-error&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;requirement-evidence-2&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-requirement-evidence-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/textarea&gt;</span>
+      
+    
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+
+
+<span style="color: #008000; font-weight: bold">&lt;/form&gt;</span>
+</pre></div>
+</div>
+    </div>
+</main>
+
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper">
+        
+
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+            
+
+            <div class="open-government-licence">
+              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+              <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+            </div>
+          </div>
+
+          <div class="copyright">
+            <a href="https://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">&copy; Crown copyright</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--end footer-->
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="../govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
+
+    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="../public/javascripts/govuk_frontend_toolkit/vendor/polyfills/bind.js"></script> <script type="text/javascript" src="../public/javascripts/govuk_frontend_toolkit/govuk/selection-buttons.js"></script> <script type="text/javascript" src="../public/javascripts/govuk_frontend_toolkit/govuk/show-hide-content.js"></script>
+
+<script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
+
+  </body>
+</html>
