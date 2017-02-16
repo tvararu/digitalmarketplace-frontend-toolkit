@@ -1238,16 +1238,16 @@ body {
 
 .contact-details-organisation {
   font-family: "nta", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.14286;
+  font-size: 16px;
+  line-height: 1.25;
   font-weight: 400;
   text-transform: none;
   font-weight: bold;
   margin: 0 0 5px; }
   @media (min-width: 641px) {
     .contact-details-organisation {
-      font-size: 16px;
-      line-height: 1.25; } }
+      font-size: 19px;
+      line-height: 1.31579; } }
 
 .contact-details-block-without-spacing,
 .contact-details-block {
