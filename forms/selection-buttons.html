@@ -1475,6 +1475,263 @@
             <div class="column-two-thirds">
             
             
+
+
+
+  <div class="message-wrapper">
+
+  <fieldset class="question first-question" id="Trumpton">
+    <legend>
+      <span class="question-heading">
+        
+          <span class="question-number">
+            23
+          </span>
+        
+        Checkboxes with a message
+      </span>
+      
+        <span class="message-content">
+          Grubb required
+        </span>
+      
+    </legend>
+    
+    
+    
+    
+      
+        
+        <label class="selection-button" for="input-Trumpton-1">
+          Pugh
+          
+            <input
+              type="checkbox"
+              name="Trumpton"
+              id="input-Trumpton-1"
+              value="Pugh"
+              
+              
+            />
+          
+          
+        </label>
+      
+        
+        <label class="selection-button" for="input-Trumpton-2">
+          Pugh
+          
+            <input
+              type="checkbox"
+              name="Trumpton"
+              id="input-Trumpton-2"
+              value="Pugh"
+              
+              
+            />
+          
+          
+        </label>
+      
+        
+        <label class="selection-button" for="input-Trumpton-3">
+          Barney McGrew
+          
+            <input
+              type="checkbox"
+              name="Trumpton"
+              id="input-Trumpton-3"
+              value="Barney McGrew"
+              
+              
+            />
+          
+          
+        </label>
+      
+        
+        <label class="selection-button" for="input-Trumpton-4">
+          Cuthbert
+          
+            <input
+              type="checkbox"
+              name="Trumpton"
+              id="input-Trumpton-4"
+              value="Cuthbert"
+              
+              
+            />
+          
+          
+        </label>
+      
+        
+        <label class="selection-button" for="input-Trumpton-5">
+          Dibble
+          
+            <input
+              type="checkbox"
+              name="Trumpton"
+              id="input-Trumpton-5"
+              value="Dibble"
+              
+              
+            />
+          
+          
+        </label>
+      
+    
+    
+  </fieldset>
+
+  </div>
+
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Trumpton&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Checkboxes with a message&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #666666">23,</span>
+  <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Grubb required&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Pugh&quot;</span>
+    <span style="color: #666666">},</span> 
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Pugh&quot;</span>
+    <span style="color: #666666">},</span> 
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Barney McGrew&quot;</span>
+    <span style="color: #666666">},</span> 
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Cuthbert&quot;</span>
+    <span style="color: #666666">},</span> 
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Dibble&quot;</span>
+    <span style="color: #666666">}</span>
+<span style="color: #666666">]</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;message-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+
+  <span style="color: #008000; font-weight: bold">&lt;fieldset</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question first-question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;Trumpton&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;legend&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-number&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            23
+          <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+        
+        Checkboxes with a message
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;message-content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Grubb required
+        <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/legend&gt;</span>
+    
+    
+    
+    
+      
+        
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-Trumpton-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Pugh
+          
+            <span style="color: #008000; font-weight: bold">&lt;input</span>
+              <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span>
+              <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;Trumpton&quot;</span>
+              <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-Trumpton-1&quot;</span>
+              <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Pugh&quot;</span>
+              
+              
+            <span style="color: #008000; font-weight: bold">/&gt;</span>
+          
+          
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+      
+        
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-Trumpton-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Pugh
+          
+            <span style="color: #008000; font-weight: bold">&lt;input</span>
+              <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span>
+              <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;Trumpton&quot;</span>
+              <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-Trumpton-2&quot;</span>
+              <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Pugh&quot;</span>
+              
+              
+            <span style="color: #008000; font-weight: bold">/&gt;</span>
+          
+          
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+      
+        
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-Trumpton-3&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Barney McGrew
+          
+            <span style="color: #008000; font-weight: bold">&lt;input</span>
+              <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span>
+              <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;Trumpton&quot;</span>
+              <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-Trumpton-3&quot;</span>
+              <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Barney McGrew&quot;</span>
+              
+              
+            <span style="color: #008000; font-weight: bold">/&gt;</span>
+          
+          
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+      
+        
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-Trumpton-4&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Cuthbert
+          
+            <span style="color: #008000; font-weight: bold">&lt;input</span>
+              <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span>
+              <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;Trumpton&quot;</span>
+              <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-Trumpton-4&quot;</span>
+              <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Cuthbert&quot;</span>
+              
+              
+            <span style="color: #008000; font-weight: bold">/&gt;</span>
+          
+          
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+      
+        
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-Trumpton-5&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Dibble
+          
+            <span style="color: #008000; font-weight: bold">&lt;input</span>
+              <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span>
+              <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;Trumpton&quot;</span>
+              <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-Trumpton-5&quot;</span>
+              <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Dibble&quot;</span>
+              
+              
+            <span style="color: #008000; font-weight: bold">/&gt;</span>
+          
+          
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+      
+    
+    
+  <span style="color: #008000; font-weight: bold">&lt;/fieldset&gt;</span>
+
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            
   
 
 

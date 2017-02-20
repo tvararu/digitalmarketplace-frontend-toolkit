@@ -297,6 +297,32 @@
 </pre></div>
 </div>
             
+            <div class="banner-information-without-action">
+  
+  <p class="banner-message">
+    This text provides some information about what you can see on the page.
+  </p>
+  
+</div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;This text provides some information about what you can see on the page.&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;information&quot;</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/notification-banner.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-information-without-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  
+  <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    This text provides some information about what you can see on the page.
+  <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+  
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+            
             <div class="banner-temporary-message-without-action">
   
   <h2>

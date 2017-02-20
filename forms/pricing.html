@@ -1672,6 +1672,380 @@
 
 
 
+  <div class="message-wrapper">
+
+
+
+  <fieldset class="question first-question" id="anotherPrice">
+    <legend>
+      <span class="question-heading">
+        Price with a message
+      </span>
+      
+        <span class="message-content">
+          This is a message about this price
+        </span>
+      
+    </legend>
+    
+    
+    
+    <div class="pricing">
+      
+      
+      
+      <div class="pricing-column">
+        <label for="input-minimum-price">
+          Minimum price
+          <span class="visually-hidden">in</span>
+          <span class="pricing-unit">£</span>
+        </label>
+        
+        <input
+          type="text"
+          class="text-box pricing-input-with-unit"
+          name="priceMin"
+          id="input-minimum-price"
+          value="12.12"
+          
+        />
+      </div>
+      
+      
+      <div class="pricing-column">
+        <div class="pricing-preposition">to</div>
+      </div>
+      <div class="pricing-column">
+        <label for="input-minimum-price">
+          Maximum price
+          <span class="visually-hidden">in</span>
+          <span class="pricing-unit">£</span>
+        </label>
+        
+        <input
+          type="text"
+          class="text-box pricing-input-with-unit"
+          name="priceMax"
+          id="input-maximum-price"
+          value="15.15"
+          
+        />
+      </div>
+      
+      
+      <div class="pricing-column">
+        <span class="pricing-preposition">per</span>
+      </div>
+      <div class="pricing-column">
+        <label for="input-price-unit">
+          Unit
+        </label>
+        
+        <select
+          class="pricing-input-select"
+          name="priceUnit"
+          id="input-price-unit"
+          
+        >
+          
+    <option value=''></option>
+  
+          
+    <option value='Unit'>Unit</option>
+  
+          
+    <option value='Person'>Person</option>
+  
+          
+    <option value='Licence'>Licence</option>
+  
+          
+    <option value='User'>User</option>
+  
+          
+    <option value='Device'>Device</option>
+  
+          
+    <option value='Instance'>Instance</option>
+  
+          
+    <option value='Server'>Server</option>
+  
+          
+    <option value='Virtual machine'>Virtual machine</option>
+  
+          
+    <option value='Transaction' selected='selected'>Transaction</option>
+    
+          
+    <option value='Megabyte'>Megabyte</option>
+  
+          
+    <option value='Gigabyte'>Gigabyte</option>
+  
+          
+    <option value='Terabyte'>Terabyte</option>
+  
+        </select>
+      </div>
+      
+      
+      <div class="pricing-column">
+        <span class="pricing-preposition">per</span>
+      </div>
+      <div class="pricing-column">
+        <label for="input-pricing-interval">
+          Interval
+        </label>
+        
+        <select
+          class="pricing-input-select"
+          name="priceInterval"
+          id="input-pricing-interval"
+          
+        >
+          
+    <option value=''></option>
+  
+          
+    <option value='Second'>Second</option>
+  
+          
+    <option value='Minute'>Minute</option>
+  
+          
+    <option value='Hour'>Hour</option>
+  
+          
+    <option value='Day'>Day</option>
+  
+          
+    <option value='Week'>Week</option>
+  
+          
+    <option value='Month'>Month</option>
+  
+          
+    <option value='Quarter'>Quarter</option>
+  
+          
+    <option value='6 months'>6 months</option>
+  
+          
+    <option value='Year' selected='selected'>Year</option>
+    
+        </select>
+      </div>
+      
+    </div>
+  </fieldset>
+
+
+  </div>
+
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;anotherPrice&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">minimum_price</span> <span style="color: #666666">=</span> <span style="color: #666666">12.12,</span>
+  <span style="color: #19177C">fields</span> <span style="color: #666666">=</span> <span style="color: #666666">{</span>
+    <span style="color: #BA2121">&quot;minimum_price&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;priceMin&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;maximum_price&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;priceMax&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;price_unit&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;priceUnit&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;price_interval&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;priceInterval&quot;</span>
+<span style="color: #666666">},</span>
+  <span style="color: #19177C">price_unit</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Transaction&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Price with a message&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">maximum_price</span> <span style="color: #666666">=</span> <span style="color: #666666">15.15,</span>
+  <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;This is a message about this price&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">price_interval</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Year&quot;</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/pricing.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;message-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+
+
+
+  <span style="color: #008000; font-weight: bold">&lt;fieldset</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question first-question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;anotherPrice&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;legend&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        Price with a message
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;message-content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          This is a message about this price
+        <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/legend&gt;</span>
+    
+    
+    
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;pricing&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      
+      
+      
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;pricing-column&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-minimum-price&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Minimum price
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visually-hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>in<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;pricing-unit&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>£<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        
+        <span style="color: #008000; font-weight: bold">&lt;input</span>
+          <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span>
+          <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box pricing-input-with-unit&quot;</span>
+          <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;priceMin&quot;</span>
+          <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-minimum-price&quot;</span>
+          <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;12.12&quot;</span>
+          
+        <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+      
+      
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;pricing-column&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;pricing-preposition&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>to<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;pricing-column&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-minimum-price&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Maximum price
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visually-hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>in<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;pricing-unit&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>£<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        
+        <span style="color: #008000; font-weight: bold">&lt;input</span>
+          <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span>
+          <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;text-box pricing-input-with-unit&quot;</span>
+          <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;priceMax&quot;</span>
+          <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-maximum-price&quot;</span>
+          <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;15.15&quot;</span>
+          
+        <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+      
+      
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;pricing-column&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;pricing-preposition&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>per<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;pricing-column&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-price-unit&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Unit
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        
+        <span style="color: #008000; font-weight: bold">&lt;select</span>
+          <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;pricing-input-select&quot;</span>
+          <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;priceUnit&quot;</span>
+          <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-price-unit&quot;</span>
+          
+        <span style="color: #008000; font-weight: bold">&gt;</span>
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;&#39;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;Unit&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>Unit<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;Person&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>Person<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;Licence&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>Licence<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;User&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>User<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;Device&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>Device<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;Instance&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>Instance<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;Server&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>Server<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;Virtual machine&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>Virtual machine<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;Transaction&#39;</span> <span style="color: #7D9029">selected=</span><span style="color: #BA2121">&#39;selected&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>Transaction<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+    
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;Megabyte&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>Megabyte<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;Gigabyte&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>Gigabyte<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;Terabyte&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>Terabyte<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+  
+        <span style="color: #008000; font-weight: bold">&lt;/select&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+      
+      
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;pricing-column&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;pricing-preposition&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>per<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;pricing-column&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-pricing-interval&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          Interval
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        
+        <span style="color: #008000; font-weight: bold">&lt;select</span>
+          <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;pricing-input-select&quot;</span>
+          <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;priceInterval&quot;</span>
+          <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-pricing-interval&quot;</span>
+          
+        <span style="color: #008000; font-weight: bold">&gt;</span>
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;&#39;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;Second&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>Second<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;Minute&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>Minute<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;Hour&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>Hour<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;Day&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>Day<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;Week&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>Week<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;Month&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>Month<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;Quarter&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>Quarter<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;6 months&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>6 months<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+  
+          
+    <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&#39;Year&#39;</span> <span style="color: #7D9029">selected=</span><span style="color: #BA2121">&#39;selected&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>Year<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+    
+        <span style="color: #008000; font-weight: bold">&lt;/select&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+      
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/fieldset&gt;</span>
+
+
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            
+
+
+
+
+
 
 
   <fieldset class="question first-question" id="price">
