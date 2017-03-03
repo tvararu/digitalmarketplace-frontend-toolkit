@@ -43,11 +43,11 @@
       margin-top: 20px; } }
 
 .document-link-with-icon, .document-link-with-narrow-icon,
-.document-link, .hint, .question-heading, .question-optional, .question-advice, .selection-button, .validation-message, .message-content, .file-upload-input {
+.document-link, .hint, .question-heading, .question-optional, .question-advice, .selection-button, .validation-message, .message-content, .file-upload-input, .checkbox-tree__counter {
   margin-bottom: 10px; }
   @media (min-width: 641px) {
     .document-link-with-icon, .document-link-with-narrow-icon,
-    .document-link, .hint, .question-heading, .question-optional, .question-advice, .selection-button, .validation-message, .message-content, .file-upload-input {
+    .document-link, .hint, .question-heading, .question-optional, .question-advice, .selection-button, .validation-message, .message-content, .file-upload-input, .checkbox-tree__counter {
       padding-top: 7px;
       padding-bottom: 7px; } }
 
@@ -2231,7 +2231,7 @@ body {
   .hint ol, .hint-underneath ol, .question-advice ol {
     list-style: decimal; }
 
-.single-question-page form [class^="question-heading"] {
+.single-question-page form [class^="question-heading"], fieldset.checkbox-tree__selection-buttons > legend, .checkbox-tree__selection-buttons details legend {
   position: absolute;
   left: -9999em; }
 
@@ -2668,6 +2668,15 @@ table.summary-item-body tbody .summary-item-field-no-padding, .summary-item-fiel
     margin: 0;
     list-style-type: disc;
     padding: 0 0 0 20px; }
+    table.summary-item-body tbody .summary-item-field-first-narrow-no-padding ul.checkbox-tree,
+    table.summary-item-body tbody .summary-item-field-no-padding ul.checkbox-tree, .summary-item-field-border ul.checkbox-tree, .summary-item-field-first ul.checkbox-tree, .summary-item-field-first-narrow ul.checkbox-tree, .summary-item-field-first-half ul.checkbox-tree, .summary-item-field-first-two-thirds ul.checkbox-tree, .summary-item-field-with-action ul.checkbox-tree,
+    .summary-item-field ul.checkbox-tree {
+      list-style-type: none;
+      padding-left: 0; }
+      table.summary-item-body tbody .summary-item-field-first-narrow-no-padding ul.checkbox-tree > li:not(:last-child) ul,
+      table.summary-item-body tbody .summary-item-field-no-padding ul.checkbox-tree > li:not(:last-child) ul, .summary-item-field-border ul.checkbox-tree > li:not(:last-child) ul, .summary-item-field-first ul.checkbox-tree > li:not(:last-child) ul, .summary-item-field-first-narrow ul.checkbox-tree > li:not(:last-child) ul, .summary-item-field-first-half ul.checkbox-tree > li:not(:last-child) ul, .summary-item-field-first-two-thirds ul.checkbox-tree > li:not(:last-child) ul, .summary-item-field-with-action ul.checkbox-tree > li:not(:last-child) ul,
+      .summary-item-field ul.checkbox-tree > li:not(:last-child) ul {
+        margin-bottom: 10px; }
   table.summary-item-body tbody .summary-item-field-first-narrow-no-padding .multiquestion,
   table.summary-item-body tbody .summary-item-field-no-padding .multiquestion, .summary-item-field-border .multiquestion, .summary-item-field-first .multiquestion, .summary-item-field-first-narrow .multiquestion, .summary-item-field-first-half .multiquestion, .summary-item-field-first-two-thirds .multiquestion, .summary-item-field-with-action .multiquestion,
   .summary-item-field .multiquestion {
@@ -3002,6 +3011,78 @@ a.summary-item-remove-link {
     border-left: none;
     padding-left: 0;
     margin-top: -20px; }
+
+@media (min-width: 641px) {
+  .column-two-thirds .checkbox-tree {
+    margin-right: -50%; } }
+
+.checkbox-tree__counter strong {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 18px;
+  line-height: 1.2;
+  /* overriding the line heights in the bold style is finicky */
+  line-height: 0 !important; }
+  @media (min-width: 641px) {
+    .checkbox-tree__counter strong {
+      font-size: 24px;
+      line-height: 1.25; } }
+
+.checkbox-tree__selection-buttons .panel fieldset.related-information {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 15px; }
+  @media (min-width: 641px) {
+    .checkbox-tree__selection-buttons .panel fieldset.related-information {
+      margin-bottom: 30px; } }
+  .checkbox-tree__selection-buttons .panel fieldset.related-information label:last-of-type {
+    /* when focused, it hits the bottom of the grey bar */
+    padding-bottom: 9px;
+    margin-bottom: 4px; }
+    @media (min-width: 641px) {
+      .checkbox-tree__selection-buttons .panel fieldset.related-information label:last-of-type {
+        padding-bottom: 4px; } }
+  .validation-wrapper .checkbox-tree__selection-buttons .panel fieldset.related-information, .message-wrapper .checkbox-tree__selection-buttons .panel fieldset.related-information {
+    border-left: solid 5px #bfc1c3; }
+
+.checkbox-tree__selection-buttons details {
+  position: relative;
+  display: block;
+  clear: both;
+  margin-top: 10px; }
+  .checkbox-tree__selection-buttons details summary {
+    display: inline-block;
+    color: #005ea5;
+    cursor: pointer; }
+    .checkbox-tree__selection-buttons details summary:hover {
+      color: #2b8cc4; }
+    .checkbox-tree__selection-buttons details summary:focus {
+      outline: solid 3px #ffbf47; }
+  .checkbox-tree__selection-buttons details .categories-heading {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+    display: inline-block; }
+    @media (min-width: 641px) {
+      .checkbox-tree__selection-buttons details .categories-heading {
+        font-size: 19px;
+        line-height: 1.31579; } }
+  .checkbox-tree__selection-buttons details .categories-summary {
+    font-family: "ntatabularnumbers", "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+    display: block;
+    margin-left: 25px;
+    color: #6f777b; }
+    @media (min-width: 641px) {
+      .checkbox-tree__selection-buttons details .categories-summary {
+        font-size: 19px;
+        line-height: 1.31579; } }
 
 .grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after, .message-wrapper:after {
   content: "";

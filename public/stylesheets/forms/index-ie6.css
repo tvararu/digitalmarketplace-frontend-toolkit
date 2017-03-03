@@ -1008,6 +1008,15 @@ table.summary-item-body tbody .summary-item-field-no-padding, .summary-item-fiel
     margin: 0;
     list-style-type: disc;
     padding: 0 0 0 20px; }
+    table.summary-item-body tbody .summary-item-field-first-narrow-no-padding ul.checkbox-tree,
+    table.summary-item-body tbody .summary-item-field-no-padding ul.checkbox-tree, .summary-item-field-border ul.checkbox-tree, .summary-item-field-first ul.checkbox-tree, .summary-item-field-first-narrow ul.checkbox-tree, .summary-item-field-first-half ul.checkbox-tree, .summary-item-field-first-two-thirds ul.checkbox-tree, .summary-item-field-with-action ul.checkbox-tree,
+    .summary-item-field ul.checkbox-tree {
+      list-style-type: none;
+      padding-left: 0; }
+      table.summary-item-body tbody .summary-item-field-first-narrow-no-padding ul.checkbox-tree > li:not(:last-child) ul,
+      table.summary-item-body tbody .summary-item-field-no-padding ul.checkbox-tree > li:not(:last-child) ul, .summary-item-field-border ul.checkbox-tree > li:not(:last-child) ul, .summary-item-field-first ul.checkbox-tree > li:not(:last-child) ul, .summary-item-field-first-narrow ul.checkbox-tree > li:not(:last-child) ul, .summary-item-field-first-half ul.checkbox-tree > li:not(:last-child) ul, .summary-item-field-first-two-thirds ul.checkbox-tree > li:not(:last-child) ul, .summary-item-field-with-action ul.checkbox-tree > li:not(:last-child) ul,
+      .summary-item-field ul.checkbox-tree > li:not(:last-child) ul {
+        margin-bottom: 10px; }
   table.summary-item-body tbody .summary-item-field-first-narrow-no-padding .multiquestion,
   table.summary-item-body tbody .summary-item-field-no-padding .multiquestion, .summary-item-field-border .multiquestion, .summary-item-field-first .multiquestion, .summary-item-field-first-narrow .multiquestion, .summary-item-field-first-half .multiquestion, .summary-item-field-first-two-thirds .multiquestion, .summary-item-field-with-action .multiquestion,
   .summary-item-field .multiquestion {

@@ -1934,6 +1934,58 @@
   </td>
   
   </tr>
+  <tr class="summary-item-row">
+    
+   
+  <td  class="summary-item-field-first">
+    
+      <span>Service categories</span>
+    
+  </td>
+   
+  <td  class="summary-item-field">
+    
+      <span><ul class="checkbox-tree">
+      
+        <li>
+          <p>Accounting and finance</p>
+          
+            <ul>
+    
+      <li>Accounting</li>
+    
+      <li>Accounts payable</li>
+    
+      <li>Accounts receivable</li>
+    
+      <li>Asset management</li>
+    
+  </ul>
+  
+          
+        </li>
+      
+        <li>
+          <p>Operations management</p>
+          
+            <ul>
+    
+      <li>Contract management</li>
+    
+      <li>Enterprise resource planning (ERP)</li>
+    
+      <li>Operations management</li>
+    
+  </ul>
+  
+          
+        </li>
+      
+      </ul></span>
+    
+  </td>
+  
+  </tr>
 
     </tbody>
   </table>
@@ -1979,9 +2031,28 @@
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.row</span><span style="color: #666666">()</span> <span style="color: #BC7A00">%}</span>
     <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.field_name</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Developer&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
     <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.multiquestion</span><span style="color: #666666">([</span>
-      <span style="color: #666666">{</span><span style="color: #BA2121">&#39;name&#39;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Where they&#39;ll work&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;type&#39;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;list&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;value&#39;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span><span style="color: #BA2121">&quot;London&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Mississauga&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Rivière-du-Loup&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Singapore&quot;</span><span style="color: #666666">]},</span>
-      <span style="color: #666666">{</span><span style="color: #BA2121">&#39;name&#39;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Day rate&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;type&#39;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;text&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;value&#39;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;£100 to £1000000 per day&quot;</span><span style="color: #666666">}</span>
+      <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Where they&#39;ll work&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;list&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span><span style="color: #BA2121">&quot;London&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Mississauga&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Rivière-du-Loup&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Singapore&quot;</span><span style="color: #666666">]},</span>
+      <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Day rate&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;text&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;£100 to £1000000 per day&quot;</span><span style="color: #666666">}</span>
      <span style="color: #666666">])</span> <span style="color: #BC7A00">}}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.row</span><span style="color: #666666">()</span> <span style="color: #BC7A00">%}</span>
+   <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.field_name</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Service categories&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+   <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.checkbox_tree</span><span style="color: #666666">(</span>
+     <span style="color: #666666">[{</span>
+       <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Accounting and finance&quot;</span><span style="color: #666666">,</span>
+       <span style="color: #BA2121">&quot;options&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
+         <span style="color: #666666">{</span><span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Accounting&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;options&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[]},</span>
+         <span style="color: #666666">{</span><span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Accounts payable&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;options&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[]},</span>
+         <span style="color: #666666">{</span><span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Accounts receivable&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;options&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[]},</span>
+         <span style="color: #666666">{</span><span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Asset management&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;options&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[]}]</span>
+     <span style="color: #666666">},{</span>
+       <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Operations management&quot;</span><span style="color: #666666">,</span>
+       <span style="color: #BA2121">&quot;options&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
+         <span style="color: #666666">{</span><span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Contract management&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;options&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[]},</span>
+         <span style="color: #666666">{</span><span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Enterprise resource planning (ERP)&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;options&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[]},</span>
+         <span style="color: #666666">{</span><span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Operations management&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;options&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[]}]</span>
+     <span style="color: #666666">}])</span>
+   <span style="color: #BC7A00">}}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
@@ -2164,6 +2235,58 @@
           <span style="color: #008000; font-weight: bold">&lt;div&gt;</span>£100 to £1000000 per day<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
         <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+  
+  <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+   
+  <span style="color: #008000; font-weight: bold">&lt;td</span>  <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Service categories<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+   
+  <span style="color: #008000; font-weight: bold">&lt;td</span>  <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;span&gt;&lt;ul</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;checkbox-tree&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Accounting and finance<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Accounting<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Accounts payable<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Accounts receivable<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Asset management<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+  
+          
+        <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+      
+        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Operations management<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+          
+            <span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Contract management<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Enterprise resource planning (ERP)<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Operations management<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+  
+          
+        <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+      
+      <span style="color: #008000; font-weight: bold">&lt;/ul&gt;&lt;/span&gt;</span>
     
   <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
   
