@@ -2683,21 +2683,19 @@ a.summary-item-remove-link {
   margin-top: -20px; }
   .related-information .question-heading {
     font-family: "nta", Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: none;
     font-size: 16px;
     line-height: 1.25;
     font-size: 19px;
-    line-height: 1.31579;
-    padding-top: 0;
-    margin-bottom: 0; }
-  .related-information span:last-child {
-    padding-bottom: 2px;
-    margin-bottom: 0; }
+    line-height: 1.31579; }
   .validation-wrapper .related-information, .message-wrapper .related-information {
     border-left: none;
     padding-left: 0;
     margin-top: -20px; }
+
+fieldset.related-information {
+  padding-top: 0; }
 
 .column-two-thirds .checkbox-tree {
   margin-right: -50%; }
