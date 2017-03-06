@@ -1133,7 +1133,7 @@
       Summary table with top-level action
   </h2>
 <p class="summary-item-description">
-    You must add at least one service to be eligable.
+    You must add at least one service to be eligible.
   </p>
 <p class="summary-item-top-level-action">
     <a href="#" class="summary-change-link">Add new service</a>
@@ -1145,7 +1145,7 @@
   
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with top-level action&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
-<span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.description</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;You must add at least one service to be eligable.&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+<span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.description</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;You must add at least one service to be eligible.&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.top_link</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Add new service&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;#&#39;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[],</span>
@@ -1165,7 +1165,7 @@
       Summary table with top-level action
   <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
 <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-description&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-    You must add at least one service to be eligable.
+    You must add at least one service to be eligible.
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
 <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-top-level-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-change-link&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Add new service<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
@@ -1939,18 +1939,20 @@
    
   <td  class="summary-item-field-first">
     
-      <span>Service categories</span>
+      <span>Service categories with children</span>
     
   </td>
    
   <td  class="summary-item-field">
     
-      <span><ul class="checkbox-tree">
+      <span>
       
-        <li>
-          <p>Accounting and finance</p>
-          
-            <ul>
+        <ul class="checkbox-tree--with-children">
+        
+          <li>
+            <p>Accounting and finance</p>
+            
+              <ul>
     
       <li>Accounting</li>
     
@@ -1962,13 +1964,13 @@
     
   </ul>
   
-          
-        </li>
-      
-        <li>
-          <p>Operations management</p>
-          
-            <ul>
+            
+          </li>
+        
+          <li>
+            <p>Operations management</p>
+            
+              <ul>
     
       <li>Contract management</li>
     
@@ -1978,10 +1980,43 @@
     
   </ul>
   
-          
-        </li>
+            
+          </li>
+        
+        </ul>
+      </span>
+    
+  </td>
+  
+  </tr>
+  <tr class="summary-item-row">
+    
+   
+  <td  class="summary-item-field-first">
+    
+      <span>Flat list of service categories</span>
+    
+  </td>
+   
+  <td  class="summary-item-field">
+    
+      <span>
       
-      </ul></span>
+        <ul>
+    
+      <li>Firewall</li>
+    
+      <li>Infrastructure and platform security</li>
+    
+      <li>Intrusion detection</li>
+    
+      <li>Load balancing</li>
+    
+      <li>Logging and analysis</li>
+    
+  </ul>
+  
+      </span>
     
   </td>
   
@@ -2036,7 +2071,7 @@
      <span style="color: #666666">])</span> <span style="color: #BC7A00">}}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.row</span><span style="color: #666666">()</span> <span style="color: #BC7A00">%}</span>
-   <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.field_name</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Service categories&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+   <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.field_name</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Service categories with children&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.checkbox_tree</span><span style="color: #666666">(</span>
      <span style="color: #666666">[{</span>
        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Accounting and finance&quot;</span><span style="color: #666666">,</span>
@@ -2052,6 +2087,18 @@
          <span style="color: #666666">{</span><span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Enterprise resource planning (ERP)&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;options&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[]},</span>
          <span style="color: #666666">{</span><span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Operations management&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;options&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[]}]</span>
      <span style="color: #666666">}])</span>
+   <span style="color: #BC7A00">}}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.row</span><span style="color: #666666">()</span> <span style="color: #BC7A00">%}</span>
+   <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.field_name</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Flat list of service categories&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+   <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.checkbox_tree</span><span style="color: #666666">(</span>
+     <span style="color: #666666">[</span>
+      <span style="color: #666666">{</span><span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Firewall&quot;</span><span style="color: #666666">},</span>
+      <span style="color: #666666">{</span><span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Infrastructure and platform security&quot;</span><span style="color: #666666">},</span>
+      <span style="color: #666666">{</span><span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Intrusion detection&quot;</span><span style="color: #666666">},</span>
+      <span style="color: #666666">{</span><span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Load balancing&quot;</span><span style="color: #666666">},</span>
+      <span style="color: #666666">{</span><span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Logging and analysis&quot;</span><span style="color: #666666">},</span>
+     <span style="color: #666666">])</span>
    <span style="color: #BC7A00">}}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
@@ -2244,18 +2291,20 @@
    
   <span style="color: #008000; font-weight: bold">&lt;td</span>  <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
-      <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Service categories<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Service categories with children<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
     
   <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
    
   <span style="color: #008000; font-weight: bold">&lt;td</span>  <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
-      <span style="color: #008000; font-weight: bold">&lt;span&gt;&lt;ul</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;checkbox-tree&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
       
-        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Accounting and finance<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
-          
-            <span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;checkbox-tree--with-children&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Accounting and finance<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+            
+              <span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
     
       <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Accounting<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
     
@@ -2267,13 +2316,13 @@
     
   <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
   
-          
-        <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
-      
-        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Operations management<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
-          
-            <span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
+            
+          <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Operations management<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+            
+              <span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
     
       <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Contract management<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
     
@@ -2283,10 +2332,43 @@
     
   <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
   
-          
-        <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+            
+          <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+        
+        <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+  
+  <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+   
+  <span style="color: #008000; font-weight: bold">&lt;td</span>  <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Flat list of service categories<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+   
+  <span style="color: #008000; font-weight: bold">&lt;td</span>  <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
       
-      <span style="color: #008000; font-weight: bold">&lt;/ul&gt;&lt;/span&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;ul&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Firewall<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Infrastructure and platform security<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Intrusion detection<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Load balancing<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Logging and analysis<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+  
+      <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
     
   <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
   
