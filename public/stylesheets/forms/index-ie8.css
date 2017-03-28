@@ -206,7 +206,7 @@
   .selection-button:last-child, .selection-button:last-of-type {
     margin-bottom: 0; }
 
-fieldset.inline .selection-button {
+.inline fieldset .selection-button {
   clear: none;
   margin-bottom: 0;
   margin-right: 30px; }

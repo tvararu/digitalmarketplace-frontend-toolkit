@@ -2179,7 +2179,7 @@ legend {
   .selection-button:last-child, .selection-button:last-of-type {
     margin-bottom: 0; }
 
-fieldset.inline .selection-button {
+.inline fieldset .selection-button {
   clear: none;
   margin-bottom: 0;
   margin-right: 30px; }
@@ -2679,8 +2679,10 @@ a.summary-item-remove-link {
 
 .related-information {
   padding-left: 15px;
-  padding-top: 15px;
-  margin-top: -20px; }
+  padding-top: 20px;
+  margin: -30px 0 0 0; }
+  .related-information:not(:last-of-type) {
+    padding-bottom: 30px; }
   .related-information .question-heading {
     font-family: "nta", Arial, sans-serif;
     font-weight: 700;
@@ -2694,8 +2696,9 @@ a.summary-item-remove-link {
     padding-left: 0;
     margin-top: -20px; }
 
-fieldset.related-information {
-  padding-top: 0; }
+.related-information + .related-information {
+  padding-top: 10px;
+  margin-top: 0; }
 
 .column-two-thirds .checkbox-tree {
   margin-right: -50%; }
@@ -2722,7 +2725,8 @@ fieldset.related-information {
 .checkbox-tree__inputs fieldset.related-information {
   margin-top: 10px;
   margin-bottom: 0;
-  padding-left: 15px; }
+  padding-left: 15px;
+  padding-top: 0; }
   .checkbox-tree__inputs fieldset.related-information label:last-of-type {
     /* when focused, it hits the bottom of the grey bar */
     padding-bottom: 9px;
