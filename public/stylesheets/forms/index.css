@@ -995,6 +995,14 @@ table.summary-item-body {
   table.summary-item-body tbody tr {
     text-align: right;
     border-top: 1px solid #bfc1c3; }
+  table.summary-item-body-no-bottom-border-text-large tbody .summary-item-row-no-border,
+  table.summary-item-body-no-bottom-border-row-bold-borders-text-large tbody .summary-item-row-no-border,
+  table.summary-item-body-no-bottom-border-row-bold-borders tbody .summary-item-row-no-border,
+  table.summary-item-body-no-bottom-border tbody .summary-item-row-no-border,
+  table.summary-item-body-row-bold-borders-text-large tbody .summary-item-row-no-border,
+  table.summary-item-body-row-bold-borders tbody .summary-item-row-no-border,
+  table.summary-item-body tbody .summary-item-row-no-border {
+    border-top: 0; }
   table.summary-item-body-no-bottom-border-text-large tbody td,
   table.summary-item-body-no-bottom-border-row-bold-borders-text-large tbody td,
   table.summary-item-body-no-bottom-border-row-bold-borders tbody td,
