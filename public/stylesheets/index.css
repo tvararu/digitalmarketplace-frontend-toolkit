@@ -2856,6 +2856,17 @@ a.summary-item-remove-link {
   position: absolute;
   left: -9999em; }
 
+.date-field-container {
+  display: -moz-inline-stack;
+  display: inline-block;
+  padding-right: 1em; }
+
+.date-input-day-month {
+  width: 2.75em; }
+
+.date-input-year {
+  width: 4.25em; }
+
 .grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after, .message-wrapper:after {
   content: "";
   display: block;
