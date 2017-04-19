@@ -2631,7 +2631,7 @@ a.summary-item-remove-link {
   margin: 24px 0 48px 0; }
   .validation-wrapper .question, .message-wrapper .question,
   .validation-wrapper .question button, .message-wrapper .question button {
-    margin: 0; }
+    margin-bottom: 0; }
   .validation-wrapper .question-heading, .message-wrapper .question-heading {
     padding-top: 0; }
 
