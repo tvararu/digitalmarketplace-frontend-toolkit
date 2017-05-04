@@ -293,19 +293,18 @@
       text-transform: none;
       font-size: 14px;
       line-height: 1.14286;
-      background: url("../images/breadcrumb-separator.png") 100% 50% no-repeat;
+      background: url("../images/breadcrumb-separator.png") 0% 50% no-repeat;
       float: left;
       list-style: none;
-      margin-left: 0;
       margin-right: 0.5em;
-      padding-right: 15px; }
+      padding-left: 15px; }
       @media (min-width: 641px) {
         #global-breadcrumb nav ol li {
           font-size: 16px;
           line-height: 1.25; } }
-      #global-breadcrumb nav ol li:last-child {
+      #global-breadcrumb nav ol li:first-child {
         background-image: none;
-        margin-right: 0; }
+        padding-left: 0; }
       #global-breadcrumb nav ol li a {
         color: #0b0c0c; }
         #global-breadcrumb nav ol li a:hover {
@@ -2433,8 +2432,6 @@ body {
     zoom: 1;
     filter: alpha(opacity=100);
     opacity: 1; }
-  .selection-button:last-child, .selection-button:last-of-type {
-    margin-bottom: 0; }
 
 .inline fieldset .selection-button {
   clear: none; }
@@ -3014,9 +3011,7 @@ a.summary-item-remove-link {
 .related-information {
   padding-left: 15px;
   padding-top: 20px;
-  margin: -30px 0 0 0; }
-  .related-information:not(:last-of-type) {
-    padding-bottom: 30px; }
+  margin: -15px 0 0 0; }
   .related-information .question-heading {
     font-family: "nta", Arial, sans-serif;
     font-weight: 700;
@@ -3033,8 +3028,7 @@ a.summary-item-remove-link {
     margin-top: -20px; }
 
 .related-information + .related-information {
-  padding-top: 10px;
-  margin-top: 0; }
+  padding-top: 60px; }
 
 @media (min-width: 641px) {
   .column-two-thirds .checkbox-tree {
@@ -3066,15 +3060,14 @@ a.summary-item-remove-link {
   margin-bottom: 0;
   padding-left: 15px;
   padding-top: 0; }
-  .checkbox-tree__inputs fieldset.related-information label:last-of-type {
-    /* when focused, it hits the bottom of the grey bar */
-    padding-bottom: 9px;
-    margin-bottom: 4px; }
-    @media (min-width: 641px) {
-      .checkbox-tree__inputs fieldset.related-information label:last-of-type {
-        padding-bottom: 4px; } }
   .validation-wrapper .checkbox-tree__inputs fieldset.related-information, .message-wrapper .checkbox-tree__inputs fieldset.related-information {
     border-left: solid 5px #bfc1c3; }
+  .checkbox-tree__inputs fieldset.related-information .last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 10px; }
+    @media (min-width: 641px) {
+      .checkbox-tree__inputs fieldset.related-information .last-of-type {
+        margin-bottom: 5px; } }
 
 .checkbox-tree__inputs details:not(:last-child) fieldset.related-information {
   margin-bottom: 20px; }
