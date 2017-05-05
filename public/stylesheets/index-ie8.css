@@ -1562,6 +1562,7 @@ legend {
   margin-bottom: 15px;
   margin-top: 5px;
   position: static;
+  overflow: hidden;
   display: -moz-inline-stack;
   display: inline-block;
   margin: 0 0 0 0.6em;

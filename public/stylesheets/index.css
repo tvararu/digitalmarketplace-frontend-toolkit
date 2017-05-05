@@ -1722,7 +1722,8 @@ body {
   display: block;
   margin-bottom: 15px;
   margin-top: 5px;
-  position: static; }
+  position: static;
+  overflow: hidden; }
   @media (min-width: 641px) {
     .input-list .list-entry-remove {
       font-size: 19px;
