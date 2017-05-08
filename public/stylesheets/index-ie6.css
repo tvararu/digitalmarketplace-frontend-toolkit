@@ -1564,13 +1564,13 @@ legend {
   line-height: 1.31579; }
   .hint p, .hint-underneath p, .question-advice p {
     margin: 0;
-    padding-bottom: 10px; }
+    padding-top: 10px; }
   .hint p + ul, .hint-underneath p + ul, .question-advice p + ul, .hint p + ol, .hint-underneath p + ol, .question-advice p + ol {
-    margin-top: -10px; }
+    margin-top: 5px; }
     .hint p + ul li, .hint-underneath p + ul li, .question-advice p + ul li, .hint p + ol li, .hint-underneath p + ol li, .question-advice p + ol li {
       margin-bottom: 0; }
-  .hint p:last-child, .hint-underneath p:last-child, .question-advice p:last-child {
-    padding-bottom: 0; }
+  .hint p:first-child, .hint-underneath p:first-child, .question-advice p:first-child {
+    padding-top: 0; }
   .hint ul, .hint-underneath ul, .question-advice ul, .hint ol, .hint-underneath ol, .question-advice ol {
     padding-bottom: 10px;
     padding-left: 20px; }
@@ -2073,13 +2073,13 @@ legend {
   line-height: 1.31579; }
   .hint p, .hint-underneath p, .question-advice p {
     margin: 0;
-    padding-bottom: 10px; }
+    padding-top: 10px; }
   .hint p + ul, .hint-underneath p + ul, .question-advice p + ul, .hint p + ol, .hint-underneath p + ol, .question-advice p + ol {
-    margin-top: -10px; }
+    margin-top: 5px; }
     .hint p + ul li, .hint-underneath p + ul li, .question-advice p + ul li, .hint p + ol li, .hint-underneath p + ol li, .question-advice p + ol li {
       margin-bottom: 0; }
-  .hint p:last-child, .hint-underneath p:last-child, .question-advice p:last-child {
-    padding-bottom: 0; }
+  .hint p:first-child, .hint-underneath p:first-child, .question-advice p:first-child {
+    padding-top: 0; }
   .hint ul, .hint-underneath ul, .question-advice ul, .hint ol, .hint-underneath ol, .question-advice ol {
     padding-bottom: 10px;
     padding-left: 20px; }
