@@ -1107,7 +1107,7 @@ legend {
 .instruction-list[start] .divider {
   border-top: 1px solid #dee0e2; }
 
-.instruction-list .divider:last-child .question:last-child {
+.instruction-list .question {
   margin: 15px 0 0 0; }
 
 .sublist {
