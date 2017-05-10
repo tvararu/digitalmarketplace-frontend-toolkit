@@ -1533,8 +1533,6 @@ legend {
   display: block;
   color: #6f777b;
   clear: both; }
-  .hint p:last-child, .hint-underneath p:last-child {
-    padding-bottom: 0; }
 
 .hint-underneath {
   padding-top: 18px;
