@@ -1310,9 +1310,9 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 
 .service-id-chunk {
   display: inline;
-  padding-right: 5px; }
-  .service-id-chunk:last-child {
-    padding-right: 0; }
+  padding-left: 5px; }
+  .service-id-chunk:first-child {
+    padding-left: 0; }
 
 .link-button,
 a.link-button, .link-button-with-advice,
