@@ -1683,20 +1683,66 @@ legend {
     .js-enabled .govuk-option-select.js-collapsible.js-closed .options-container {
       display: none; }
 
-.govuk-option-select .filter-field-text {
-  font-family: "nta", Arial, sans-serif;
-  font-weight: 400;
-  text-transform: none;
-  font-size: 14px;
-  line-height: 1.14286;
-  font-size: 16px;
-  line-height: 1.25;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
+.govuk-option-select.filter-field-text {
+  margin-bottom: 30px;
   padding: 5px;
-  border: 1px solid #bfc1c3; }
+  /* Mostly gotten from: https://github.com/alphagov/static/blob/bb2e0b052c15e5cfc58a0dca3a34bd4cc5caed46/app/assets/stylesheets/helpers/_header.scss#L102 */ }
+  .js-enabled .govuk-option-select.filter-field-text {
+    /* This is required because we want padding around the search box but it gets overridden by a style from _option_select.scss */
+    padding: 5px; }
+  .govuk-option-select.filter-field-text .container-head {
+    padding-left: 0;
+    padding-right: 0; }
+  .govuk-option-select.filter-field-text .option-select-label {
+    display: block; }
+  .govuk-option-select.filter-field-text .container-search {
+    position: relative; }
+  .govuk-option-select.filter-field-text input {
+    height: 36px; }
+  .govuk-option-select.filter-field-text input[type="search"] {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 1.14286;
+    font-size: 16px;
+    line-height: 1.25;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    padding: 6px;
+    width: 86%;
+    width: -webkit-calc(100% - 36px);
+    width: calc(100% - 36px);
+    border: 1px solid #bfc1c3;
+    border-right: none; }
+    .govuk-option-select.filter-field-text input[type="search"].focus, .govuk-option-select.filter-field-text input[type="search"]:focus {
+      outline-offset: -2px; }
+  .govuk-option-select.filter-field-text input.submit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 36px;
+    border: 1px solid #bfc1c3;
+    border-left: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    overflow: hidden;
+    text-indent: -5000px;
+    color: #fff;
+    background-color: #005ea5;
+    background-image: url("../images/search-button.png");
+    background-repeat: no-repeat;
+    background-position: 0 50%; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      .govuk-option-select.filter-field-text input.submit {
+        background-size: 52.5px 35px;
+        background-position: 100% 50%; } }
+    .govuk-option-select.filter-field-text input.submit:hover {
+      cursor: pointer;
+      background-color: #004f8c; }
 
 .grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after, .message-wrapper:after {
   content: "";
