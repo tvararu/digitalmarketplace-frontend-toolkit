@@ -2437,22 +2437,26 @@ table.summary-item-body tbody .summary-item-field-no-padding, .summary-item-fiel
     .summary-item-field ul.checkbox-tree--with-children {
       list-style-type: none;
       padding-left: 0; }
-      table.summary-item-body tbody .summary-item-field-first-narrow-no-padding ul.checkbox-tree--with-children > li:not(:last-child) ul,
-      table.summary-item-body tbody .summary-item-field-no-padding ul.checkbox-tree--with-children > li:not(:last-child) ul, .summary-item-field-border ul.checkbox-tree--with-children > li:not(:last-child) ul, .summary-item-field-first ul.checkbox-tree--with-children > li:not(:last-child) ul, .summary-item-field-first-narrow ul.checkbox-tree--with-children > li:not(:last-child) ul, .summary-item-field-first-half ul.checkbox-tree--with-children > li:not(:last-child) ul, .summary-item-field-first-two-thirds ul.checkbox-tree--with-children > li:not(:last-child) ul, .summary-item-field-with-action ul.checkbox-tree--with-children > li:not(:last-child) ul,
-      .summary-item-field ul.checkbox-tree--with-children > li:not(:last-child) ul {
-        margin-bottom: 15px; }
-      table.summary-item-body tbody .summary-item-field-first-narrow-no-padding ul.checkbox-tree--with-children > li p,
-      table.summary-item-body tbody .summary-item-field-no-padding ul.checkbox-tree--with-children > li p, .summary-item-field-border ul.checkbox-tree--with-children > li p, .summary-item-field-first ul.checkbox-tree--with-children > li p, .summary-item-field-first-narrow ul.checkbox-tree--with-children > li p, .summary-item-field-first-half ul.checkbox-tree--with-children > li p, .summary-item-field-first-two-thirds ul.checkbox-tree--with-children > li p, .summary-item-field-with-action ul.checkbox-tree--with-children > li p,
-      .summary-item-field ul.checkbox-tree--with-children > li p {
-        margin-bottom: 3px; }
+      table.summary-item-body tbody .summary-item-field-first-narrow-no-padding ul.checkbox-tree--with-children > li,
+      table.summary-item-body tbody .summary-item-field-no-padding ul.checkbox-tree--with-children > li, .summary-item-field-border ul.checkbox-tree--with-children > li, .summary-item-field-first ul.checkbox-tree--with-children > li, .summary-item-field-first-narrow ul.checkbox-tree--with-children > li, .summary-item-field-first-half ul.checkbox-tree--with-children > li, .summary-item-field-first-two-thirds ul.checkbox-tree--with-children > li, .summary-item-field-with-action ul.checkbox-tree--with-children > li,
+      .summary-item-field ul.checkbox-tree--with-children > li {
+        margin-top: 15px; }
+        table.summary-item-body tbody .summary-item-field-first-narrow-no-padding ul.checkbox-tree--with-children > li p,
+        table.summary-item-body tbody .summary-item-field-no-padding ul.checkbox-tree--with-children > li p, .summary-item-field-border ul.checkbox-tree--with-children > li p, .summary-item-field-first ul.checkbox-tree--with-children > li p, .summary-item-field-first-narrow ul.checkbox-tree--with-children > li p, .summary-item-field-first-half ul.checkbox-tree--with-children > li p, .summary-item-field-first-two-thirds ul.checkbox-tree--with-children > li p, .summary-item-field-with-action ul.checkbox-tree--with-children > li p,
+        .summary-item-field ul.checkbox-tree--with-children > li p {
+          margin-bottom: 3px; }
+      table.summary-item-body tbody .summary-item-field-first-narrow-no-padding ul.checkbox-tree--with-children > li:first-child,
+      table.summary-item-body tbody .summary-item-field-no-padding ul.checkbox-tree--with-children > li:first-child, .summary-item-field-border ul.checkbox-tree--with-children > li:first-child, .summary-item-field-first ul.checkbox-tree--with-children > li:first-child, .summary-item-field-first-narrow ul.checkbox-tree--with-children > li:first-child, .summary-item-field-first-half ul.checkbox-tree--with-children > li:first-child, .summary-item-field-first-two-thirds ul.checkbox-tree--with-children > li:first-child, .summary-item-field-with-action ul.checkbox-tree--with-children > li:first-child,
+      .summary-item-field ul.checkbox-tree--with-children > li:first-child {
+        margin-top: 0; }
   table.summary-item-body tbody .summary-item-field-first-narrow-no-padding .multiquestion,
   table.summary-item-body tbody .summary-item-field-no-padding .multiquestion, .summary-item-field-border .multiquestion, .summary-item-field-first .multiquestion, .summary-item-field-first-narrow .multiquestion, .summary-item-field-first-half .multiquestion, .summary-item-field-first-two-thirds .multiquestion, .summary-item-field-with-action .multiquestion,
   .summary-item-field .multiquestion {
-    padding-bottom: 15px; }
-    table.summary-item-body tbody .summary-item-field-first-narrow-no-padding .multiquestion:last-child,
-    table.summary-item-body tbody .summary-item-field-no-padding .multiquestion:last-child, .summary-item-field-border .multiquestion:last-child, .summary-item-field-first .multiquestion:last-child, .summary-item-field-first-narrow .multiquestion:last-child, .summary-item-field-first-half .multiquestion:last-child, .summary-item-field-first-two-thirds .multiquestion:last-child, .summary-item-field-with-action .multiquestion:last-child,
-    .summary-item-field .multiquestion:last-child {
-      padding-bottom: 0; }
+    margin-top: 15px; }
+    table.summary-item-body tbody .summary-item-field-first-narrow-no-padding .multiquestion:first-child,
+    table.summary-item-body tbody .summary-item-field-no-padding .multiquestion:first-child, .summary-item-field-border .multiquestion:first-child, .summary-item-field-first .multiquestion:first-child, .summary-item-field-first-narrow .multiquestion:first-child, .summary-item-field-first-half .multiquestion:first-child, .summary-item-field-first-two-thirds .multiquestion:first-child, .summary-item-field-with-action .multiquestion:first-child,
+    .summary-item-field .multiquestion:first-child {
+      margin-top: 0; }
     table.summary-item-body tbody .summary-item-field-first-narrow-no-padding .multiquestion > p:first-child,
     table.summary-item-body tbody .summary-item-field-no-padding .multiquestion > p:first-child, .summary-item-field-border .multiquestion > p:first-child, .summary-item-field-first .multiquestion > p:first-child, .summary-item-field-first-narrow .multiquestion > p:first-child, .summary-item-field-first-half .multiquestion > p:first-child, .summary-item-field-first-two-thirds .multiquestion > p:first-child, .summary-item-field-with-action .multiquestion > p:first-child,
     .summary-item-field .multiquestion > p:first-child {
