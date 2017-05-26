@@ -2615,10 +2615,10 @@ a.summary-item-remove-link {
   display: inline-block;
   padding-right: 1em; }
 
-.date-input-day-month {
+.text-box.date-input-day-month {
   width: 2.75em; }
 
-.date-input-year {
+.text-box.date-input-year {
   width: 4.25em; }
 
 .grid-row:after, .notice:after, .question:after, .question-first:after, .validation-wrapper:after, .message-wrapper:after {

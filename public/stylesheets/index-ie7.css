@@ -2713,10 +2713,10 @@ a.summary-item-remove-link {
   display: inline;
   padding-right: 1em; }
 
-.date-input-day-month {
+.text-box.date-input-day-month {
   width: 2.75em; }
 
-.date-input-year {
+.text-box.date-input-year {
   width: 4.25em; }
 
 .grid-row, .notice, .question, .question-first, .validation-wrapper, .message-wrapper {
