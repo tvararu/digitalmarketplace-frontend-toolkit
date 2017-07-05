@@ -2,11 +2,28 @@
 
 Records breaking changes from major version bumps
 
+## 23.0.0
+
+### What changed
+
+- 'media-down' IE helper mixin has been moved to a '_conditionals2.scss' stylesheet, which is consistent
+  with its location in the equivalent gov.uk repository;
+- this means we can use it even if we aren't using the next/previous navigation stylesheet.
+
+###
+
+Example app change:
+
+app/assets/scss/application.scss
+```diff
++@import "toolkit/shared_scss/_conditionals2.scss";
+```
+
 ## 22.0.0
 
 PR: [#313](https://github.com/alphagov/digitalmarketplace-frontend-toolkit/pull/313)
 
-## What changed
+### What changed
 
 - The `fake-full-width` [Sass mixin](http://sass-lang.com/guide#topic-6) is now required to compile the `_pricing.scss` file.
   This means a new shared placeholder in the apps that use the frontend toolkit
